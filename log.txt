@@ -1,0 +1,3934 @@
+Server running on port 3000
+Incoming request: POST /api/whatsapp/whatsapp-webhook
+Here")
+Incoming request: POST /api/whatsapp/whatsapp-webhook {
+  SmsMessageSid: 'SM7b59f09ee8748453b7ae7cdbce985a99',
+  NumMedia: '0',
+  ProfileName: 'Dinan',
+  MessageType: 'text',
+  SmsSid: 'SM7b59f09ee8748453b7ae7cdbce985a99',
+  WaId: '94773470464',
+  SmsStatus: 'received',
+  Body: 'Job ID : 17099999436\n' +
+    'TEACHING HOSPITAL - RAGAMA\n' +
+    'Location : Kadawatha Road RAGAMA\n' +
+    'Fault : Check faulty extension-203\n' +
+    'Job Reported Time : 2025-08-27 / 12:40 PM\n' +
+    'Reported By  : Ms Nisansala\n' +
+    'Report : Shiran',
+  To: 'whatsapp:+14155238886',
+  NumSegments: '1',
+  ReferralNumMedia: '0',
+  MessageSid: 'SM7b59f09ee8748453b7ae7cdbce985a99',
+  AccountSid: 'ACb602f04a7a01bc4bb08292980764dccd',
+  ChannelMetadata: '{"type":"whatsapp","data":{"context":{"ProfileName":"Dinan","WaId":"94773470464"}}}',
+  From: 'whatsapp:+94773470464',
+  ApiVersion: '2010-04-01'
+}
+Here")
+📩 WhatsApp webhook received:
+💬 Message from +94773470464: JOB ID : 17099999436
+TEACHING HOSPITAL - RAGAMA
+LOCATION : KADAWATHA ROAD RAGAMA
+FAULT : CHECK FAULTY EXTENSION-203
+JOB REPORTED TIME : 2025-08-27 / 12:40 PM
+REPORTED BY  : MS NISANSALA
+REPORT : SHIRAN 
+🔍 Searching for email with first name: SHIRAN
+✅ Google Sheets response: [
+  [ 'email', 'f_name', 'l_name', 'phone' ],
+  [ 'dinan.jay20@gmail.com', 'DINAN', 'Jayasuriya', '773470464' ],
+  [ 'shiranj2000@gmail.com', 'SHIRAN', 'Jayasuriya', '775770997' ],
+  [
+    'chamalsamindabandara@gmail.com',
+    'CHAMAL',
+    'Bandara',
+    '765224111'
+  ]
+]
+📧 Contact found for first name SHIRAN: shiranj2000@gmail.com
+Issue created successfully: {
+  id: '10414',
+  key: 'TES-45',
+  self: 'https://dinanjay20.atlassian.net/rest/api/3/issue/10414'
+}
+Incoming request: POST /api/jira/webhook?triggeredByUser=712020%3A2bea55ee-2bf4-44c9-88ff-2ffd1472a3dc
+Here")
+Incoming request: POST /api/jira/webhook?triggeredByUser=712020%3A2bea55ee-2bf4-44c9-88ff-2ffd1472a3dc {
+  timestamp: 1756282657833,
+  webhookEvent: 'jira:issue_created',
+  issue_event_type_name: 'issue_created',
+  user: {
+    self: 'https://dinanjay20.atlassian.net/rest/api/2/user?accountId=712020%3A2bea55ee-2bf4-44c9-88ff-2ffd1472a3dc',
+    accountId: '712020:2bea55ee-2bf4-44c9-88ff-2ffd1472a3dc',
+    avatarUrls: {
+      '48x48': 'https://secure.gravatar.com/avatar/e6b56e854c6f977472198836b59d4b4d?d=https%3A%2F%2Favatar-management--avatars.us-west-2.prod.public.atl-paas.net%2Finitials%2FDJ-2.png',
+      '24x24': 'https://secure.gravatar.com/avatar/e6b56e854c6f977472198836b59d4b4d?d=https%3A%2F%2Favatar-management--avatars.us-west-2.prod.public.atl-paas.net%2Finitials%2FDJ-2.png',
+      '16x16': 'https://secure.gravatar.com/avatar/e6b56e854c6f977472198836b59d4b4d?d=https%3A%2F%2Favatar-management--avatars.us-west-2.prod.public.atl-paas.net%2Finitials%2FDJ-2.png',
+      '32x32': 'https://secure.gravatar.com/avatar/e6b56e854c6f977472198836b59d4b4d?d=https%3A%2F%2Favatar-management--avatars.us-west-2.prod.public.atl-paas.net%2Finitials%2FDJ-2.png'
+    },
+    displayName: 'Dinan Jayasuriya',
+    active: true,
+    timeZone: 'Asia/Colombo',
+    accountType: 'atlassian'
+  },
+  issue: {
+    id: '10414',
+    self: 'https://dinanjay20.atlassian.net/rest/api/2/10414',
+    key: 'TES-45',
+    fields: {
+      statuscategorychangedate: '2025-08-27T13:47:37.879+0530',
+      issuetype: [Object],
+      components: [],
+      customfield_10091: null,
+      timespent: null,
+      timeoriginalestimate: null,
+      description: 'Job ID: 17099999436\n' +
+        '\n' +
+        'Client: TEACHING HOSPITAL - RAGAMA\n' +
+        '\n' +
+        'Location: KADAWATHA ROAD RAGAMA\n' +
+        '\n' +
+        'Fault: CHECK FAULTY EXTENSION-203\n' +
+        '\n' +
+        'Reported Time: 2025-08-27 / 12:40 PM\n' +
+        '\n' +
+        'Reported By: MS NISANSALA\n' +
+        '\n' +
+        'Reporter: SHIRAN',
+      project: [Object],
+      fixVersions: [],
+      statusCategory: [Object],
+      aggregatetimespent: null,
+      resolution: null,
+      timetracking: {},
+      customfield_10015: null,
+      security: null,
+      attachment: [],
+      aggregatetimeestimate: null,
+      resolutiondate: null,
+      workratio: -1,
+      summary: 'Job 17099999436 - TEACHING HOSPITAL - RAGAMA',
+      watches: [Object],
+      lastViewed: null,
+      creator: [Object],
+      subtasks: [],
+      created: '2025-08-27T13:47:37.671+0530',
+      reporter: [Object],
+      aggregateprogress: [Object],
+      priority: [Object],
+      customfield_10001: null,
+      labels: [],
+      environment: null,
+      customfield_10019: '0|i0009r:',
+      timeestimate: null,
+      aggregatetimeoriginalestimate: null,
+      versions: [],
+      duedate: null,
+      progress: [Object],
+      votes: [Object],
+      issuelinks: [],
+      assignee: [Object],
+      updated: '2025-08-27T13:47:37.671+0530',
+      status: [Object]
+    }
+  },
+  changelog: {
+    id: '10732',
+    items: [ [Object], [Object], [Object], [Object], [Object], [Object] ]
+  }
+}
+Here")
+📩 Jira webhook received: {
+  "timestamp": 1756282657833,
+  "webhookEvent": "jira:issue_created",
+  "issue_event_type_name": "issue_created",
+  "user": {
+    "self": "https://dinanjay20.atlassian.net/rest/api/2/user?accountId=712020%3A2bea55ee-2bf4-44c9-88ff-2ffd1472a3dc",
+    "accountId": "712020:2bea55ee-2bf4-44c9-88ff-2ffd1472a3dc",
+    "avatarUrls": {
+      "48x48": "https://secure.gravatar.com/avatar/e6b56e854c6f977472198836b59d4b4d?d=https%3A%2F%2Favatar-management--avatars.us-west-2.prod.public.atl-paas.net%2Finitials%2FDJ-2.png",
+      "24x24": "https://secure.gravatar.com/avatar/e6b56e854c6f977472198836b59d4b4d?d=https%3A%2F%2Favatar-management--avatars.us-west-2.prod.public.atl-paas.net%2Finitials%2FDJ-2.png",
+      "16x16": "https://secure.gravatar.com/avatar/e6b56e854c6f977472198836b59d4b4d?d=https%3A%2F%2Favatar-management--avatars.us-west-2.prod.public.atl-paas.net%2Finitials%2FDJ-2.png",
+      "32x32": "https://secure.gravatar.com/avatar/e6b56e854c6f977472198836b59d4b4d?d=https%3A%2F%2Favatar-management--avatars.us-west-2.prod.public.atl-paas.net%2Finitials%2FDJ-2.png"
+    },
+    "displayName": "Dinan Jayasuriya",
+    "active": true,
+    "timeZone": "Asia/Colombo",
+    "accountType": "atlassian"
+  },
+  "issue": {
+    "id": "10414",
+    "self": "https://dinanjay20.atlassian.net/rest/api/2/10414",
+    "key": "TES-45",
+    "fields": {
+      "statuscategorychangedate": "2025-08-27T13:47:37.879+0530",
+      "issuetype": {
+        "self": "https://dinanjay20.atlassian.net/rest/api/2/issuetype/10070",
+        "id": "10070",
+        "description": "A small, distinct piece of work.",
+        "iconUrl": "https://dinanjay20.atlassian.net/rest/api/2/universal_avatar/view/type/issuetype/avatar/10318?size=medium",
+        "name": "Task",
+        "subtask": false,
+        "avatarId": 10318,
+        "entityId": "8f170138-b743-4266-a903-da1b7e8f6916",
+        "hierarchyLevel": 0
+      },
+      "components": [],
+      "customfield_10091": null,
+      "timespent": null,
+      "timeoriginalestimate": null,
+      "description": "Job ID: 17099999436\n\nClient: TEACHING HOSPITAL - RAGAMA\n\nLocation: KADAWATHA ROAD RAGAMA\n\nFault: CHECK FAULTY EXTENSION-203\n\nReported Time: 2025-08-27 / 12:40 PM\n\nReported By: MS NISANSALA\n\nReporter: SHIRAN",
+      "project": {
+        "self": "https://dinanjay20.atlassian.net/rest/api/2/project/10067",
+        "id": "10067",
+        "key": "TES",
+        "name": "MetroTest",
+        "projectTypeKey": "business",
+        "simplified": true,
+        "avatarUrls": {
+          "48x48": "https://dinanjay20.atlassian.net/rest/api/2/universal_avatar/view/type/project/avatar/10422",
+          "24x24": "https://dinanjay20.atlassian.net/rest/api/2/universal_avatar/view/type/project/avatar/10422?size=small",
+          "16x16": "https://dinanjay20.atlassian.net/rest/api/2/universal_avatar/view/type/project/avatar/10422?size=xsmall",
+          "32x32": "https://dinanjay20.atlassian.net/rest/api/2/universal_avatar/view/type/project/avatar/10422?size=medium"
+        }
+      },
+      "fixVersions": [],
+      "statusCategory": {
+        "self": "https://dinanjay20.atlassian.net/rest/api/2/statuscategory/2",
+        "id": 2,
+        "key": "new",
+        "colorName": "blue-gray",
+        "name": "New"
+      },
+      "aggregatetimespent": null,
+      "resolution": null,
+      "timetracking": {},
+      "customfield_10015": null,
+      "security": null,
+      "attachment": [],
+      "aggregatetimeestimate": null,
+      "resolutiondate": null,
+      "workratio": -1,
+      "summary": "Job 17099999436 - TEACHING HOSPITAL - RAGAMA",
+      "watches": {
+        "self": "https://dinanjay20.atlassian.net/rest/api/2/issue/TES-45/watchers",
+        "watchCount": 0,
+        "isWatching": true
+      },
+      "lastViewed": null,
+      "creator": {
+        "self": "https://dinanjay20.atlassian.net/rest/api/2/user?accountId=712020%3A2bea55ee-2bf4-44c9-88ff-2ffd1472a3dc",
+        "accountId": "712020:2bea55ee-2bf4-44c9-88ff-2ffd1472a3dc",
+        "avatarUrls": {
+          "48x48": "https://secure.gravatar.com/avatar/e6b56e854c6f977472198836b59d4b4d?d=https%3A%2F%2Favatar-management--avatars.us-west-2.prod.public.atl-paas.net%2Finitials%2FDJ-2.png",
+          "24x24": "https://secure.gravatar.com/avatar/e6b56e854c6f977472198836b59d4b4d?d=https%3A%2F%2Favatar-management--avatars.us-west-2.prod.public.atl-paas.net%2Finitials%2FDJ-2.png",
+          "16x16": "https://secure.gravatar.com/avatar/e6b56e854c6f977472198836b59d4b4d?d=https%3A%2F%2Favatar-management--avatars.us-west-2.prod.public.atl-paas.net%2Finitials%2FDJ-2.png",
+          "32x32": "https://secure.gravatar.com/avatar/e6b56e854c6f977472198836b59d4b4d?d=https%3A%2F%2Favatar-management--avatars.us-west-2.prod.public.atl-paas.net%2Finitials%2FDJ-2.png"
+        },
+        "displayName": "Dinan Jayasuriya",
+        "active": true,
+        "timeZone": "Asia/Colombo",
+        "accountType": "atlassian"
+      },
+      "subtasks": [],
+      "created": "2025-08-27T13:47:37.671+0530",
+      "reporter": {
+        "self": "https://dinanjay20.atlassian.net/rest/api/2/user?accountId=712020%3A742d2122-9523-4a23-8725-ef0c967aefb5",
+        "accountId": "712020:742d2122-9523-4a23-8725-ef0c967aefb5",
+        "emailAddress": "shiranj2000@gmail.com",
+        "avatarUrls": {
+          "48x48": "https://secure.gravatar.com/avatar/1ea8e3580adba1e381a8cb5d7562fd04?d=https%3A%2F%2Favatar-management--avatars.us-west-2.prod.public.atl-paas.net%2Finitials%2FSJ-1.png",
+          "24x24": "https://secure.gravatar.com/avatar/1ea8e3580adba1e381a8cb5d7562fd04?d=https%3A%2F%2Favatar-management--avatars.us-west-2.prod.public.atl-paas.net%2Finitials%2FSJ-1.png",
+          "16x16": "https://secure.gravatar.com/avatar/1ea8e3580adba1e381a8cb5d7562fd04?d=https%3A%2F%2Favatar-management--avatars.us-west-2.prod.public.atl-paas.net%2Finitials%2FSJ-1.png",
+          "32x32": "https://secure.gravatar.com/avatar/1ea8e3580adba1e381a8cb5d7562fd04?d=https%3A%2F%2Favatar-management--avatars.us-west-2.prod.public.atl-paas.net%2Finitials%2FSJ-1.png"
+        },
+        "displayName": "Shiran Jayasuriya",
+        "active": true,
+        "timeZone": "Asia/Colombo",
+        "accountType": "atlassian"
+      },
+      "aggregateprogress": {
+        "progress": 0,
+        "total": 0
+      },
+      "priority": {
+        "self": "https://dinanjay20.atlassian.net/rest/api/2/priority/3",
+        "iconUrl": "https://dinanjay20.atlassian.net/images/icons/priorities/medium_new.svg",
+        "name": "Medium",
+        "id": "3"
+      },
+      "customfield_10001": null,
+      "labels": [],
+      "environment": null,
+      "customfield_10019": "0|i0009r:",
+      "timeestimate": null,
+      "aggregatetimeoriginalestimate": null,
+      "versions": [],
+      "duedate": null,
+      "progress": {
+        "progress": 0,
+        "total": 0
+      },
+      "votes": {
+        "self": "https://dinanjay20.atlassian.net/rest/api/2/issue/TES-45/votes",
+        "votes": 0,
+        "hasVoted": false
+      },
+      "issuelinks": [],
+      "assignee": {
+        "self": "https://dinanjay20.atlassian.net/rest/api/2/user?accountId=712020%3A742d2122-9523-4a23-8725-ef0c967aefb5",
+        "accountId": "712020:742d2122-9523-4a23-8725-ef0c967aefb5",
+        "emailAddress": "shiranj2000@gmail.com",
+        "avatarUrls": {
+          "48x48": "https://secure.gravatar.com/avatar/1ea8e3580adba1e381a8cb5d7562fd04?d=https%3A%2F%2Favatar-management--avatars.us-west-2.prod.public.atl-paas.net%2Finitials%2FSJ-1.png",
+          "24x24": "https://secure.gravatar.com/avatar/1ea8e3580adba1e381a8cb5d7562fd04?d=https%3A%2F%2Favatar-management--avatars.us-west-2.prod.public.atl-paas.net%2Finitials%2FSJ-1.png",
+          "16x16": "https://secure.gravatar.com/avatar/1ea8e3580adba1e381a8cb5d7562fd04?d=https%3A%2F%2Favatar-management--avatars.us-west-2.prod.public.atl-paas.net%2Finitials%2FSJ-1.png",
+          "32x32": "https://secure.gravatar.com/avatar/1ea8e3580adba1e381a8cb5d7562fd04?d=https%3A%2F%2Favatar-management--avatars.us-west-2.prod.public.atl-paas.net%2Finitials%2FSJ-1.png"
+        },
+        "displayName": "Shiran Jayasuriya",
+        "active": true,
+        "timeZone": "Asia/Colombo",
+        "accountType": "atlassian"
+      },
+      "updated": "2025-08-27T13:47:37.671+0530",
+      "status": {
+        "self": "https://dinanjay20.atlassian.net/rest/api/2/status/10075",
+        "description": "",
+        "iconUrl": "https://dinanjay20.atlassian.net/",
+        "name": "To Do",
+        "id": "10075",
+        "statusCategory": {
+          "self": "https://dinanjay20.atlassian.net/rest/api/2/statuscategory/2",
+          "id": 2,
+          "key": "new",
+          "colorName": "blue-gray",
+          "name": "New"
+        }
+      }
+    }
+  },
+  "changelog": {
+    "id": "10732",
+    "items": [
+      {
+        "field": "assignee",
+        "fieldtype": "jira",
+        "fieldId": "assignee",
+        "from": null,
+        "fromString": null,
+        "to": "712020:742d2122-9523-4a23-8725-ef0c967aefb5",
+        "toString": "Shiran Jayasuriya",
+        "tmpFromAccountId": null,
+        "tmpToAccountId": "712020:742d2122-9523-4a23-8725-ef0c967aefb5"
+      },
+      {
+        "field": "description",
+        "fieldtype": "jira",
+        "fieldId": "description",
+        "from": null,
+        "fromString": null,
+        "to": null,
+        "toString": "Job ID: 17099999436\n\nClient: TEACHING HOSPITAL - RAGAMA\n\nLocation: KADAWATHA ROAD RAGAMA\n\nFault: CHECK FAULTY EXTENSION-203\n\nReported Time: 2025-08-27 / 12:40 PM\n\nReported By: MS NISANSALA\n\nReporter: SHIRAN"
+      },
+      {
+        "field": "priority",
+        "fieldtype": "jira",
+        "fieldId": "priority",
+        "from": null,
+        "fromString": null,
+        "to": "3",
+        "toString": "Medium"
+      },
+      {
+        "field": "reporter",
+        "fieldtype": "jira",
+        "fieldId": "reporter",
+        "from": null,
+        "fromString": null,
+        "to": "712020:742d2122-9523-4a23-8725-ef0c967aefb5",
+        "toString": "Shiran Jayasuriya",
+        "tmpFromAccountId": null,
+        "tmpToAccountId": "712020:742d2122-9523-4a23-8725-ef0c967aefb5"
+      },
+      {
+        "field": "Status",
+        "fieldtype": "jira",
+        "fieldId": "status",
+        "from": null,
+        "fromString": null,
+        "to": "10075",
+        "toString": "To Do"
+      },
+      {
+        "field": "summary",
+        "fieldtype": "jira",
+        "fieldId": "summary",
+        "from": null,
+        "fromString": null,
+        "to": null,
+        "toString": "Job 17099999436 - TEACHING HOSPITAL - RAGAMA"
+      }
+    ]
+  }
+}
+👤 Issue TES-45 assigned to Shiran Jayasuriya (accountId: 712020:742d2122-9523-4a23-8725-ef0c967aefb5)
+📩 Jira user lookup response: {
+  self: 'https://dinanjay20.atlassian.net/rest/api/3/user?accountId=712020:742d2122-9523-4a23-8725-ef0c967aefb5',
+  accountId: '712020:742d2122-9523-4a23-8725-ef0c967aefb5',
+  accountType: 'atlassian',
+  emailAddress: 'shiranj2000@gmail.com',
+  avatarUrls: {
+    '48x48': 'https://secure.gravatar.com/avatar/1ea8e3580adba1e381a8cb5d7562fd04?d=https%3A%2F%2Favatar-management--avatars.us-west-2.prod.public.atl-paas.net%2Finitials%2FSJ-1.png',
+    '24x24': 'https://secure.gravatar.com/avatar/1ea8e3580adba1e381a8cb5d7562fd04?d=https%3A%2F%2Favatar-management--avatars.us-west-2.prod.public.atl-paas.net%2Finitials%2FSJ-1.png',
+    '16x16': 'https://secure.gravatar.com/avatar/1ea8e3580adba1e381a8cb5d7562fd04?d=https%3A%2F%2Favatar-management--avatars.us-west-2.prod.public.atl-paas.net%2Finitials%2FSJ-1.png',
+    '32x32': 'https://secure.gravatar.com/avatar/1ea8e3580adba1e381a8cb5d7562fd04?d=https%3A%2F%2Favatar-management--avatars.us-west-2.prod.public.atl-paas.net%2Finitials%2FSJ-1.png'
+  },
+  displayName: 'Shiran Jayasuriya',
+  active: true,
+  timeZone: 'Asia/Colombo',
+  locale: 'en_US',
+  groups: { size: 1, items: [] },
+  applicationRoles: { size: 1, items: [] },
+  expand: 'groups,applicationRoles'
+}
+📧 Jira returned email: shiranj2000@gmail.com
+🔍 Searching for contact with email: shiranj2000@gmail.com
+✅ Google Sheets response: [
+  [ 'email', 'f_name', 'l_name', 'phone' ],
+  [ 'dinan.jay20@gmail.com', 'DINAN', 'Jayasuriya', '773470464' ],
+  [ 'shiranj2000@gmail.com', 'SHIRAN', 'Jayasuriya', '775770997' ],
+  [
+    'chamalsamindabandara@gmail.com',
+    'CHAMAL',
+    'Bandara',
+    '765224111'
+  ]
+]
+📞 Contact found for email shiranj2000@gmail.com: +94775770997
+📞 Found phone number for shiranj2000@gmail.com: +94775770997
+👋 Hi Shiran Jayasuriya,
+
+You have been assigned a new Jira task:
+Job ID: 17099999436
+
+Client: TEACHING HOSPITAL - RAGAMA
+
+Location: KADAWATHA ROAD RAGAMA
+
+Fault: CHECK FAULTY EXTENSION-203
+
+Reported Time: 2025-08-27 / 12:40 PM
+
+Reported By: MS NISANSALA
+
+Reporter: SHIRAN
+✅ WhatsApp message sent: SM04e06f38134524f699644b218f626a43
+✅ WhatsApp message sent to Shiran Jayasuriya (+94775770997)
+✅ Saved mapping to Google Sheet: SM04e06f38134524f699644b218f626a43 -> TES-45
+Server running on port 3000
+Incoming request: POST /api/whatsapp/whatsapp-webhook
+Here")
+Incoming request: POST /api/whatsapp/whatsapp-webhook {
+  SmsMessageSid: 'SM951501327d303370dcff2e621cd3a24b',
+  NumMedia: '0',
+  ProfileName: 'Dinan',
+  MessageType: 'text',
+  SmsSid: 'SM951501327d303370dcff2e621cd3a24b',
+  WaId: '94773470464',
+  SmsStatus: 'received',
+  Body: 'Job ID : 17099999436\n' +
+    'TEACHING HOSPITAL - RAGAMA\n' +
+    'Location : Kadawatha Road RAGAMA\n' +
+    'Fault : Check faulty extension-203\n' +
+    'Job Reported Time : 2025-08-27 / 12:40 PM\n' +
+    'Reported By  : Ms Nisansala\n' +
+    'Report : Shiran',
+  To: 'whatsapp:+14155238886',
+  NumSegments: '1',
+  ReferralNumMedia: '0',
+  MessageSid: 'SM951501327d303370dcff2e621cd3a24b',
+  AccountSid: 'ACb602f04a7a01bc4bb08292980764dccd',
+  ChannelMetadata: '{"type":"whatsapp","data":{"context":{"ProfileName":"Dinan","WaId":"94773470464"}}}',
+  From: 'whatsapp:+94773470464',
+  ApiVersion: '2010-04-01'
+}
+Here")
+📩 WhatsApp webhook received:
+💬 Message from +94773470464: JOB ID : 17099999436
+TEACHING HOSPITAL - RAGAMA
+LOCATION : KADAWATHA ROAD RAGAMA
+FAULT : CHECK FAULTY EXTENSION-203
+JOB REPORTED TIME : 2025-08-27 / 12:40 PM
+REPORTED BY  : MS NISANSALA
+REPORT : SHIRAN 
+🔍 Searching for email with first name: SHIRAN
+✅ Google Sheets response: [
+  [ 'email', 'f_name', 'l_name', 'phone' ],
+  [ 'dinan.jay20@gmail.com', 'DINAN', 'Jayasuriya', '773470464' ],
+  [ 'shiranj2000@gmail.com', 'SHIRAN', 'Jayasuriya', '775770997' ],
+  [
+    'chamalsamindabandara@gmail.com',
+    'CHAMAL',
+    'Bandara',
+    '765224111'
+  ]
+]
+📧 Contact found for first name SHIRAN: shiranj2000@gmail.com
+Issue created successfully: {
+  id: '10415',
+  key: 'TES-46',
+  self: 'https://dinanjay20.atlassian.net/rest/api/3/issue/10415'
+}
+Incoming request: POST /api/jira/webhook?triggeredByUser=712020%3A2bea55ee-2bf4-44c9-88ff-2ffd1472a3dc
+Here")
+Incoming request: POST /api/jira/webhook?triggeredByUser=712020%3A2bea55ee-2bf4-44c9-88ff-2ffd1472a3dc {
+  timestamp: 1756285157572,
+  webhookEvent: 'jira:issue_created',
+  issue_event_type_name: 'issue_created',
+  user: {
+    self: 'https://dinanjay20.atlassian.net/rest/api/2/user?accountId=712020%3A2bea55ee-2bf4-44c9-88ff-2ffd1472a3dc',
+    accountId: '712020:2bea55ee-2bf4-44c9-88ff-2ffd1472a3dc',
+    avatarUrls: {
+      '48x48': 'https://secure.gravatar.com/avatar/e6b56e854c6f977472198836b59d4b4d?d=https%3A%2F%2Favatar-management--avatars.us-west-2.prod.public.atl-paas.net%2Finitials%2FDJ-2.png',
+      '24x24': 'https://secure.gravatar.com/avatar/e6b56e854c6f977472198836b59d4b4d?d=https%3A%2F%2Favatar-management--avatars.us-west-2.prod.public.atl-paas.net%2Finitials%2FDJ-2.png',
+      '16x16': 'https://secure.gravatar.com/avatar/e6b56e854c6f977472198836b59d4b4d?d=https%3A%2F%2Favatar-management--avatars.us-west-2.prod.public.atl-paas.net%2Finitials%2FDJ-2.png',
+      '32x32': 'https://secure.gravatar.com/avatar/e6b56e854c6f977472198836b59d4b4d?d=https%3A%2F%2Favatar-management--avatars.us-west-2.prod.public.atl-paas.net%2Finitials%2FDJ-2.png'
+    },
+    displayName: 'Dinan Jayasuriya',
+    active: true,
+    timeZone: 'Asia/Colombo',
+    accountType: 'atlassian'
+  },
+  issue: {
+    id: '10415',
+    self: 'https://dinanjay20.atlassian.net/rest/api/2/10415',
+    key: 'TES-46',
+    fields: {
+      statuscategorychangedate: null,
+      issuetype: [Object],
+      components: [],
+      customfield_10091: null,
+      timespent: null,
+      timeoriginalestimate: null,
+      description: 'Job ID: 17099999436\n' +
+        '\n' +
+        'Client: TEACHING HOSPITAL - RAGAMA\n' +
+        '\n' +
+        'Location: KADAWATHA ROAD RAGAMA\n' +
+        '\n' +
+        'Fault: CHECK FAULTY EXTENSION-203\n' +
+        '\n' +
+        'Reported Time: 2025-08-27 / 12:40 PM\n' +
+        '\n' +
+        'Reported By: MS NISANSALA\n' +
+        '\n' +
+        'Reporter: SHIRAN',
+      project: [Object],
+      fixVersions: [],
+      statusCategory: [Object],
+      aggregatetimespent: null,
+      resolution: null,
+      timetracking: {},
+      customfield_10015: null,
+      security: null,
+      attachment: [],
+      aggregatetimeestimate: null,
+      resolutiondate: null,
+      workratio: -1,
+      summary: 'Job 17099999436 - TEACHING HOSPITAL - RAGAMA',
+      watches: [Object],
+      lastViewed: null,
+      creator: [Object],
+      subtasks: [],
+      created: '2025-08-27T14:29:17.417+0530',
+      reporter: [Object],
+      aggregateprogress: [Object],
+      priority: [Object],
+      customfield_10001: null,
+      labels: [],
+      environment: null,
+      customfield_10019: '0|i0009z:',
+      timeestimate: null,
+      aggregatetimeoriginalestimate: null,
+      versions: [],
+      duedate: null,
+      progress: [Object],
+      votes: [Object],
+      issuelinks: [],
+      assignee: [Object],
+      updated: '2025-08-27T14:29:17.417+0530',
+      status: [Object]
+    }
+  },
+  changelog: {
+    id: '10733',
+    items: [ [Object], [Object], [Object], [Object], [Object], [Object] ]
+  }
+}
+Here")
+📩 Jira webhook received: {
+  "timestamp": 1756285157572,
+  "webhookEvent": "jira:issue_created",
+  "issue_event_type_name": "issue_created",
+  "user": {
+    "self": "https://dinanjay20.atlassian.net/rest/api/2/user?accountId=712020%3A2bea55ee-2bf4-44c9-88ff-2ffd1472a3dc",
+    "accountId": "712020:2bea55ee-2bf4-44c9-88ff-2ffd1472a3dc",
+    "avatarUrls": {
+      "48x48": "https://secure.gravatar.com/avatar/e6b56e854c6f977472198836b59d4b4d?d=https%3A%2F%2Favatar-management--avatars.us-west-2.prod.public.atl-paas.net%2Finitials%2FDJ-2.png",
+      "24x24": "https://secure.gravatar.com/avatar/e6b56e854c6f977472198836b59d4b4d?d=https%3A%2F%2Favatar-management--avatars.us-west-2.prod.public.atl-paas.net%2Finitials%2FDJ-2.png",
+      "16x16": "https://secure.gravatar.com/avatar/e6b56e854c6f977472198836b59d4b4d?d=https%3A%2F%2Favatar-management--avatars.us-west-2.prod.public.atl-paas.net%2Finitials%2FDJ-2.png",
+      "32x32": "https://secure.gravatar.com/avatar/e6b56e854c6f977472198836b59d4b4d?d=https%3A%2F%2Favatar-management--avatars.us-west-2.prod.public.atl-paas.net%2Finitials%2FDJ-2.png"
+    },
+    "displayName": "Dinan Jayasuriya",
+    "active": true,
+    "timeZone": "Asia/Colombo",
+    "accountType": "atlassian"
+  },
+  "issue": {
+    "id": "10415",
+    "self": "https://dinanjay20.atlassian.net/rest/api/2/10415",
+    "key": "TES-46",
+    "fields": {
+      "statuscategorychangedate": null,
+      "issuetype": {
+        "self": "https://dinanjay20.atlassian.net/rest/api/2/issuetype/10070",
+        "id": "10070",
+        "description": "A small, distinct piece of work.",
+        "iconUrl": "https://dinanjay20.atlassian.net/rest/api/2/universal_avatar/view/type/issuetype/avatar/10318?size=medium",
+        "name": "Task",
+        "subtask": false,
+        "avatarId": 10318,
+        "entityId": "8f170138-b743-4266-a903-da1b7e8f6916",
+        "hierarchyLevel": 0
+      },
+      "components": [],
+      "customfield_10091": null,
+      "timespent": null,
+      "timeoriginalestimate": null,
+      "description": "Job ID: 17099999436\n\nClient: TEACHING HOSPITAL - RAGAMA\n\nLocation: KADAWATHA ROAD RAGAMA\n\nFault: CHECK FAULTY EXTENSION-203\n\nReported Time: 2025-08-27 / 12:40 PM\n\nReported By: MS NISANSALA\n\nReporter: SHIRAN",
+      "project": {
+        "self": "https://dinanjay20.atlassian.net/rest/api/2/project/10067",
+        "id": "10067",
+        "key": "TES",
+        "name": "MetroTest",
+        "projectTypeKey": "business",
+        "simplified": true,
+        "avatarUrls": {
+          "48x48": "https://dinanjay20.atlassian.net/rest/api/2/universal_avatar/view/type/project/avatar/10422",
+          "24x24": "https://dinanjay20.atlassian.net/rest/api/2/universal_avatar/view/type/project/avatar/10422?size=small",
+          "16x16": "https://dinanjay20.atlassian.net/rest/api/2/universal_avatar/view/type/project/avatar/10422?size=xsmall",
+          "32x32": "https://dinanjay20.atlassian.net/rest/api/2/universal_avatar/view/type/project/avatar/10422?size=medium"
+        }
+      },
+      "fixVersions": [],
+      "statusCategory": {
+        "self": "https://dinanjay20.atlassian.net/rest/api/2/statuscategory/2",
+        "id": 2,
+        "key": "new",
+        "colorName": "blue-gray",
+        "name": "New"
+      },
+      "aggregatetimespent": null,
+      "resolution": null,
+      "timetracking": {},
+      "customfield_10015": null,
+      "security": null,
+      "attachment": [],
+      "aggregatetimeestimate": null,
+      "resolutiondate": null,
+      "workratio": -1,
+      "summary": "Job 17099999436 - TEACHING HOSPITAL - RAGAMA",
+      "watches": {
+        "self": "https://dinanjay20.atlassian.net/rest/api/2/issue/TES-46/watchers",
+        "watchCount": 0,
+        "isWatching": true
+      },
+      "lastViewed": null,
+      "creator": {
+        "self": "https://dinanjay20.atlassian.net/rest/api/2/user?accountId=712020%3A2bea55ee-2bf4-44c9-88ff-2ffd1472a3dc",
+        "accountId": "712020:2bea55ee-2bf4-44c9-88ff-2ffd1472a3dc",
+        "avatarUrls": {
+          "48x48": "https://secure.gravatar.com/avatar/e6b56e854c6f977472198836b59d4b4d?d=https%3A%2F%2Favatar-management--avatars.us-west-2.prod.public.atl-paas.net%2Finitials%2FDJ-2.png",
+          "24x24": "https://secure.gravatar.com/avatar/e6b56e854c6f977472198836b59d4b4d?d=https%3A%2F%2Favatar-management--avatars.us-west-2.prod.public.atl-paas.net%2Finitials%2FDJ-2.png",
+          "16x16": "https://secure.gravatar.com/avatar/e6b56e854c6f977472198836b59d4b4d?d=https%3A%2F%2Favatar-management--avatars.us-west-2.prod.public.atl-paas.net%2Finitials%2FDJ-2.png",
+          "32x32": "https://secure.gravatar.com/avatar/e6b56e854c6f977472198836b59d4b4d?d=https%3A%2F%2Favatar-management--avatars.us-west-2.prod.public.atl-paas.net%2Finitials%2FDJ-2.png"
+        },
+        "displayName": "Dinan Jayasuriya",
+        "active": true,
+        "timeZone": "Asia/Colombo",
+        "accountType": "atlassian"
+      },
+      "subtasks": [],
+      "created": "2025-08-27T14:29:17.417+0530",
+      "reporter": {
+        "self": "https://dinanjay20.atlassian.net/rest/api/2/user?accountId=712020%3A742d2122-9523-4a23-8725-ef0c967aefb5",
+        "accountId": "712020:742d2122-9523-4a23-8725-ef0c967aefb5",
+        "emailAddress": "shiranj2000@gmail.com",
+        "avatarUrls": {
+          "48x48": "https://secure.gravatar.com/avatar/1ea8e3580adba1e381a8cb5d7562fd04?d=https%3A%2F%2Favatar-management--avatars.us-west-2.prod.public.atl-paas.net%2Finitials%2FSJ-1.png",
+          "24x24": "https://secure.gravatar.com/avatar/1ea8e3580adba1e381a8cb5d7562fd04?d=https%3A%2F%2Favatar-management--avatars.us-west-2.prod.public.atl-paas.net%2Finitials%2FSJ-1.png",
+          "16x16": "https://secure.gravatar.com/avatar/1ea8e3580adba1e381a8cb5d7562fd04?d=https%3A%2F%2Favatar-management--avatars.us-west-2.prod.public.atl-paas.net%2Finitials%2FSJ-1.png",
+          "32x32": "https://secure.gravatar.com/avatar/1ea8e3580adba1e381a8cb5d7562fd04?d=https%3A%2F%2Favatar-management--avatars.us-west-2.prod.public.atl-paas.net%2Finitials%2FSJ-1.png"
+        },
+        "displayName": "Shiran Jayasuriya",
+        "active": true,
+        "timeZone": "Asia/Colombo",
+        "accountType": "atlassian"
+      },
+      "aggregateprogress": {
+        "progress": 0,
+        "total": 0
+      },
+      "priority": {
+        "self": "https://dinanjay20.atlassian.net/rest/api/2/priority/3",
+        "iconUrl": "https://dinanjay20.atlassian.net/images/icons/priorities/medium_new.svg",
+        "name": "Medium",
+        "id": "3"
+      },
+      "customfield_10001": null,
+      "labels": [],
+      "environment": null,
+      "customfield_10019": "0|i0009z:",
+      "timeestimate": null,
+      "aggregatetimeoriginalestimate": null,
+      "versions": [],
+      "duedate": null,
+      "progress": {
+        "progress": 0,
+        "total": 0
+      },
+      "votes": {
+        "self": "https://dinanjay20.atlassian.net/rest/api/2/issue/TES-46/votes",
+        "votes": 0,
+        "hasVoted": false
+      },
+      "issuelinks": [],
+      "assignee": {
+        "self": "https://dinanjay20.atlassian.net/rest/api/2/user?accountId=712020%3A742d2122-9523-4a23-8725-ef0c967aefb5",
+        "accountId": "712020:742d2122-9523-4a23-8725-ef0c967aefb5",
+        "emailAddress": "shiranj2000@gmail.com",
+        "avatarUrls": {
+          "48x48": "https://secure.gravatar.com/avatar/1ea8e3580adba1e381a8cb5d7562fd04?d=https%3A%2F%2Favatar-management--avatars.us-west-2.prod.public.atl-paas.net%2Finitials%2FSJ-1.png",
+          "24x24": "https://secure.gravatar.com/avatar/1ea8e3580adba1e381a8cb5d7562fd04?d=https%3A%2F%2Favatar-management--avatars.us-west-2.prod.public.atl-paas.net%2Finitials%2FSJ-1.png",
+          "16x16": "https://secure.gravatar.com/avatar/1ea8e3580adba1e381a8cb5d7562fd04?d=https%3A%2F%2Favatar-management--avatars.us-west-2.prod.public.atl-paas.net%2Finitials%2FSJ-1.png",
+          "32x32": "https://secure.gravatar.com/avatar/1ea8e3580adba1e381a8cb5d7562fd04?d=https%3A%2F%2Favatar-management--avatars.us-west-2.prod.public.atl-paas.net%2Finitials%2FSJ-1.png"
+        },
+        "displayName": "Shiran Jayasuriya",
+        "active": true,
+        "timeZone": "Asia/Colombo",
+        "accountType": "atlassian"
+      },
+      "updated": "2025-08-27T14:29:17.417+0530",
+      "status": {
+        "self": "https://dinanjay20.atlassian.net/rest/api/2/status/10075",
+        "description": "",
+        "iconUrl": "https://dinanjay20.atlassian.net/",
+        "name": "To Do",
+        "id": "10075",
+        "statusCategory": {
+          "self": "https://dinanjay20.atlassian.net/rest/api/2/statuscategory/2",
+          "id": 2,
+          "key": "new",
+          "colorName": "blue-gray",
+          "name": "New"
+        }
+      }
+    }
+  },
+  "changelog": {
+    "id": "10733",
+    "items": [
+      {
+        "field": "assignee",
+        "fieldtype": "jira",
+        "fieldId": "assignee",
+        "from": null,
+        "fromString": null,
+        "to": "712020:742d2122-9523-4a23-8725-ef0c967aefb5",
+        "toString": "Shiran Jayasuriya",
+        "tmpFromAccountId": null,
+        "tmpToAccountId": "712020:742d2122-9523-4a23-8725-ef0c967aefb5"
+      },
+      {
+        "field": "description",
+        "fieldtype": "jira",
+        "fieldId": "description",
+        "from": null,
+        "fromString": null,
+        "to": null,
+        "toString": "Job ID: 17099999436\n\nClient: TEACHING HOSPITAL - RAGAMA\n\nLocation: KADAWATHA ROAD RAGAMA\n\nFault: CHECK FAULTY EXTENSION-203\n\nReported Time: 2025-08-27 / 12:40 PM\n\nReported By: MS NISANSALA\n\nReporter: SHIRAN"
+      },
+      {
+        "field": "priority",
+        "fieldtype": "jira",
+        "fieldId": "priority",
+        "from": null,
+        "fromString": null,
+        "to": "3",
+        "toString": "Medium"
+      },
+      {
+        "field": "reporter",
+        "fieldtype": "jira",
+        "fieldId": "reporter",
+        "from": null,
+        "fromString": null,
+        "to": "712020:742d2122-9523-4a23-8725-ef0c967aefb5",
+        "toString": "Shiran Jayasuriya",
+        "tmpFromAccountId": null,
+        "tmpToAccountId": "712020:742d2122-9523-4a23-8725-ef0c967aefb5"
+      },
+      {
+        "field": "Status",
+        "fieldtype": "jira",
+        "fieldId": "status",
+        "from": null,
+        "fromString": null,
+        "to": "10075",
+        "toString": "To Do"
+      },
+      {
+        "field": "summary",
+        "fieldtype": "jira",
+        "fieldId": "summary",
+        "from": null,
+        "fromString": null,
+        "to": null,
+        "toString": "Job 17099999436 - TEACHING HOSPITAL - RAGAMA"
+      }
+    ]
+  }
+}
+👤 Issue TES-46 assigned to Shiran Jayasuriya (accountId: 712020:742d2122-9523-4a23-8725-ef0c967aefb5)
+📩 Jira user lookup response: {
+  self: 'https://dinanjay20.atlassian.net/rest/api/3/user?accountId=712020:742d2122-9523-4a23-8725-ef0c967aefb5',
+  accountId: '712020:742d2122-9523-4a23-8725-ef0c967aefb5',
+  accountType: 'atlassian',
+  emailAddress: 'shiranj2000@gmail.com',
+  avatarUrls: {
+    '48x48': 'https://secure.gravatar.com/avatar/1ea8e3580adba1e381a8cb5d7562fd04?d=https%3A%2F%2Favatar-management--avatars.us-west-2.prod.public.atl-paas.net%2Finitials%2FSJ-1.png',
+    '24x24': 'https://secure.gravatar.com/avatar/1ea8e3580adba1e381a8cb5d7562fd04?d=https%3A%2F%2Favatar-management--avatars.us-west-2.prod.public.atl-paas.net%2Finitials%2FSJ-1.png',
+    '16x16': 'https://secure.gravatar.com/avatar/1ea8e3580adba1e381a8cb5d7562fd04?d=https%3A%2F%2Favatar-management--avatars.us-west-2.prod.public.atl-paas.net%2Finitials%2FSJ-1.png',
+    '32x32': 'https://secure.gravatar.com/avatar/1ea8e3580adba1e381a8cb5d7562fd04?d=https%3A%2F%2Favatar-management--avatars.us-west-2.prod.public.atl-paas.net%2Finitials%2FSJ-1.png'
+  },
+  displayName: 'Shiran Jayasuriya',
+  active: true,
+  timeZone: 'Asia/Colombo',
+  locale: 'en_US',
+  groups: { size: 1, items: [] },
+  applicationRoles: { size: 1, items: [] },
+  expand: 'groups,applicationRoles'
+}
+📧 Jira returned email: shiranj2000@gmail.com
+🔍 Searching for contact with email: shiranj2000@gmail.com
+✅ Google Sheets response: [
+  [ 'email', 'f_name', 'l_name', 'phone' ],
+  [ 'dinan.jay20@gmail.com', 'DINAN', 'Jayasuriya', '773470464' ],
+  [ 'shiranj2000@gmail.com', 'SHIRAN', 'Jayasuriya', '775770997' ],
+  [
+    'chamalsamindabandara@gmail.com',
+    'CHAMAL',
+    'Bandara',
+    '765224111'
+  ]
+]
+📞 Contact found for email shiranj2000@gmail.com: +94775770997
+📞 Found phone number for shiranj2000@gmail.com: +94775770997
+👋 Hi Shiran Jayasuriya,
+
+You have been assigned a new Jira task:
+Job ID: 17099999436
+
+Client: TEACHING HOSPITAL - RAGAMA
+
+Location: KADAWATHA ROAD RAGAMA
+
+Fault: CHECK FAULTY EXTENSION-203
+
+Reported Time: 2025-08-27 / 12:40 PM
+
+Reported By: MS NISANSALA
+
+Reporter: SHIRAN
+✅ WhatsApp message sent: SM6130be8db8bd965b2877229ad3071af5
+✅ WhatsApp message sent to Shiran Jayasuriya (+94775770997)
+✅ Saved mapping to Google Sheet: SM6130be8db8bd965b2877229ad3071af5 -> TES-46
+Incoming request: POST /api/whatsapp/whatsapp-webhook
+Here")
+Incoming request: POST /api/whatsapp/whatsapp-webhook {
+  SmsMessageSid: 'SMdbee2390ed3ebb281ea15f9df1f2d806',
+  NumMedia: '0',
+  ProfileName: 'Dinan',
+  MessageType: 'text',
+  SmsSid: 'SMdbee2390ed3ebb281ea15f9df1f2d806',
+  WaId: '94773470464',
+  SmsStatus: 'received',
+  Body: 'Job ID : 17099999436\n' +
+    'TEACHING HOSPITAL - RAGAMA\n' +
+    'Location : Kadawatha Road RAGAMA\n' +
+    'Fault : Check faulty extension-203\n' +
+    'Job Reported Time : 2025-08-27 / 12:40 PM\n' +
+    'Reported By  : Ms Nisansala\n' +
+    'Report : Shiran',
+  To: 'whatsapp:+14155238886',
+  NumSegments: '1',
+  ReferralNumMedia: '0',
+  MessageSid: 'SMdbee2390ed3ebb281ea15f9df1f2d806',
+  AccountSid: 'ACb602f04a7a01bc4bb08292980764dccd',
+  ChannelMetadata: '{"type":"whatsapp","data":{"context":{"ProfileName":"Dinan","WaId":"94773470464"}}}',
+  From: 'whatsapp:+94773470464',
+  ApiVersion: '2010-04-01'
+}
+Here")
+📩 WhatsApp webhook received:
+💬 Message from +94773470464: JOB ID : 17099999436
+TEACHING HOSPITAL - RAGAMA
+LOCATION : KADAWATHA ROAD RAGAMA
+FAULT : CHECK FAULTY EXTENSION-203
+JOB REPORTED TIME : 2025-08-27 / 12:40 PM
+REPORTED BY  : MS NISANSALA
+REPORT : SHIRAN 
+🔍 Searching for email with first name: SHIRAN
+✅ Google Sheets response: [
+  [ 'email', 'f_name', 'l_name', 'phone' ],
+  [ 'dinan.jay20@gmail.com', 'DINAN', 'Jayasuriya', '773470464' ],
+  [ 'shiranj2000@gmail.com', 'SHIRAN', 'Jayasuriya', '775770997' ],
+  [
+    'chamalsamindabandara@gmail.com',
+    'CHAMAL',
+    'Bandara',
+    '765224111'
+  ]
+]
+📧 Contact found for first name SHIRAN: shiranj2000@gmail.com
+Issue created successfully: {
+  id: '10416',
+  key: 'TES-47',
+  self: 'https://dinanjay20.atlassian.net/rest/api/3/issue/10416'
+}
+Incoming request: POST /api/jira/webhook?triggeredByUser=712020%3A2bea55ee-2bf4-44c9-88ff-2ffd1472a3dc
+Here")
+Incoming request: POST /api/jira/webhook?triggeredByUser=712020%3A2bea55ee-2bf4-44c9-88ff-2ffd1472a3dc {
+  timestamp: 1756285403232,
+  webhookEvent: 'jira:issue_created',
+  issue_event_type_name: 'issue_created',
+  user: {
+    self: 'https://dinanjay20.atlassian.net/rest/api/2/user?accountId=712020%3A2bea55ee-2bf4-44c9-88ff-2ffd1472a3dc',
+    accountId: '712020:2bea55ee-2bf4-44c9-88ff-2ffd1472a3dc',
+    avatarUrls: {
+      '48x48': 'https://secure.gravatar.com/avatar/e6b56e854c6f977472198836b59d4b4d?d=https%3A%2F%2Favatar-management--avatars.us-west-2.prod.public.atl-paas.net%2Finitials%2FDJ-2.png',
+      '24x24': 'https://secure.gravatar.com/avatar/e6b56e854c6f977472198836b59d4b4d?d=https%3A%2F%2Favatar-management--avatars.us-west-2.prod.public.atl-paas.net%2Finitials%2FDJ-2.png',
+      '16x16': 'https://secure.gravatar.com/avatar/e6b56e854c6f977472198836b59d4b4d?d=https%3A%2F%2Favatar-management--avatars.us-west-2.prod.public.atl-paas.net%2Finitials%2FDJ-2.png',
+      '32x32': 'https://secure.gravatar.com/avatar/e6b56e854c6f977472198836b59d4b4d?d=https%3A%2F%2Favatar-management--avatars.us-west-2.prod.public.atl-paas.net%2Finitials%2FDJ-2.png'
+    },
+    displayName: 'Dinan Jayasuriya',
+    active: true,
+    timeZone: 'Asia/Colombo',
+    accountType: 'atlassian'
+  },
+  issue: {
+    id: '10416',
+    self: 'https://dinanjay20.atlassian.net/rest/api/2/10416',
+    key: 'TES-47',
+    fields: {
+      statuscategorychangedate: '2025-08-27T14:33:23.267+0530',
+      issuetype: [Object],
+      components: [],
+      customfield_10091: null,
+      timespent: null,
+      timeoriginalestimate: null,
+      description: 'Job ID: 17099999436\n' +
+        '\n' +
+        'Client: TEACHING HOSPITAL - RAGAMA\n' +
+        '\n' +
+        'Location: KADAWATHA ROAD RAGAMA\n' +
+        '\n' +
+        'Fault: CHECK FAULTY EXTENSION-203\n' +
+        '\n' +
+        'Reported Time: 2025-08-27 / 12:40 PM\n' +
+        '\n' +
+        'Reported By: MS NISANSALA\n' +
+        '\n' +
+        'Reporter: SHIRAN',
+      project: [Object],
+      fixVersions: [],
+      statusCategory: [Object],
+      aggregatetimespent: null,
+      resolution: null,
+      timetracking: {},
+      customfield_10015: null,
+      security: null,
+      attachment: [],
+      aggregatetimeestimate: null,
+      resolutiondate: null,
+      workratio: -1,
+      summary: 'Job 17099999436 - TEACHING HOSPITAL - RAGAMA',
+      watches: [Object],
+      lastViewed: null,
+      creator: [Object],
+      subtasks: [],
+      created: '2025-08-27T14:33:23.054+0530',
+      reporter: [Object],
+      aggregateprogress: [Object],
+      priority: [Object],
+      customfield_10001: null,
+      labels: [],
+      environment: null,
+      customfield_10019: null,
+      timeestimate: null,
+      aggregatetimeoriginalestimate: null,
+      versions: [],
+      duedate: null,
+      progress: [Object],
+      votes: [Object],
+      issuelinks: [],
+      assignee: [Object],
+      updated: '2025-08-27T14:33:23.054+0530',
+      status: [Object]
+    }
+  },
+  changelog: {
+    id: '10734',
+    items: [ [Object], [Object], [Object], [Object], [Object], [Object] ]
+  }
+}
+Here")
+📩 Jira webhook received: {
+  "timestamp": 1756285403232,
+  "webhookEvent": "jira:issue_created",
+  "issue_event_type_name": "issue_created",
+  "user": {
+    "self": "https://dinanjay20.atlassian.net/rest/api/2/user?accountId=712020%3A2bea55ee-2bf4-44c9-88ff-2ffd1472a3dc",
+    "accountId": "712020:2bea55ee-2bf4-44c9-88ff-2ffd1472a3dc",
+    "avatarUrls": {
+      "48x48": "https://secure.gravatar.com/avatar/e6b56e854c6f977472198836b59d4b4d?d=https%3A%2F%2Favatar-management--avatars.us-west-2.prod.public.atl-paas.net%2Finitials%2FDJ-2.png",
+      "24x24": "https://secure.gravatar.com/avatar/e6b56e854c6f977472198836b59d4b4d?d=https%3A%2F%2Favatar-management--avatars.us-west-2.prod.public.atl-paas.net%2Finitials%2FDJ-2.png",
+      "16x16": "https://secure.gravatar.com/avatar/e6b56e854c6f977472198836b59d4b4d?d=https%3A%2F%2Favatar-management--avatars.us-west-2.prod.public.atl-paas.net%2Finitials%2FDJ-2.png",
+      "32x32": "https://secure.gravatar.com/avatar/e6b56e854c6f977472198836b59d4b4d?d=https%3A%2F%2Favatar-management--avatars.us-west-2.prod.public.atl-paas.net%2Finitials%2FDJ-2.png"
+    },
+    "displayName": "Dinan Jayasuriya",
+    "active": true,
+    "timeZone": "Asia/Colombo",
+    "accountType": "atlassian"
+  },
+  "issue": {
+    "id": "10416",
+    "self": "https://dinanjay20.atlassian.net/rest/api/2/10416",
+    "key": "TES-47",
+    "fields": {
+      "statuscategorychangedate": "2025-08-27T14:33:23.267+0530",
+      "issuetype": {
+        "self": "https://dinanjay20.atlassian.net/rest/api/2/issuetype/10070",
+        "id": "10070",
+        "description": "A small, distinct piece of work.",
+        "iconUrl": "https://dinanjay20.atlassian.net/rest/api/2/universal_avatar/view/type/issuetype/avatar/10318?size=medium",
+        "name": "Task",
+        "subtask": false,
+        "avatarId": 10318,
+        "entityId": "8f170138-b743-4266-a903-da1b7e8f6916",
+        "hierarchyLevel": 0
+      },
+      "components": [],
+      "customfield_10091": null,
+      "timespent": null,
+      "timeoriginalestimate": null,
+      "description": "Job ID: 17099999436\n\nClient: TEACHING HOSPITAL - RAGAMA\n\nLocation: KADAWATHA ROAD RAGAMA\n\nFault: CHECK FAULTY EXTENSION-203\n\nReported Time: 2025-08-27 / 12:40 PM\n\nReported By: MS NISANSALA\n\nReporter: SHIRAN",
+      "project": {
+        "self": "https://dinanjay20.atlassian.net/rest/api/2/project/10067",
+        "id": "10067",
+        "key": "TES",
+        "name": "MetroTest",
+        "projectTypeKey": "business",
+        "simplified": true,
+        "avatarUrls": {
+          "48x48": "https://dinanjay20.atlassian.net/rest/api/2/universal_avatar/view/type/project/avatar/10422",
+          "24x24": "https://dinanjay20.atlassian.net/rest/api/2/universal_avatar/view/type/project/avatar/10422?size=small",
+          "16x16": "https://dinanjay20.atlassian.net/rest/api/2/universal_avatar/view/type/project/avatar/10422?size=xsmall",
+          "32x32": "https://dinanjay20.atlassian.net/rest/api/2/universal_avatar/view/type/project/avatar/10422?size=medium"
+        }
+      },
+      "fixVersions": [],
+      "statusCategory": {
+        "self": "https://dinanjay20.atlassian.net/rest/api/2/statuscategory/2",
+        "id": 2,
+        "key": "new",
+        "colorName": "blue-gray",
+        "name": "New"
+      },
+      "aggregatetimespent": null,
+      "resolution": null,
+      "timetracking": {},
+      "customfield_10015": null,
+      "security": null,
+      "attachment": [],
+      "aggregatetimeestimate": null,
+      "resolutiondate": null,
+      "workratio": -1,
+      "summary": "Job 17099999436 - TEACHING HOSPITAL - RAGAMA",
+      "watches": {
+        "self": "https://dinanjay20.atlassian.net/rest/api/2/issue/TES-47/watchers",
+        "watchCount": 0,
+        "isWatching": true
+      },
+      "lastViewed": null,
+      "creator": {
+        "self": "https://dinanjay20.atlassian.net/rest/api/2/user?accountId=712020%3A2bea55ee-2bf4-44c9-88ff-2ffd1472a3dc",
+        "accountId": "712020:2bea55ee-2bf4-44c9-88ff-2ffd1472a3dc",
+        "avatarUrls": {
+          "48x48": "https://secure.gravatar.com/avatar/e6b56e854c6f977472198836b59d4b4d?d=https%3A%2F%2Favatar-management--avatars.us-west-2.prod.public.atl-paas.net%2Finitials%2FDJ-2.png",
+          "24x24": "https://secure.gravatar.com/avatar/e6b56e854c6f977472198836b59d4b4d?d=https%3A%2F%2Favatar-management--avatars.us-west-2.prod.public.atl-paas.net%2Finitials%2FDJ-2.png",
+          "16x16": "https://secure.gravatar.com/avatar/e6b56e854c6f977472198836b59d4b4d?d=https%3A%2F%2Favatar-management--avatars.us-west-2.prod.public.atl-paas.net%2Finitials%2FDJ-2.png",
+          "32x32": "https://secure.gravatar.com/avatar/e6b56e854c6f977472198836b59d4b4d?d=https%3A%2F%2Favatar-management--avatars.us-west-2.prod.public.atl-paas.net%2Finitials%2FDJ-2.png"
+        },
+        "displayName": "Dinan Jayasuriya",
+        "active": true,
+        "timeZone": "Asia/Colombo",
+        "accountType": "atlassian"
+      },
+      "subtasks": [],
+      "created": "2025-08-27T14:33:23.054+0530",
+      "reporter": {
+        "self": "https://dinanjay20.atlassian.net/rest/api/2/user?accountId=712020%3A742d2122-9523-4a23-8725-ef0c967aefb5",
+        "accountId": "712020:742d2122-9523-4a23-8725-ef0c967aefb5",
+        "emailAddress": "shiranj2000@gmail.com",
+        "avatarUrls": {
+          "48x48": "https://secure.gravatar.com/avatar/1ea8e3580adba1e381a8cb5d7562fd04?d=https%3A%2F%2Favatar-management--avatars.us-west-2.prod.public.atl-paas.net%2Finitials%2FSJ-1.png",
+          "24x24": "https://secure.gravatar.com/avatar/1ea8e3580adba1e381a8cb5d7562fd04?d=https%3A%2F%2Favatar-management--avatars.us-west-2.prod.public.atl-paas.net%2Finitials%2FSJ-1.png",
+          "16x16": "https://secure.gravatar.com/avatar/1ea8e3580adba1e381a8cb5d7562fd04?d=https%3A%2F%2Favatar-management--avatars.us-west-2.prod.public.atl-paas.net%2Finitials%2FSJ-1.png",
+          "32x32": "https://secure.gravatar.com/avatar/1ea8e3580adba1e381a8cb5d7562fd04?d=https%3A%2F%2Favatar-management--avatars.us-west-2.prod.public.atl-paas.net%2Finitials%2FSJ-1.png"
+        },
+        "displayName": "Shiran Jayasuriya",
+        "active": true,
+        "timeZone": "Asia/Colombo",
+        "accountType": "atlassian"
+      },
+      "aggregateprogress": {
+        "progress": 0,
+        "total": 0
+      },
+      "priority": {
+        "self": "https://dinanjay20.atlassian.net/rest/api/2/priority/3",
+        "iconUrl": "https://dinanjay20.atlassian.net/images/icons/priorities/medium_new.svg",
+        "name": "Medium",
+        "id": "3"
+      },
+      "customfield_10001": null,
+      "labels": [],
+      "environment": null,
+      "customfield_10019": null,
+      "timeestimate": null,
+      "aggregatetimeoriginalestimate": null,
+      "versions": [],
+      "duedate": null,
+      "progress": {
+        "progress": 0,
+        "total": 0
+      },
+      "votes": {
+        "self": "https://dinanjay20.atlassian.net/rest/api/2/issue/TES-47/votes",
+        "votes": 0,
+        "hasVoted": false
+      },
+      "issuelinks": [],
+      "assignee": {
+        "self": "https://dinanjay20.atlassian.net/rest/api/2/user?accountId=712020%3A742d2122-9523-4a23-8725-ef0c967aefb5",
+        "accountId": "712020:742d2122-9523-4a23-8725-ef0c967aefb5",
+        "emailAddress": "shiranj2000@gmail.com",
+        "avatarUrls": {
+          "48x48": "https://secure.gravatar.com/avatar/1ea8e3580adba1e381a8cb5d7562fd04?d=https%3A%2F%2Favatar-management--avatars.us-west-2.prod.public.atl-paas.net%2Finitials%2FSJ-1.png",
+          "24x24": "https://secure.gravatar.com/avatar/1ea8e3580adba1e381a8cb5d7562fd04?d=https%3A%2F%2Favatar-management--avatars.us-west-2.prod.public.atl-paas.net%2Finitials%2FSJ-1.png",
+          "16x16": "https://secure.gravatar.com/avatar/1ea8e3580adba1e381a8cb5d7562fd04?d=https%3A%2F%2Favatar-management--avatars.us-west-2.prod.public.atl-paas.net%2Finitials%2FSJ-1.png",
+          "32x32": "https://secure.gravatar.com/avatar/1ea8e3580adba1e381a8cb5d7562fd04?d=https%3A%2F%2Favatar-management--avatars.us-west-2.prod.public.atl-paas.net%2Finitials%2FSJ-1.png"
+        },
+        "displayName": "Shiran Jayasuriya",
+        "active": true,
+        "timeZone": "Asia/Colombo",
+        "accountType": "atlassian"
+      },
+      "updated": "2025-08-27T14:33:23.054+0530",
+      "status": {
+        "self": "https://dinanjay20.atlassian.net/rest/api/2/status/10075",
+        "description": "",
+        "iconUrl": "https://dinanjay20.atlassian.net/",
+        "name": "To Do",
+        "id": "10075",
+        "statusCategory": {
+          "self": "https://dinanjay20.atlassian.net/rest/api/2/statuscategory/2",
+          "id": 2,
+          "key": "new",
+          "colorName": "blue-gray",
+          "name": "New"
+        }
+      }
+    }
+  },
+  "changelog": {
+    "id": "10734",
+    "items": [
+      {
+        "field": "assignee",
+        "fieldtype": "jira",
+        "fieldId": "assignee",
+        "from": null,
+        "fromString": null,
+        "to": "712020:742d2122-9523-4a23-8725-ef0c967aefb5",
+        "toString": "Shiran Jayasuriya",
+        "tmpFromAccountId": null,
+        "tmpToAccountId": "712020:742d2122-9523-4a23-8725-ef0c967aefb5"
+      },
+      {
+        "field": "description",
+        "fieldtype": "jira",
+        "fieldId": "description",
+        "from": null,
+        "fromString": null,
+        "to": null,
+        "toString": "Job ID: 17099999436\n\nClient: TEACHING HOSPITAL - RAGAMA\n\nLocation: KADAWATHA ROAD RAGAMA\n\nFault: CHECK FAULTY EXTENSION-203\n\nReported Time: 2025-08-27 / 12:40 PM\n\nReported By: MS NISANSALA\n\nReporter: SHIRAN"
+      },
+      {
+        "field": "priority",
+        "fieldtype": "jira",
+        "fieldId": "priority",
+        "from": null,
+        "fromString": null,
+        "to": "3",
+        "toString": "Medium"
+      },
+      {
+        "field": "reporter",
+        "fieldtype": "jira",
+        "fieldId": "reporter",
+        "from": null,
+        "fromString": null,
+        "to": "712020:742d2122-9523-4a23-8725-ef0c967aefb5",
+        "toString": "Shiran Jayasuriya",
+        "tmpFromAccountId": null,
+        "tmpToAccountId": "712020:742d2122-9523-4a23-8725-ef0c967aefb5"
+      },
+      {
+        "field": "Status",
+        "fieldtype": "jira",
+        "fieldId": "status",
+        "from": null,
+        "fromString": null,
+        "to": "10075",
+        "toString": "To Do"
+      },
+      {
+        "field": "summary",
+        "fieldtype": "jira",
+        "fieldId": "summary",
+        "from": null,
+        "fromString": null,
+        "to": null,
+        "toString": "Job 17099999436 - TEACHING HOSPITAL - RAGAMA"
+      }
+    ]
+  }
+}
+👤 Issue TES-47 assigned to Shiran Jayasuriya (accountId: 712020:742d2122-9523-4a23-8725-ef0c967aefb5)
+📩 Jira user lookup response: {
+  self: 'https://dinanjay20.atlassian.net/rest/api/3/user?accountId=712020:742d2122-9523-4a23-8725-ef0c967aefb5',
+  accountId: '712020:742d2122-9523-4a23-8725-ef0c967aefb5',
+  accountType: 'atlassian',
+  emailAddress: 'shiranj2000@gmail.com',
+  avatarUrls: {
+    '48x48': 'https://secure.gravatar.com/avatar/1ea8e3580adba1e381a8cb5d7562fd04?d=https%3A%2F%2Favatar-management--avatars.us-west-2.prod.public.atl-paas.net%2Finitials%2FSJ-1.png',
+    '24x24': 'https://secure.gravatar.com/avatar/1ea8e3580adba1e381a8cb5d7562fd04?d=https%3A%2F%2Favatar-management--avatars.us-west-2.prod.public.atl-paas.net%2Finitials%2FSJ-1.png',
+    '16x16': 'https://secure.gravatar.com/avatar/1ea8e3580adba1e381a8cb5d7562fd04?d=https%3A%2F%2Favatar-management--avatars.us-west-2.prod.public.atl-paas.net%2Finitials%2FSJ-1.png',
+    '32x32': 'https://secure.gravatar.com/avatar/1ea8e3580adba1e381a8cb5d7562fd04?d=https%3A%2F%2Favatar-management--avatars.us-west-2.prod.public.atl-paas.net%2Finitials%2FSJ-1.png'
+  },
+  displayName: 'Shiran Jayasuriya',
+  active: true,
+  timeZone: 'Asia/Colombo',
+  locale: 'en_US',
+  groups: { size: 1, items: [] },
+  applicationRoles: { size: 1, items: [] },
+  expand: 'groups,applicationRoles'
+}
+📧 Jira returned email: shiranj2000@gmail.com
+🔍 Searching for contact with email: shiranj2000@gmail.com
+✅ Google Sheets response: [
+  [ 'email', 'f_name', 'l_name', 'phone' ],
+  [ 'dinan.jay20@gmail.com', 'DINAN', 'Jayasuriya', '773470464' ],
+  [ 'shiranj2000@gmail.com', 'SHIRAN', 'Jayasuriya', '775770997' ],
+  [
+    'chamalsamindabandara@gmail.com',
+    'CHAMAL',
+    'Bandara',
+    '765224111'
+  ]
+]
+📞 Contact found for email shiranj2000@gmail.com: +94775770997
+📞 Found phone number for shiranj2000@gmail.com: +94775770997
+👋 Hi Shiran Jayasuriya,
+
+You have been assigned a new Jira task:
+Job ID: 17099999436
+
+Client: TEACHING HOSPITAL - RAGAMA
+
+Location: KADAWATHA ROAD RAGAMA
+
+Fault: CHECK FAULTY EXTENSION-203
+
+Reported Time: 2025-08-27 / 12:40 PM
+
+Reported By: MS NISANSALA
+
+Reporter: SHIRAN
+✅ WhatsApp message sent: SM3dd2f9fe9d6858d126d9da3f643c5834
+✅ WhatsApp message sent to Shiran Jayasuriya (+94775770997)
+✅ Saved mapping to Google Sheet: SM3dd2f9fe9d6858d126d9da3f643c5834 -> TES-47
+Server running on port 3000
+Incoming request: POST /api/whatsapp/whatsapp-webhook
+Here")
+Incoming request: POST /api/whatsapp/whatsapp-webhook {
+  SmsMessageSid: 'SMc74f5b79a6b168937cb88c9117002fc8',
+  NumMedia: '0',
+  ProfileName: 'Dinan',
+  MessageType: 'text',
+  SmsSid: 'SMc74f5b79a6b168937cb88c9117002fc8',
+  WaId: '94773470464',
+  SmsStatus: 'received',
+  Body: 'Job ID : 17099999436\n' +
+    'TEACHING HOSPITAL - RAGAMA\n' +
+    'Location : Kadawatha Road RAGAMA\n' +
+    'Fault : Check faulty extension-203\n' +
+    'Job Reported Time : 2025-08-27 / 12:40 PM\n' +
+    'Reported By  : Ms Nisansala\n' +
+    'Report : Shiran',
+  To: 'whatsapp:+14155238886',
+  NumSegments: '1',
+  ReferralNumMedia: '0',
+  MessageSid: 'SMc74f5b79a6b168937cb88c9117002fc8',
+  AccountSid: 'ACb602f04a7a01bc4bb08292980764dccd',
+  ChannelMetadata: '{"type":"whatsapp","data":{"context":{"ProfileName":"Dinan","WaId":"94773470464"}}}',
+  From: 'whatsapp:+94773470464',
+  ApiVersion: '2010-04-01'
+}
+Here")
+📩 WhatsApp webhook received:
+💬 Message from +94773470464: JOB ID : 17099999436
+TEACHING HOSPITAL - RAGAMA
+LOCATION : KADAWATHA ROAD RAGAMA
+FAULT : CHECK FAULTY EXTENSION-203
+JOB REPORTED TIME : 2025-08-27 / 12:40 PM
+REPORTED BY  : MS NISANSALA
+REPORT : SHIRAN 
+🔍 Checking if job JOB ID : 17099999436
+TEACHING HOSPITAL - RAGAMA
+LOCATION : KADAWATHA ROAD RAGAMA
+FAULT : CHECK FAULTY EXTENSION-203
+JOB REPORTED TIME : 2025-08-27 / 12:40 PM
+REPORTED BY  : MS NISANSALA
+REPORT : SHIRAN exists in Jira: false
+🔍 Searching for email with first name: SHIRAN
+✅ Google Sheets response: [
+  [ 'email', 'f_name', 'l_name', 'phone' ],
+  [ 'dinan.jay20@gmail.com', 'DINAN', 'Jayasuriya', '773470464' ],
+  [ 'shiranj2000@gmail.com', 'SHIRAN', 'Jayasuriya', '775770997' ],
+  [
+    'chamalsamindabandara@gmail.com',
+    'CHAMAL',
+    'Bandara',
+    '765224111'
+  ]
+]
+📧 Contact found for first name SHIRAN: shiranj2000@gmail.com
+Issue created successfully: {
+  id: '10417',
+  key: 'TES-48',
+  self: 'https://dinanjay20.atlassian.net/rest/api/3/issue/10417'
+}
+Incoming request: POST /api/jira/webhook?triggeredByUser=712020%3A2bea55ee-2bf4-44c9-88ff-2ffd1472a3dc
+Here")
+Incoming request: POST /api/jira/webhook?triggeredByUser=712020%3A2bea55ee-2bf4-44c9-88ff-2ffd1472a3dc {
+  timestamp: 1756285682133,
+  webhookEvent: 'jira:issue_created',
+  issue_event_type_name: 'issue_created',
+  user: {
+    self: 'https://dinanjay20.atlassian.net/rest/api/2/user?accountId=712020%3A2bea55ee-2bf4-44c9-88ff-2ffd1472a3dc',
+    accountId: '712020:2bea55ee-2bf4-44c9-88ff-2ffd1472a3dc',
+    avatarUrls: {
+      '48x48': 'https://secure.gravatar.com/avatar/e6b56e854c6f977472198836b59d4b4d?d=https%3A%2F%2Favatar-management--avatars.us-west-2.prod.public.atl-paas.net%2Finitials%2FDJ-2.png',
+      '24x24': 'https://secure.gravatar.com/avatar/e6b56e854c6f977472198836b59d4b4d?d=https%3A%2F%2Favatar-management--avatars.us-west-2.prod.public.atl-paas.net%2Finitials%2FDJ-2.png',
+      '16x16': 'https://secure.gravatar.com/avatar/e6b56e854c6f977472198836b59d4b4d?d=https%3A%2F%2Favatar-management--avatars.us-west-2.prod.public.atl-paas.net%2Finitials%2FDJ-2.png',
+      '32x32': 'https://secure.gravatar.com/avatar/e6b56e854c6f977472198836b59d4b4d?d=https%3A%2F%2Favatar-management--avatars.us-west-2.prod.public.atl-paas.net%2Finitials%2FDJ-2.png'
+    },
+    displayName: 'Dinan Jayasuriya',
+    active: true,
+    timeZone: 'Asia/Colombo',
+    accountType: 'atlassian'
+  },
+  issue: {
+    id: '10417',
+    self: 'https://dinanjay20.atlassian.net/rest/api/2/10417',
+    key: 'TES-48',
+    fields: {
+      statuscategorychangedate: '2025-08-27T14:38:02.186+0530',
+      issuetype: [Object],
+      components: [],
+      customfield_10091: null,
+      timespent: null,
+      timeoriginalestimate: null,
+      description: 'Job ID: 17099999436\n' +
+        '\n' +
+        'Client: TEACHING HOSPITAL - RAGAMA\n' +
+        '\n' +
+        'Location: KADAWATHA ROAD RAGAMA\n' +
+        '\n' +
+        'Fault: CHECK FAULTY EXTENSION-203\n' +
+        '\n' +
+        'Reported Time: 2025-08-27 / 12:40 PM\n' +
+        '\n' +
+        'Reported By: MS NISANSALA\n' +
+        '\n' +
+        'Reporter: SHIRAN',
+      project: [Object],
+      fixVersions: [],
+      statusCategory: [Object],
+      aggregatetimespent: null,
+      resolution: null,
+      timetracking: {},
+      customfield_10015: null,
+      security: null,
+      attachment: [],
+      aggregatetimeestimate: null,
+      resolutiondate: null,
+      workratio: -1,
+      summary: 'Job 17099999436 - TEACHING HOSPITAL - RAGAMA',
+      watches: [Object],
+      lastViewed: null,
+      creator: [Object],
+      subtasks: [],
+      created: '2025-08-27T14:38:01.935+0530',
+      reporter: [Object],
+      aggregateprogress: [Object],
+      priority: [Object],
+      customfield_10001: null,
+      labels: [],
+      environment: null,
+      customfield_10019: '0|i000af:',
+      timeestimate: null,
+      aggregatetimeoriginalestimate: null,
+      versions: [],
+      duedate: null,
+      progress: [Object],
+      votes: [Object],
+      issuelinks: [],
+      assignee: [Object],
+      updated: '2025-08-27T14:38:01.935+0530',
+      status: [Object]
+    }
+  },
+  changelog: {
+    id: '10735',
+    items: [ [Object], [Object], [Object], [Object], [Object], [Object] ]
+  }
+}
+Here")
+📩 Jira webhook received: {
+  "timestamp": 1756285682133,
+  "webhookEvent": "jira:issue_created",
+  "issue_event_type_name": "issue_created",
+  "user": {
+    "self": "https://dinanjay20.atlassian.net/rest/api/2/user?accountId=712020%3A2bea55ee-2bf4-44c9-88ff-2ffd1472a3dc",
+    "accountId": "712020:2bea55ee-2bf4-44c9-88ff-2ffd1472a3dc",
+    "avatarUrls": {
+      "48x48": "https://secure.gravatar.com/avatar/e6b56e854c6f977472198836b59d4b4d?d=https%3A%2F%2Favatar-management--avatars.us-west-2.prod.public.atl-paas.net%2Finitials%2FDJ-2.png",
+      "24x24": "https://secure.gravatar.com/avatar/e6b56e854c6f977472198836b59d4b4d?d=https%3A%2F%2Favatar-management--avatars.us-west-2.prod.public.atl-paas.net%2Finitials%2FDJ-2.png",
+      "16x16": "https://secure.gravatar.com/avatar/e6b56e854c6f977472198836b59d4b4d?d=https%3A%2F%2Favatar-management--avatars.us-west-2.prod.public.atl-paas.net%2Finitials%2FDJ-2.png",
+      "32x32": "https://secure.gravatar.com/avatar/e6b56e854c6f977472198836b59d4b4d?d=https%3A%2F%2Favatar-management--avatars.us-west-2.prod.public.atl-paas.net%2Finitials%2FDJ-2.png"
+    },
+    "displayName": "Dinan Jayasuriya",
+    "active": true,
+    "timeZone": "Asia/Colombo",
+    "accountType": "atlassian"
+  },
+  "issue": {
+    "id": "10417",
+    "self": "https://dinanjay20.atlassian.net/rest/api/2/10417",
+    "key": "TES-48",
+    "fields": {
+      "statuscategorychangedate": "2025-08-27T14:38:02.186+0530",
+      "issuetype": {
+        "self": "https://dinanjay20.atlassian.net/rest/api/2/issuetype/10070",
+        "id": "10070",
+        "description": "A small, distinct piece of work.",
+        "iconUrl": "https://dinanjay20.atlassian.net/rest/api/2/universal_avatar/view/type/issuetype/avatar/10318?size=medium",
+        "name": "Task",
+        "subtask": false,
+        "avatarId": 10318,
+        "entityId": "8f170138-b743-4266-a903-da1b7e8f6916",
+        "hierarchyLevel": 0
+      },
+      "components": [],
+      "customfield_10091": null,
+      "timespent": null,
+      "timeoriginalestimate": null,
+      "description": "Job ID: 17099999436\n\nClient: TEACHING HOSPITAL - RAGAMA\n\nLocation: KADAWATHA ROAD RAGAMA\n\nFault: CHECK FAULTY EXTENSION-203\n\nReported Time: 2025-08-27 / 12:40 PM\n\nReported By: MS NISANSALA\n\nReporter: SHIRAN",
+      "project": {
+        "self": "https://dinanjay20.atlassian.net/rest/api/2/project/10067",
+        "id": "10067",
+        "key": "TES",
+        "name": "MetroTest",
+        "projectTypeKey": "business",
+        "simplified": true,
+        "avatarUrls": {
+          "48x48": "https://dinanjay20.atlassian.net/rest/api/2/universal_avatar/view/type/project/avatar/10422",
+          "24x24": "https://dinanjay20.atlassian.net/rest/api/2/universal_avatar/view/type/project/avatar/10422?size=small",
+          "16x16": "https://dinanjay20.atlassian.net/rest/api/2/universal_avatar/view/type/project/avatar/10422?size=xsmall",
+          "32x32": "https://dinanjay20.atlassian.net/rest/api/2/universal_avatar/view/type/project/avatar/10422?size=medium"
+        }
+      },
+      "fixVersions": [],
+      "statusCategory": {
+        "self": "https://dinanjay20.atlassian.net/rest/api/2/statuscategory/2",
+        "id": 2,
+        "key": "new",
+        "colorName": "blue-gray",
+        "name": "New"
+      },
+      "aggregatetimespent": null,
+      "resolution": null,
+      "timetracking": {},
+      "customfield_10015": null,
+      "security": null,
+      "attachment": [],
+      "aggregatetimeestimate": null,
+      "resolutiondate": null,
+      "workratio": -1,
+      "summary": "Job 17099999436 - TEACHING HOSPITAL - RAGAMA",
+      "watches": {
+        "self": "https://dinanjay20.atlassian.net/rest/api/2/issue/TES-48/watchers",
+        "watchCount": 0,
+        "isWatching": true
+      },
+      "lastViewed": null,
+      "creator": {
+        "self": "https://dinanjay20.atlassian.net/rest/api/2/user?accountId=712020%3A2bea55ee-2bf4-44c9-88ff-2ffd1472a3dc",
+        "accountId": "712020:2bea55ee-2bf4-44c9-88ff-2ffd1472a3dc",
+        "avatarUrls": {
+          "48x48": "https://secure.gravatar.com/avatar/e6b56e854c6f977472198836b59d4b4d?d=https%3A%2F%2Favatar-management--avatars.us-west-2.prod.public.atl-paas.net%2Finitials%2FDJ-2.png",
+          "24x24": "https://secure.gravatar.com/avatar/e6b56e854c6f977472198836b59d4b4d?d=https%3A%2F%2Favatar-management--avatars.us-west-2.prod.public.atl-paas.net%2Finitials%2FDJ-2.png",
+          "16x16": "https://secure.gravatar.com/avatar/e6b56e854c6f977472198836b59d4b4d?d=https%3A%2F%2Favatar-management--avatars.us-west-2.prod.public.atl-paas.net%2Finitials%2FDJ-2.png",
+          "32x32": "https://secure.gravatar.com/avatar/e6b56e854c6f977472198836b59d4b4d?d=https%3A%2F%2Favatar-management--avatars.us-west-2.prod.public.atl-paas.net%2Finitials%2FDJ-2.png"
+        },
+        "displayName": "Dinan Jayasuriya",
+        "active": true,
+        "timeZone": "Asia/Colombo",
+        "accountType": "atlassian"
+      },
+      "subtasks": [],
+      "created": "2025-08-27T14:38:01.935+0530",
+      "reporter": {
+        "self": "https://dinanjay20.atlassian.net/rest/api/2/user?accountId=712020%3A742d2122-9523-4a23-8725-ef0c967aefb5",
+        "accountId": "712020:742d2122-9523-4a23-8725-ef0c967aefb5",
+        "emailAddress": "shiranj2000@gmail.com",
+        "avatarUrls": {
+          "48x48": "https://secure.gravatar.com/avatar/1ea8e3580adba1e381a8cb5d7562fd04?d=https%3A%2F%2Favatar-management--avatars.us-west-2.prod.public.atl-paas.net%2Finitials%2FSJ-1.png",
+          "24x24": "https://secure.gravatar.com/avatar/1ea8e3580adba1e381a8cb5d7562fd04?d=https%3A%2F%2Favatar-management--avatars.us-west-2.prod.public.atl-paas.net%2Finitials%2FSJ-1.png",
+          "16x16": "https://secure.gravatar.com/avatar/1ea8e3580adba1e381a8cb5d7562fd04?d=https%3A%2F%2Favatar-management--avatars.us-west-2.prod.public.atl-paas.net%2Finitials%2FSJ-1.png",
+          "32x32": "https://secure.gravatar.com/avatar/1ea8e3580adba1e381a8cb5d7562fd04?d=https%3A%2F%2Favatar-management--avatars.us-west-2.prod.public.atl-paas.net%2Finitials%2FSJ-1.png"
+        },
+        "displayName": "Shiran Jayasuriya",
+        "active": true,
+        "timeZone": "Asia/Colombo",
+        "accountType": "atlassian"
+      },
+      "aggregateprogress": {
+        "progress": 0,
+        "total": 0
+      },
+      "priority": {
+        "self": "https://dinanjay20.atlassian.net/rest/api/2/priority/3",
+        "iconUrl": "https://dinanjay20.atlassian.net/images/icons/priorities/medium_new.svg",
+        "name": "Medium",
+        "id": "3"
+      },
+      "customfield_10001": null,
+      "labels": [],
+      "environment": null,
+      "customfield_10019": "0|i000af:",
+      "timeestimate": null,
+      "aggregatetimeoriginalestimate": null,
+      "versions": [],
+      "duedate": null,
+      "progress": {
+        "progress": 0,
+        "total": 0
+      },
+      "votes": {
+        "self": "https://dinanjay20.atlassian.net/rest/api/2/issue/TES-48/votes",
+        "votes": 0,
+        "hasVoted": false
+      },
+      "issuelinks": [],
+      "assignee": {
+        "self": "https://dinanjay20.atlassian.net/rest/api/2/user?accountId=712020%3A742d2122-9523-4a23-8725-ef0c967aefb5",
+        "accountId": "712020:742d2122-9523-4a23-8725-ef0c967aefb5",
+        "emailAddress": "shiranj2000@gmail.com",
+        "avatarUrls": {
+          "48x48": "https://secure.gravatar.com/avatar/1ea8e3580adba1e381a8cb5d7562fd04?d=https%3A%2F%2Favatar-management--avatars.us-west-2.prod.public.atl-paas.net%2Finitials%2FSJ-1.png",
+          "24x24": "https://secure.gravatar.com/avatar/1ea8e3580adba1e381a8cb5d7562fd04?d=https%3A%2F%2Favatar-management--avatars.us-west-2.prod.public.atl-paas.net%2Finitials%2FSJ-1.png",
+          "16x16": "https://secure.gravatar.com/avatar/1ea8e3580adba1e381a8cb5d7562fd04?d=https%3A%2F%2Favatar-management--avatars.us-west-2.prod.public.atl-paas.net%2Finitials%2FSJ-1.png",
+          "32x32": "https://secure.gravatar.com/avatar/1ea8e3580adba1e381a8cb5d7562fd04?d=https%3A%2F%2Favatar-management--avatars.us-west-2.prod.public.atl-paas.net%2Finitials%2FSJ-1.png"
+        },
+        "displayName": "Shiran Jayasuriya",
+        "active": true,
+        "timeZone": "Asia/Colombo",
+        "accountType": "atlassian"
+      },
+      "updated": "2025-08-27T14:38:01.935+0530",
+      "status": {
+        "self": "https://dinanjay20.atlassian.net/rest/api/2/status/10075",
+        "description": "",
+        "iconUrl": "https://dinanjay20.atlassian.net/",
+        "name": "To Do",
+        "id": "10075",
+        "statusCategory": {
+          "self": "https://dinanjay20.atlassian.net/rest/api/2/statuscategory/2",
+          "id": 2,
+          "key": "new",
+          "colorName": "blue-gray",
+          "name": "New"
+        }
+      }
+    }
+  },
+  "changelog": {
+    "id": "10735",
+    "items": [
+      {
+        "field": "assignee",
+        "fieldtype": "jira",
+        "fieldId": "assignee",
+        "from": null,
+        "fromString": null,
+        "to": "712020:742d2122-9523-4a23-8725-ef0c967aefb5",
+        "toString": "Shiran Jayasuriya",
+        "tmpFromAccountId": null,
+        "tmpToAccountId": "712020:742d2122-9523-4a23-8725-ef0c967aefb5"
+      },
+      {
+        "field": "description",
+        "fieldtype": "jira",
+        "fieldId": "description",
+        "from": null,
+        "fromString": null,
+        "to": null,
+        "toString": "Job ID: 17099999436\n\nClient: TEACHING HOSPITAL - RAGAMA\n\nLocation: KADAWATHA ROAD RAGAMA\n\nFault: CHECK FAULTY EXTENSION-203\n\nReported Time: 2025-08-27 / 12:40 PM\n\nReported By: MS NISANSALA\n\nReporter: SHIRAN"
+      },
+      {
+        "field": "priority",
+        "fieldtype": "jira",
+        "fieldId": "priority",
+        "from": null,
+        "fromString": null,
+        "to": "3",
+        "toString": "Medium"
+      },
+      {
+        "field": "reporter",
+        "fieldtype": "jira",
+        "fieldId": "reporter",
+        "from": null,
+        "fromString": null,
+        "to": "712020:742d2122-9523-4a23-8725-ef0c967aefb5",
+        "toString": "Shiran Jayasuriya",
+        "tmpFromAccountId": null,
+        "tmpToAccountId": "712020:742d2122-9523-4a23-8725-ef0c967aefb5"
+      },
+      {
+        "field": "Status",
+        "fieldtype": "jira",
+        "fieldId": "status",
+        "from": null,
+        "fromString": null,
+        "to": "10075",
+        "toString": "To Do"
+      },
+      {
+        "field": "summary",
+        "fieldtype": "jira",
+        "fieldId": "summary",
+        "from": null,
+        "fromString": null,
+        "to": null,
+        "toString": "Job 17099999436 - TEACHING HOSPITAL - RAGAMA"
+      }
+    ]
+  }
+}
+👤 Issue TES-48 assigned to Shiran Jayasuriya (accountId: 712020:742d2122-9523-4a23-8725-ef0c967aefb5)
+📩 Jira user lookup response: {
+  self: 'https://dinanjay20.atlassian.net/rest/api/3/user?accountId=712020:742d2122-9523-4a23-8725-ef0c967aefb5',
+  accountId: '712020:742d2122-9523-4a23-8725-ef0c967aefb5',
+  accountType: 'atlassian',
+  emailAddress: 'shiranj2000@gmail.com',
+  avatarUrls: {
+    '48x48': 'https://secure.gravatar.com/avatar/1ea8e3580adba1e381a8cb5d7562fd04?d=https%3A%2F%2Favatar-management--avatars.us-west-2.prod.public.atl-paas.net%2Finitials%2FSJ-1.png',
+    '24x24': 'https://secure.gravatar.com/avatar/1ea8e3580adba1e381a8cb5d7562fd04?d=https%3A%2F%2Favatar-management--avatars.us-west-2.prod.public.atl-paas.net%2Finitials%2FSJ-1.png',
+    '16x16': 'https://secure.gravatar.com/avatar/1ea8e3580adba1e381a8cb5d7562fd04?d=https%3A%2F%2Favatar-management--avatars.us-west-2.prod.public.atl-paas.net%2Finitials%2FSJ-1.png',
+    '32x32': 'https://secure.gravatar.com/avatar/1ea8e3580adba1e381a8cb5d7562fd04?d=https%3A%2F%2Favatar-management--avatars.us-west-2.prod.public.atl-paas.net%2Finitials%2FSJ-1.png'
+  },
+  displayName: 'Shiran Jayasuriya',
+  active: true,
+  timeZone: 'Asia/Colombo',
+  locale: 'en_US',
+  groups: { size: 1, items: [] },
+  applicationRoles: { size: 1, items: [] },
+  expand: 'groups,applicationRoles'
+}
+📧 Jira returned email: shiranj2000@gmail.com
+🔍 Searching for contact with email: shiranj2000@gmail.com
+✅ Google Sheets response: [
+  [ 'email', 'f_name', 'l_name', 'phone' ],
+  [ 'dinan.jay20@gmail.com', 'DINAN', 'Jayasuriya', '773470464' ],
+  [ 'shiranj2000@gmail.com', 'SHIRAN', 'Jayasuriya', '775770997' ],
+  [
+    'chamalsamindabandara@gmail.com',
+    'CHAMAL',
+    'Bandara',
+    '765224111'
+  ]
+]
+📞 Contact found for email shiranj2000@gmail.com: +94775770997
+📞 Found phone number for shiranj2000@gmail.com: +94775770997
+👋 Hi Shiran Jayasuriya,
+
+You have been assigned a new Jira task:
+Job ID: 17099999436
+
+Client: TEACHING HOSPITAL - RAGAMA
+
+Location: KADAWATHA ROAD RAGAMA
+
+Fault: CHECK FAULTY EXTENSION-203
+
+Reported Time: 2025-08-27 / 12:40 PM
+
+Reported By: MS NISANSALA
+
+Reporter: SHIRAN
+✅ WhatsApp message sent to Shiran Jayasuriya (+94775770997)
+Incoming request: POST /api/whatsapp/whatsapp-webhook
+Here")
+Incoming request: POST /api/whatsapp/whatsapp-webhook {
+  SmsMessageSid: 'SM7359ebe2997f1b6441721a527a2e384f',
+  NumMedia: '0',
+  ProfileName: 'Dinan',
+  MessageType: 'text',
+  SmsSid: 'SM7359ebe2997f1b6441721a527a2e384f',
+  WaId: '94773470464',
+  SmsStatus: 'received',
+  Body: 'Job ID : 17099999436\n' +
+    'TEACHING HOSPITAL - RAGAMA\n' +
+    'Location : Kadawatha Road RAGAMA\n' +
+    'Fault : Check faulty extension-203\n' +
+    'Job Reported Time : 2025-08-27 / 12:40 PM\n' +
+    'Reported By  : Ms Nisansala\n' +
+    'Report : Shiran',
+  To: 'whatsapp:+14155238886',
+  NumSegments: '1',
+  ReferralNumMedia: '0',
+  MessageSid: 'SM7359ebe2997f1b6441721a527a2e384f',
+  AccountSid: 'ACb602f04a7a01bc4bb08292980764dccd',
+  ChannelMetadata: '{"type":"whatsapp","data":{"context":{"ProfileName":"Dinan","WaId":"94773470464"}}}',
+  From: 'whatsapp:+94773470464',
+  ApiVersion: '2010-04-01'
+}
+Here")
+📩 WhatsApp webhook received:
+💬 Message from +94773470464: JOB ID : 17099999436
+TEACHING HOSPITAL - RAGAMA
+LOCATION : KADAWATHA ROAD RAGAMA
+FAULT : CHECK FAULTY EXTENSION-203
+JOB REPORTED TIME : 2025-08-27 / 12:40 PM
+REPORTED BY  : MS NISANSALA
+REPORT : SHIRAN 
+🔍 Checking if job JOB ID : 17099999436
+TEACHING HOSPITAL - RAGAMA
+LOCATION : KADAWATHA ROAD RAGAMA
+FAULT : CHECK FAULTY EXTENSION-203
+JOB REPORTED TIME : 2025-08-27 / 12:40 PM
+REPORTED BY  : MS NISANSALA
+REPORT : SHIRAN exists in Jira: false
+🔍 Searching for email with first name: SHIRAN
+✅ Google Sheets response: [
+  [ 'email', 'f_name', 'l_name', 'phone' ],
+  [ 'dinan.jay20@gmail.com', 'DINAN', 'Jayasuriya', '773470464' ],
+  [ 'shiranj2000@gmail.com', 'SHIRAN', 'Jayasuriya', '775770997' ],
+  [
+    'chamalsamindabandara@gmail.com',
+    'CHAMAL',
+    'Bandara',
+    '765224111'
+  ]
+]
+📧 Contact found for first name SHIRAN: shiranj2000@gmail.com
+Issue created successfully: {
+  id: '10418',
+  key: 'TES-49',
+  self: 'https://dinanjay20.atlassian.net/rest/api/3/issue/10418'
+}
+Incoming request: POST /api/jira/webhook?triggeredByUser=712020%3A2bea55ee-2bf4-44c9-88ff-2ffd1472a3dc
+Here")
+Incoming request: POST /api/jira/webhook?triggeredByUser=712020%3A2bea55ee-2bf4-44c9-88ff-2ffd1472a3dc {
+  timestamp: 1756288525845,
+  webhookEvent: 'jira:issue_created',
+  issue_event_type_name: 'issue_created',
+  user: {
+    self: 'https://dinanjay20.atlassian.net/rest/api/2/user?accountId=712020%3A2bea55ee-2bf4-44c9-88ff-2ffd1472a3dc',
+    accountId: '712020:2bea55ee-2bf4-44c9-88ff-2ffd1472a3dc',
+    avatarUrls: {
+      '48x48': 'https://secure.gravatar.com/avatar/e6b56e854c6f977472198836b59d4b4d?d=https%3A%2F%2Favatar-management--avatars.us-west-2.prod.public.atl-paas.net%2Finitials%2FDJ-2.png',
+      '24x24': 'https://secure.gravatar.com/avatar/e6b56e854c6f977472198836b59d4b4d?d=https%3A%2F%2Favatar-management--avatars.us-west-2.prod.public.atl-paas.net%2Finitials%2FDJ-2.png',
+      '16x16': 'https://secure.gravatar.com/avatar/e6b56e854c6f977472198836b59d4b4d?d=https%3A%2F%2Favatar-management--avatars.us-west-2.prod.public.atl-paas.net%2Finitials%2FDJ-2.png',
+      '32x32': 'https://secure.gravatar.com/avatar/e6b56e854c6f977472198836b59d4b4d?d=https%3A%2F%2Favatar-management--avatars.us-west-2.prod.public.atl-paas.net%2Finitials%2FDJ-2.png'
+    },
+    displayName: 'Dinan Jayasuriya',
+    active: true,
+    timeZone: 'Asia/Colombo',
+    accountType: 'atlassian'
+  },
+  issue: {
+    id: '10418',
+    self: 'https://dinanjay20.atlassian.net/rest/api/2/10418',
+    key: 'TES-49',
+    fields: {
+      statuscategorychangedate: '2025-08-27T15:25:25.919+0530',
+      issuetype: [Object],
+      components: [],
+      customfield_10091: null,
+      timespent: null,
+      timeoriginalestimate: null,
+      description: 'Job ID: 17099999436\n' +
+        '\n' +
+        'Client: TEACHING HOSPITAL - RAGAMA\n' +
+        '\n' +
+        'Location: KADAWATHA ROAD RAGAMA\n' +
+        '\n' +
+        'Fault: CHECK FAULTY EXTENSION-203\n' +
+        '\n' +
+        'Reported Time: 2025-08-27 / 12:40 PM\n' +
+        '\n' +
+        'Reported By: MS NISANSALA\n' +
+        '\n' +
+        'Reporter: SHIRAN',
+      project: [Object],
+      fixVersions: [],
+      statusCategory: [Object],
+      aggregatetimespent: null,
+      resolution: null,
+      timetracking: {},
+      customfield_10015: null,
+      security: null,
+      attachment: [],
+      aggregatetimeestimate: null,
+      resolutiondate: null,
+      workratio: -1,
+      summary: 'Job 17099999436 - TEACHING HOSPITAL - RAGAMA',
+      watches: [Object],
+      lastViewed: null,
+      creator: [Object],
+      subtasks: [],
+      created: '2025-08-27T15:25:25.620+0530',
+      reporter: [Object],
+      aggregateprogress: [Object],
+      priority: [Object],
+      customfield_10001: null,
+      labels: [],
+      environment: null,
+      customfield_10019: '0|i000an:',
+      timeestimate: null,
+      aggregatetimeoriginalestimate: null,
+      versions: [],
+      duedate: null,
+      progress: [Object],
+      issuelinks: [],
+      votes: [Object],
+      assignee: [Object],
+      updated: '2025-08-27T15:25:25.620+0530',
+      status: [Object]
+    }
+  },
+  changelog: {
+    id: '10736',
+    items: [ [Object], [Object], [Object], [Object], [Object], [Object] ]
+  }
+}
+Here")
+📩 Jira webhook received: {
+  "timestamp": 1756288525845,
+  "webhookEvent": "jira:issue_created",
+  "issue_event_type_name": "issue_created",
+  "user": {
+    "self": "https://dinanjay20.atlassian.net/rest/api/2/user?accountId=712020%3A2bea55ee-2bf4-44c9-88ff-2ffd1472a3dc",
+    "accountId": "712020:2bea55ee-2bf4-44c9-88ff-2ffd1472a3dc",
+    "avatarUrls": {
+      "48x48": "https://secure.gravatar.com/avatar/e6b56e854c6f977472198836b59d4b4d?d=https%3A%2F%2Favatar-management--avatars.us-west-2.prod.public.atl-paas.net%2Finitials%2FDJ-2.png",
+      "24x24": "https://secure.gravatar.com/avatar/e6b56e854c6f977472198836b59d4b4d?d=https%3A%2F%2Favatar-management--avatars.us-west-2.prod.public.atl-paas.net%2Finitials%2FDJ-2.png",
+      "16x16": "https://secure.gravatar.com/avatar/e6b56e854c6f977472198836b59d4b4d?d=https%3A%2F%2Favatar-management--avatars.us-west-2.prod.public.atl-paas.net%2Finitials%2FDJ-2.png",
+      "32x32": "https://secure.gravatar.com/avatar/e6b56e854c6f977472198836b59d4b4d?d=https%3A%2F%2Favatar-management--avatars.us-west-2.prod.public.atl-paas.net%2Finitials%2FDJ-2.png"
+    },
+    "displayName": "Dinan Jayasuriya",
+    "active": true,
+    "timeZone": "Asia/Colombo",
+    "accountType": "atlassian"
+  },
+  "issue": {
+    "id": "10418",
+    "self": "https://dinanjay20.atlassian.net/rest/api/2/10418",
+    "key": "TES-49",
+    "fields": {
+      "statuscategorychangedate": "2025-08-27T15:25:25.919+0530",
+      "issuetype": {
+        "self": "https://dinanjay20.atlassian.net/rest/api/2/issuetype/10070",
+        "id": "10070",
+        "description": "A small, distinct piece of work.",
+        "iconUrl": "https://dinanjay20.atlassian.net/rest/api/2/universal_avatar/view/type/issuetype/avatar/10318?size=medium",
+        "name": "Task",
+        "subtask": false,
+        "avatarId": 10318,
+        "entityId": "8f170138-b743-4266-a903-da1b7e8f6916",
+        "hierarchyLevel": 0
+      },
+      "components": [],
+      "customfield_10091": null,
+      "timespent": null,
+      "timeoriginalestimate": null,
+      "description": "Job ID: 17099999436\n\nClient: TEACHING HOSPITAL - RAGAMA\n\nLocation: KADAWATHA ROAD RAGAMA\n\nFault: CHECK FAULTY EXTENSION-203\n\nReported Time: 2025-08-27 / 12:40 PM\n\nReported By: MS NISANSALA\n\nReporter: SHIRAN",
+      "project": {
+        "self": "https://dinanjay20.atlassian.net/rest/api/2/project/10067",
+        "id": "10067",
+        "key": "TES",
+        "name": "MetroTest",
+        "projectTypeKey": "business",
+        "simplified": true,
+        "avatarUrls": {
+          "48x48": "https://dinanjay20.atlassian.net/rest/api/2/universal_avatar/view/type/project/avatar/10422",
+          "24x24": "https://dinanjay20.atlassian.net/rest/api/2/universal_avatar/view/type/project/avatar/10422?size=small",
+          "16x16": "https://dinanjay20.atlassian.net/rest/api/2/universal_avatar/view/type/project/avatar/10422?size=xsmall",
+          "32x32": "https://dinanjay20.atlassian.net/rest/api/2/universal_avatar/view/type/project/avatar/10422?size=medium"
+        }
+      },
+      "fixVersions": [],
+      "statusCategory": {
+        "self": "https://dinanjay20.atlassian.net/rest/api/2/statuscategory/2",
+        "id": 2,
+        "key": "new",
+        "colorName": "blue-gray",
+        "name": "New"
+      },
+      "aggregatetimespent": null,
+      "resolution": null,
+      "timetracking": {},
+      "customfield_10015": null,
+      "security": null,
+      "attachment": [],
+      "aggregatetimeestimate": null,
+      "resolutiondate": null,
+      "workratio": -1,
+      "summary": "Job 17099999436 - TEACHING HOSPITAL - RAGAMA",
+      "watches": {
+        "self": "https://dinanjay20.atlassian.net/rest/api/2/issue/TES-49/watchers",
+        "watchCount": 0,
+        "isWatching": true
+      },
+      "lastViewed": null,
+      "creator": {
+        "self": "https://dinanjay20.atlassian.net/rest/api/2/user?accountId=712020%3A2bea55ee-2bf4-44c9-88ff-2ffd1472a3dc",
+        "accountId": "712020:2bea55ee-2bf4-44c9-88ff-2ffd1472a3dc",
+        "avatarUrls": {
+          "48x48": "https://secure.gravatar.com/avatar/e6b56e854c6f977472198836b59d4b4d?d=https%3A%2F%2Favatar-management--avatars.us-west-2.prod.public.atl-paas.net%2Finitials%2FDJ-2.png",
+          "24x24": "https://secure.gravatar.com/avatar/e6b56e854c6f977472198836b59d4b4d?d=https%3A%2F%2Favatar-management--avatars.us-west-2.prod.public.atl-paas.net%2Finitials%2FDJ-2.png",
+          "16x16": "https://secure.gravatar.com/avatar/e6b56e854c6f977472198836b59d4b4d?d=https%3A%2F%2Favatar-management--avatars.us-west-2.prod.public.atl-paas.net%2Finitials%2FDJ-2.png",
+          "32x32": "https://secure.gravatar.com/avatar/e6b56e854c6f977472198836b59d4b4d?d=https%3A%2F%2Favatar-management--avatars.us-west-2.prod.public.atl-paas.net%2Finitials%2FDJ-2.png"
+        },
+        "displayName": "Dinan Jayasuriya",
+        "active": true,
+        "timeZone": "Asia/Colombo",
+        "accountType": "atlassian"
+      },
+      "subtasks": [],
+      "created": "2025-08-27T15:25:25.620+0530",
+      "reporter": {
+        "self": "https://dinanjay20.atlassian.net/rest/api/2/user?accountId=712020%3A742d2122-9523-4a23-8725-ef0c967aefb5",
+        "accountId": "712020:742d2122-9523-4a23-8725-ef0c967aefb5",
+        "emailAddress": "shiranj2000@gmail.com",
+        "avatarUrls": {
+          "48x48": "https://secure.gravatar.com/avatar/1ea8e3580adba1e381a8cb5d7562fd04?d=https%3A%2F%2Favatar-management--avatars.us-west-2.prod.public.atl-paas.net%2Finitials%2FSJ-1.png",
+          "24x24": "https://secure.gravatar.com/avatar/1ea8e3580adba1e381a8cb5d7562fd04?d=https%3A%2F%2Favatar-management--avatars.us-west-2.prod.public.atl-paas.net%2Finitials%2FSJ-1.png",
+          "16x16": "https://secure.gravatar.com/avatar/1ea8e3580adba1e381a8cb5d7562fd04?d=https%3A%2F%2Favatar-management--avatars.us-west-2.prod.public.atl-paas.net%2Finitials%2FSJ-1.png",
+          "32x32": "https://secure.gravatar.com/avatar/1ea8e3580adba1e381a8cb5d7562fd04?d=https%3A%2F%2Favatar-management--avatars.us-west-2.prod.public.atl-paas.net%2Finitials%2FSJ-1.png"
+        },
+        "displayName": "Shiran Jayasuriya",
+        "active": true,
+        "timeZone": "Asia/Colombo",
+        "accountType": "atlassian"
+      },
+      "aggregateprogress": {
+        "progress": 0,
+        "total": 0
+      },
+      "priority": {
+        "self": "https://dinanjay20.atlassian.net/rest/api/2/priority/3",
+        "iconUrl": "https://dinanjay20.atlassian.net/images/icons/priorities/medium_new.svg",
+        "name": "Medium",
+        "id": "3"
+      },
+      "customfield_10001": null,
+      "labels": [],
+      "environment": null,
+      "customfield_10019": "0|i000an:",
+      "timeestimate": null,
+      "aggregatetimeoriginalestimate": null,
+      "versions": [],
+      "duedate": null,
+      "progress": {
+        "progress": 0,
+        "total": 0
+      },
+      "issuelinks": [],
+      "votes": {
+        "self": "https://dinanjay20.atlassian.net/rest/api/2/issue/TES-49/votes",
+        "votes": 0,
+        "hasVoted": false
+      },
+      "assignee": {
+        "self": "https://dinanjay20.atlassian.net/rest/api/2/user?accountId=712020%3A742d2122-9523-4a23-8725-ef0c967aefb5",
+        "accountId": "712020:742d2122-9523-4a23-8725-ef0c967aefb5",
+        "emailAddress": "shiranj2000@gmail.com",
+        "avatarUrls": {
+          "48x48": "https://secure.gravatar.com/avatar/1ea8e3580adba1e381a8cb5d7562fd04?d=https%3A%2F%2Favatar-management--avatars.us-west-2.prod.public.atl-paas.net%2Finitials%2FSJ-1.png",
+          "24x24": "https://secure.gravatar.com/avatar/1ea8e3580adba1e381a8cb5d7562fd04?d=https%3A%2F%2Favatar-management--avatars.us-west-2.prod.public.atl-paas.net%2Finitials%2FSJ-1.png",
+          "16x16": "https://secure.gravatar.com/avatar/1ea8e3580adba1e381a8cb5d7562fd04?d=https%3A%2F%2Favatar-management--avatars.us-west-2.prod.public.atl-paas.net%2Finitials%2FSJ-1.png",
+          "32x32": "https://secure.gravatar.com/avatar/1ea8e3580adba1e381a8cb5d7562fd04?d=https%3A%2F%2Favatar-management--avatars.us-west-2.prod.public.atl-paas.net%2Finitials%2FSJ-1.png"
+        },
+        "displayName": "Shiran Jayasuriya",
+        "active": true,
+        "timeZone": "Asia/Colombo",
+        "accountType": "atlassian"
+      },
+      "updated": "2025-08-27T15:25:25.620+0530",
+      "status": {
+        "self": "https://dinanjay20.atlassian.net/rest/api/2/status/10075",
+        "description": "",
+        "iconUrl": "https://dinanjay20.atlassian.net/",
+        "name": "To Do",
+        "id": "10075",
+        "statusCategory": {
+          "self": "https://dinanjay20.atlassian.net/rest/api/2/statuscategory/2",
+          "id": 2,
+          "key": "new",
+          "colorName": "blue-gray",
+          "name": "New"
+        }
+      }
+    }
+  },
+  "changelog": {
+    "id": "10736",
+    "items": [
+      {
+        "field": "assignee",
+        "fieldtype": "jira",
+        "fieldId": "assignee",
+        "from": null,
+        "fromString": null,
+        "to": "712020:742d2122-9523-4a23-8725-ef0c967aefb5",
+        "toString": "Shiran Jayasuriya",
+        "tmpFromAccountId": null,
+        "tmpToAccountId": "712020:742d2122-9523-4a23-8725-ef0c967aefb5"
+      },
+      {
+        "field": "description",
+        "fieldtype": "jira",
+        "fieldId": "description",
+        "from": null,
+        "fromString": null,
+        "to": null,
+        "toString": "Job ID: 17099999436\n\nClient: TEACHING HOSPITAL - RAGAMA\n\nLocation: KADAWATHA ROAD RAGAMA\n\nFault: CHECK FAULTY EXTENSION-203\n\nReported Time: 2025-08-27 / 12:40 PM\n\nReported By: MS NISANSALA\n\nReporter: SHIRAN"
+      },
+      {
+        "field": "priority",
+        "fieldtype": "jira",
+        "fieldId": "priority",
+        "from": null,
+        "fromString": null,
+        "to": "3",
+        "toString": "Medium"
+      },
+      {
+        "field": "reporter",
+        "fieldtype": "jira",
+        "fieldId": "reporter",
+        "from": null,
+        "fromString": null,
+        "to": "712020:742d2122-9523-4a23-8725-ef0c967aefb5",
+        "toString": "Shiran Jayasuriya",
+        "tmpFromAccountId": null,
+        "tmpToAccountId": "712020:742d2122-9523-4a23-8725-ef0c967aefb5"
+      },
+      {
+        "field": "Status",
+        "fieldtype": "jira",
+        "fieldId": "status",
+        "from": null,
+        "fromString": null,
+        "to": "10075",
+        "toString": "To Do"
+      },
+      {
+        "field": "summary",
+        "fieldtype": "jira",
+        "fieldId": "summary",
+        "from": null,
+        "fromString": null,
+        "to": null,
+        "toString": "Job 17099999436 - TEACHING HOSPITAL - RAGAMA"
+      }
+    ]
+  }
+}
+👤 Issue TES-49 assigned to Shiran Jayasuriya (accountId: 712020:742d2122-9523-4a23-8725-ef0c967aefb5)
+📩 Jira user lookup response: {
+  self: 'https://dinanjay20.atlassian.net/rest/api/3/user?accountId=712020:742d2122-9523-4a23-8725-ef0c967aefb5',
+  accountId: '712020:742d2122-9523-4a23-8725-ef0c967aefb5',
+  accountType: 'atlassian',
+  emailAddress: 'shiranj2000@gmail.com',
+  avatarUrls: {
+    '48x48': 'https://secure.gravatar.com/avatar/1ea8e3580adba1e381a8cb5d7562fd04?d=https%3A%2F%2Favatar-management--avatars.us-west-2.prod.public.atl-paas.net%2Finitials%2FSJ-1.png',
+    '24x24': 'https://secure.gravatar.com/avatar/1ea8e3580adba1e381a8cb5d7562fd04?d=https%3A%2F%2Favatar-management--avatars.us-west-2.prod.public.atl-paas.net%2Finitials%2FSJ-1.png',
+    '16x16': 'https://secure.gravatar.com/avatar/1ea8e3580adba1e381a8cb5d7562fd04?d=https%3A%2F%2Favatar-management--avatars.us-west-2.prod.public.atl-paas.net%2Finitials%2FSJ-1.png',
+    '32x32': 'https://secure.gravatar.com/avatar/1ea8e3580adba1e381a8cb5d7562fd04?d=https%3A%2F%2Favatar-management--avatars.us-west-2.prod.public.atl-paas.net%2Finitials%2FSJ-1.png'
+  },
+  displayName: 'Shiran Jayasuriya',
+  active: true,
+  timeZone: 'Asia/Colombo',
+  locale: 'en_US',
+  groups: { size: 1, items: [] },
+  applicationRoles: { size: 1, items: [] },
+  expand: 'groups,applicationRoles'
+}
+📧 Jira returned email: shiranj2000@gmail.com
+🔍 Searching for contact with email: shiranj2000@gmail.com
+✅ Google Sheets response: [
+  [ 'email', 'f_name', 'l_name', 'phone' ],
+  [ 'dinan.jay20@gmail.com', 'DINAN', 'Jayasuriya', '773470464' ],
+  [ 'shiranj2000@gmail.com', 'SHIRAN', 'Jayasuriya', '775770997' ],
+  [
+    'chamalsamindabandara@gmail.com',
+    'CHAMAL',
+    'Bandara',
+    '765224111'
+  ]
+]
+📞 Contact found for email shiranj2000@gmail.com: +94775770997
+📞 Found phone number for shiranj2000@gmail.com: +94775770997
+👋 Hi Shiran Jayasuriya,
+
+You have been assigned a new Jira task:
+Job ID: 17099999436
+
+Client: TEACHING HOSPITAL - RAGAMA
+
+Location: KADAWATHA ROAD RAGAMA
+
+Fault: CHECK FAULTY EXTENSION-203
+
+Reported Time: 2025-08-27 / 12:40 PM
+
+Reported By: MS NISANSALA
+
+Reporter: SHIRAN
+✅ WhatsApp message sent: SM23fc902580c8fe707ff27b34eb478c4a
+✅ WhatsApp message sent to Shiran Jayasuriya (+94775770997)
+✅ Saved mapping to Google Sheet: SM23fc902580c8fe707ff27b34eb478c4a -> TES-49
+Incoming request: POST /api/whatsapp/whatsapp-webhook
+Here")
+Incoming request: POST /api/whatsapp/whatsapp-webhook {
+  SmsMessageSid: 'SMa57df7b50d3247b5d13e273c41d46175',
+  NumMedia: '0',
+  ProfileName: 'Dinan',
+  MessageType: 'text',
+  SmsSid: 'SMa57df7b50d3247b5d13e273c41d46175',
+  WaId: '94773470464',
+  SmsStatus: 'received',
+  Body: 'hi',
+  To: 'whatsapp:+14155238886',
+  NumSegments: '1',
+  ReferralNumMedia: '0',
+  MessageSid: 'SMa57df7b50d3247b5d13e273c41d46175',
+  AccountSid: 'ACb602f04a7a01bc4bb08292980764dccd',
+  ChannelMetadata: '{"type":"whatsapp","data":{"context":{"ProfileName":"Dinan","WaId":"94773470464"}}}',
+  From: 'whatsapp:+94773470464',
+  ApiVersion: '2010-04-01'
+}
+Here")
+📩 WhatsApp webhook received:
+💬 Message from +94773470464: HI 
+⚠️ User sent a message without replying
+Server running on port 3000
+Incoming request: POST /api/whatsapp/whatsapp-webhook
+Here")
+Incoming request: POST /api/whatsapp/whatsapp-webhook {
+  SmsMessageSid: 'SMed2c71472352fa951a24ca381fbf29b5',
+  NumMedia: '0',
+  ProfileName: 'Dinan',
+  MessageType: 'text',
+  SmsSid: 'SMed2c71472352fa951a24ca381fbf29b5',
+  WaId: '94773470464',
+  SmsStatus: 'received',
+  Body: 'Job ID : 17099999436\n' +
+    'TEACHING HOSPITAL - RAGAMA\n' +
+    'Location : Kadawatha Road RAGAMA\n' +
+    'Fault : Check faulty extension-203\n' +
+    'Job Reported Time : 2025-08-27 / 12:40 PM\n' +
+    'Reported By  : Ms Nisansala\n' +
+    'Report : Shiran',
+  To: 'whatsapp:+14155238886',
+  NumSegments: '1',
+  ReferralNumMedia: '0',
+  MessageSid: 'SMed2c71472352fa951a24ca381fbf29b5',
+  AccountSid: 'ACb602f04a7a01bc4bb08292980764dccd',
+  ChannelMetadata: '{"type":"whatsapp","data":{"context":{"ProfileName":"Dinan","WaId":"94773470464"}}}',
+  From: 'whatsapp:+94773470464',
+  ApiVersion: '2010-04-01'
+}
+Here")
+📩 WhatsApp webhook received:
+💬 Message from +94773470464: JOB ID : 17099999436
+TEACHING HOSPITAL - RAGAMA
+LOCATION : KADAWATHA ROAD RAGAMA
+FAULT : CHECK FAULTY EXTENSION-203
+JOB REPORTED TIME : 2025-08-27 / 12:40 PM
+REPORTED BY  : MS NISANSALA
+REPORT : SHIRAN 
+🔍 Checking if job JOB ID : 17099999436
+TEACHING HOSPITAL - RAGAMA
+LOCATION : KADAWATHA ROAD RAGAMA
+FAULT : CHECK FAULTY EXTENSION-203
+JOB REPORTED TIME : 2025-08-27 / 12:40 PM
+REPORTED BY  : MS NISANSALA
+REPORT : SHIRAN exists in Jira: false
+🔍 Searching for email with first name: SHIRAN
+✅ Google Sheets response: [
+  [ 'email', 'f_name', 'l_name', 'phone' ],
+  [ 'dinan.jay20@gmail.com', 'DINAN', 'Jayasuriya', '773470464' ],
+  [ 'shiranj2000@gmail.com', 'SHIRAN', 'Jayasuriya', '775770997' ],
+  [
+    'chamalsamindabandara@gmail.com',
+    'CHAMAL',
+    'Bandara',
+    '765224111'
+  ]
+]
+📧 Contact found for first name SHIRAN: shiranj2000@gmail.com
+Issue created successfully: {
+  id: '10419',
+  key: 'TES-50',
+  self: 'https://dinanjay20.atlassian.net/rest/api/3/issue/10419'
+}
+Incoming request: POST /api/jira/webhook?triggeredByUser=712020%3A2bea55ee-2bf4-44c9-88ff-2ffd1472a3dc
+Here")
+Incoming request: POST /api/jira/webhook?triggeredByUser=712020%3A2bea55ee-2bf4-44c9-88ff-2ffd1472a3dc {
+  timestamp: 1756289851108,
+  webhookEvent: 'jira:issue_created',
+  issue_event_type_name: 'issue_created',
+  user: {
+    self: 'https://dinanjay20.atlassian.net/rest/api/2/user?accountId=712020%3A2bea55ee-2bf4-44c9-88ff-2ffd1472a3dc',
+    accountId: '712020:2bea55ee-2bf4-44c9-88ff-2ffd1472a3dc',
+    avatarUrls: {
+      '48x48': 'https://secure.gravatar.com/avatar/e6b56e854c6f977472198836b59d4b4d?d=https%3A%2F%2Favatar-management--avatars.us-west-2.prod.public.atl-paas.net%2Finitials%2FDJ-2.png',
+      '24x24': 'https://secure.gravatar.com/avatar/e6b56e854c6f977472198836b59d4b4d?d=https%3A%2F%2Favatar-management--avatars.us-west-2.prod.public.atl-paas.net%2Finitials%2FDJ-2.png',
+      '16x16': 'https://secure.gravatar.com/avatar/e6b56e854c6f977472198836b59d4b4d?d=https%3A%2F%2Favatar-management--avatars.us-west-2.prod.public.atl-paas.net%2Finitials%2FDJ-2.png',
+      '32x32': 'https://secure.gravatar.com/avatar/e6b56e854c6f977472198836b59d4b4d?d=https%3A%2F%2Favatar-management--avatars.us-west-2.prod.public.atl-paas.net%2Finitials%2FDJ-2.png'
+    },
+    displayName: 'Dinan Jayasuriya',
+    active: true,
+    timeZone: 'Asia/Colombo',
+    accountType: 'atlassian'
+  },
+  issue: {
+    id: '10419',
+    self: 'https://dinanjay20.atlassian.net/rest/api/2/10419',
+    key: 'TES-50',
+    fields: {
+      statuscategorychangedate: '2025-08-27T15:47:31.139+0530',
+      issuetype: [Object],
+      components: [],
+      customfield_10091: null,
+      timespent: null,
+      timeoriginalestimate: null,
+      description: 'Job ID: 17099999436\n' +
+        '\n' +
+        'Client: TEACHING HOSPITAL - RAGAMA\n' +
+        '\n' +
+        'Location: KADAWATHA ROAD RAGAMA\n' +
+        '\n' +
+        'Fault: CHECK FAULTY EXTENSION-203\n' +
+        '\n' +
+        'Reported Time: 2025-08-27 / 12:40 PM\n' +
+        '\n' +
+        'Reported By: MS NISANSALA\n' +
+        '\n' +
+        'Reporter: SHIRAN',
+      project: [Object],
+      fixVersions: [],
+      statusCategory: [Object],
+      aggregatetimespent: null,
+      resolution: null,
+      timetracking: {},
+      customfield_10015: null,
+      security: null,
+      attachment: [],
+      aggregatetimeestimate: null,
+      resolutiondate: null,
+      workratio: -1,
+      summary: 'Job 17099999436 - TEACHING HOSPITAL - RAGAMA',
+      lastViewed: null,
+      watches: [Object],
+      creator: [Object],
+      subtasks: [],
+      created: '2025-08-27T15:47:30.953+0530',
+      reporter: [Object],
+      aggregateprogress: [Object],
+      priority: [Object],
+      customfield_10001: null,
+      labels: [],
+      environment: null,
+      customfield_10019: '0|i000av:',
+      timeestimate: null,
+      aggregatetimeoriginalestimate: null,
+      versions: [],
+      duedate: null,
+      progress: [Object],
+      votes: [Object],
+      issuelinks: [],
+      assignee: [Object],
+      updated: '2025-08-27T15:47:30.953+0530',
+      status: [Object]
+    }
+  },
+  changelog: {
+    id: '10737',
+    items: [ [Object], [Object], [Object], [Object], [Object], [Object] ]
+  }
+}
+Here")
+📩 Jira webhook received: {
+  "timestamp": 1756289851108,
+  "webhookEvent": "jira:issue_created",
+  "issue_event_type_name": "issue_created",
+  "user": {
+    "self": "https://dinanjay20.atlassian.net/rest/api/2/user?accountId=712020%3A2bea55ee-2bf4-44c9-88ff-2ffd1472a3dc",
+    "accountId": "712020:2bea55ee-2bf4-44c9-88ff-2ffd1472a3dc",
+    "avatarUrls": {
+      "48x48": "https://secure.gravatar.com/avatar/e6b56e854c6f977472198836b59d4b4d?d=https%3A%2F%2Favatar-management--avatars.us-west-2.prod.public.atl-paas.net%2Finitials%2FDJ-2.png",
+      "24x24": "https://secure.gravatar.com/avatar/e6b56e854c6f977472198836b59d4b4d?d=https%3A%2F%2Favatar-management--avatars.us-west-2.prod.public.atl-paas.net%2Finitials%2FDJ-2.png",
+      "16x16": "https://secure.gravatar.com/avatar/e6b56e854c6f977472198836b59d4b4d?d=https%3A%2F%2Favatar-management--avatars.us-west-2.prod.public.atl-paas.net%2Finitials%2FDJ-2.png",
+      "32x32": "https://secure.gravatar.com/avatar/e6b56e854c6f977472198836b59d4b4d?d=https%3A%2F%2Favatar-management--avatars.us-west-2.prod.public.atl-paas.net%2Finitials%2FDJ-2.png"
+    },
+    "displayName": "Dinan Jayasuriya",
+    "active": true,
+    "timeZone": "Asia/Colombo",
+    "accountType": "atlassian"
+  },
+  "issue": {
+    "id": "10419",
+    "self": "https://dinanjay20.atlassian.net/rest/api/2/10419",
+    "key": "TES-50",
+    "fields": {
+      "statuscategorychangedate": "2025-08-27T15:47:31.139+0530",
+      "issuetype": {
+        "self": "https://dinanjay20.atlassian.net/rest/api/2/issuetype/10070",
+        "id": "10070",
+        "description": "A small, distinct piece of work.",
+        "iconUrl": "https://dinanjay20.atlassian.net/rest/api/2/universal_avatar/view/type/issuetype/avatar/10318?size=medium",
+        "name": "Task",
+        "subtask": false,
+        "avatarId": 10318,
+        "entityId": "8f170138-b743-4266-a903-da1b7e8f6916",
+        "hierarchyLevel": 0
+      },
+      "components": [],
+      "customfield_10091": null,
+      "timespent": null,
+      "timeoriginalestimate": null,
+      "description": "Job ID: 17099999436\n\nClient: TEACHING HOSPITAL - RAGAMA\n\nLocation: KADAWATHA ROAD RAGAMA\n\nFault: CHECK FAULTY EXTENSION-203\n\nReported Time: 2025-08-27 / 12:40 PM\n\nReported By: MS NISANSALA\n\nReporter: SHIRAN",
+      "project": {
+        "self": "https://dinanjay20.atlassian.net/rest/api/2/project/10067",
+        "id": "10067",
+        "key": "TES",
+        "name": "MetroTest",
+        "projectTypeKey": "business",
+        "simplified": true,
+        "avatarUrls": {
+          "48x48": "https://dinanjay20.atlassian.net/rest/api/2/universal_avatar/view/type/project/avatar/10422",
+          "24x24": "https://dinanjay20.atlassian.net/rest/api/2/universal_avatar/view/type/project/avatar/10422?size=small",
+          "16x16": "https://dinanjay20.atlassian.net/rest/api/2/universal_avatar/view/type/project/avatar/10422?size=xsmall",
+          "32x32": "https://dinanjay20.atlassian.net/rest/api/2/universal_avatar/view/type/project/avatar/10422?size=medium"
+        }
+      },
+      "fixVersions": [],
+      "statusCategory": {
+        "self": "https://dinanjay20.atlassian.net/rest/api/2/statuscategory/2",
+        "id": 2,
+        "key": "new",
+        "colorName": "blue-gray",
+        "name": "New"
+      },
+      "aggregatetimespent": null,
+      "resolution": null,
+      "timetracking": {},
+      "customfield_10015": null,
+      "security": null,
+      "attachment": [],
+      "aggregatetimeestimate": null,
+      "resolutiondate": null,
+      "workratio": -1,
+      "summary": "Job 17099999436 - TEACHING HOSPITAL - RAGAMA",
+      "lastViewed": null,
+      "watches": {
+        "self": "https://dinanjay20.atlassian.net/rest/api/2/issue/TES-50/watchers",
+        "watchCount": 0,
+        "isWatching": true
+      },
+      "creator": {
+        "self": "https://dinanjay20.atlassian.net/rest/api/2/user?accountId=712020%3A2bea55ee-2bf4-44c9-88ff-2ffd1472a3dc",
+        "accountId": "712020:2bea55ee-2bf4-44c9-88ff-2ffd1472a3dc",
+        "avatarUrls": {
+          "48x48": "https://secure.gravatar.com/avatar/e6b56e854c6f977472198836b59d4b4d?d=https%3A%2F%2Favatar-management--avatars.us-west-2.prod.public.atl-paas.net%2Finitials%2FDJ-2.png",
+          "24x24": "https://secure.gravatar.com/avatar/e6b56e854c6f977472198836b59d4b4d?d=https%3A%2F%2Favatar-management--avatars.us-west-2.prod.public.atl-paas.net%2Finitials%2FDJ-2.png",
+          "16x16": "https://secure.gravatar.com/avatar/e6b56e854c6f977472198836b59d4b4d?d=https%3A%2F%2Favatar-management--avatars.us-west-2.prod.public.atl-paas.net%2Finitials%2FDJ-2.png",
+          "32x32": "https://secure.gravatar.com/avatar/e6b56e854c6f977472198836b59d4b4d?d=https%3A%2F%2Favatar-management--avatars.us-west-2.prod.public.atl-paas.net%2Finitials%2FDJ-2.png"
+        },
+        "displayName": "Dinan Jayasuriya",
+        "active": true,
+        "timeZone": "Asia/Colombo",
+        "accountType": "atlassian"
+      },
+      "subtasks": [],
+      "created": "2025-08-27T15:47:30.953+0530",
+      "reporter": {
+        "self": "https://dinanjay20.atlassian.net/rest/api/2/user?accountId=712020%3A742d2122-9523-4a23-8725-ef0c967aefb5",
+        "accountId": "712020:742d2122-9523-4a23-8725-ef0c967aefb5",
+        "emailAddress": "shiranj2000@gmail.com",
+        "avatarUrls": {
+          "48x48": "https://secure.gravatar.com/avatar/1ea8e3580adba1e381a8cb5d7562fd04?d=https%3A%2F%2Favatar-management--avatars.us-west-2.prod.public.atl-paas.net%2Finitials%2FSJ-1.png",
+          "24x24": "https://secure.gravatar.com/avatar/1ea8e3580adba1e381a8cb5d7562fd04?d=https%3A%2F%2Favatar-management--avatars.us-west-2.prod.public.atl-paas.net%2Finitials%2FSJ-1.png",
+          "16x16": "https://secure.gravatar.com/avatar/1ea8e3580adba1e381a8cb5d7562fd04?d=https%3A%2F%2Favatar-management--avatars.us-west-2.prod.public.atl-paas.net%2Finitials%2FSJ-1.png",
+          "32x32": "https://secure.gravatar.com/avatar/1ea8e3580adba1e381a8cb5d7562fd04?d=https%3A%2F%2Favatar-management--avatars.us-west-2.prod.public.atl-paas.net%2Finitials%2FSJ-1.png"
+        },
+        "displayName": "Shiran Jayasuriya",
+        "active": true,
+        "timeZone": "Asia/Colombo",
+        "accountType": "atlassian"
+      },
+      "aggregateprogress": {
+        "progress": 0,
+        "total": 0
+      },
+      "priority": {
+        "self": "https://dinanjay20.atlassian.net/rest/api/2/priority/3",
+        "iconUrl": "https://dinanjay20.atlassian.net/images/icons/priorities/medium_new.svg",
+        "name": "Medium",
+        "id": "3"
+      },
+      "customfield_10001": null,
+      "labels": [],
+      "environment": null,
+      "customfield_10019": "0|i000av:",
+      "timeestimate": null,
+      "aggregatetimeoriginalestimate": null,
+      "versions": [],
+      "duedate": null,
+      "progress": {
+        "progress": 0,
+        "total": 0
+      },
+      "votes": {
+        "self": "https://dinanjay20.atlassian.net/rest/api/2/issue/TES-50/votes",
+        "votes": 0,
+        "hasVoted": false
+      },
+      "issuelinks": [],
+      "assignee": {
+        "self": "https://dinanjay20.atlassian.net/rest/api/2/user?accountId=712020%3A742d2122-9523-4a23-8725-ef0c967aefb5",
+        "accountId": "712020:742d2122-9523-4a23-8725-ef0c967aefb5",
+        "emailAddress": "shiranj2000@gmail.com",
+        "avatarUrls": {
+          "48x48": "https://secure.gravatar.com/avatar/1ea8e3580adba1e381a8cb5d7562fd04?d=https%3A%2F%2Favatar-management--avatars.us-west-2.prod.public.atl-paas.net%2Finitials%2FSJ-1.png",
+          "24x24": "https://secure.gravatar.com/avatar/1ea8e3580adba1e381a8cb5d7562fd04?d=https%3A%2F%2Favatar-management--avatars.us-west-2.prod.public.atl-paas.net%2Finitials%2FSJ-1.png",
+          "16x16": "https://secure.gravatar.com/avatar/1ea8e3580adba1e381a8cb5d7562fd04?d=https%3A%2F%2Favatar-management--avatars.us-west-2.prod.public.atl-paas.net%2Finitials%2FSJ-1.png",
+          "32x32": "https://secure.gravatar.com/avatar/1ea8e3580adba1e381a8cb5d7562fd04?d=https%3A%2F%2Favatar-management--avatars.us-west-2.prod.public.atl-paas.net%2Finitials%2FSJ-1.png"
+        },
+        "displayName": "Shiran Jayasuriya",
+        "active": true,
+        "timeZone": "Asia/Colombo",
+        "accountType": "atlassian"
+      },
+      "updated": "2025-08-27T15:47:30.953+0530",
+      "status": {
+        "self": "https://dinanjay20.atlassian.net/rest/api/2/status/10075",
+        "description": "",
+        "iconUrl": "https://dinanjay20.atlassian.net/",
+        "name": "To Do",
+        "id": "10075",
+        "statusCategory": {
+          "self": "https://dinanjay20.atlassian.net/rest/api/2/statuscategory/2",
+          "id": 2,
+          "key": "new",
+          "colorName": "blue-gray",
+          "name": "New"
+        }
+      }
+    }
+  },
+  "changelog": {
+    "id": "10737",
+    "items": [
+      {
+        "field": "assignee",
+        "fieldtype": "jira",
+        "fieldId": "assignee",
+        "from": null,
+        "fromString": null,
+        "to": "712020:742d2122-9523-4a23-8725-ef0c967aefb5",
+        "toString": "Shiran Jayasuriya",
+        "tmpFromAccountId": null,
+        "tmpToAccountId": "712020:742d2122-9523-4a23-8725-ef0c967aefb5"
+      },
+      {
+        "field": "description",
+        "fieldtype": "jira",
+        "fieldId": "description",
+        "from": null,
+        "fromString": null,
+        "to": null,
+        "toString": "Job ID: 17099999436\n\nClient: TEACHING HOSPITAL - RAGAMA\n\nLocation: KADAWATHA ROAD RAGAMA\n\nFault: CHECK FAULTY EXTENSION-203\n\nReported Time: 2025-08-27 / 12:40 PM\n\nReported By: MS NISANSALA\n\nReporter: SHIRAN"
+      },
+      {
+        "field": "priority",
+        "fieldtype": "jira",
+        "fieldId": "priority",
+        "from": null,
+        "fromString": null,
+        "to": "3",
+        "toString": "Medium"
+      },
+      {
+        "field": "reporter",
+        "fieldtype": "jira",
+        "fieldId": "reporter",
+        "from": null,
+        "fromString": null,
+        "to": "712020:742d2122-9523-4a23-8725-ef0c967aefb5",
+        "toString": "Shiran Jayasuriya",
+        "tmpFromAccountId": null,
+        "tmpToAccountId": "712020:742d2122-9523-4a23-8725-ef0c967aefb5"
+      },
+      {
+        "field": "Status",
+        "fieldtype": "jira",
+        "fieldId": "status",
+        "from": null,
+        "fromString": null,
+        "to": "10075",
+        "toString": "To Do"
+      },
+      {
+        "field": "summary",
+        "fieldtype": "jira",
+        "fieldId": "summary",
+        "from": null,
+        "fromString": null,
+        "to": null,
+        "toString": "Job 17099999436 - TEACHING HOSPITAL - RAGAMA"
+      }
+    ]
+  }
+}
+👤 Issue TES-50 assigned to Shiran Jayasuriya (accountId: 712020:742d2122-9523-4a23-8725-ef0c967aefb5)
+📩 Jira user lookup response: {
+  self: 'https://dinanjay20.atlassian.net/rest/api/3/user?accountId=712020:742d2122-9523-4a23-8725-ef0c967aefb5',
+  accountId: '712020:742d2122-9523-4a23-8725-ef0c967aefb5',
+  accountType: 'atlassian',
+  emailAddress: 'shiranj2000@gmail.com',
+  avatarUrls: {
+    '48x48': 'https://secure.gravatar.com/avatar/1ea8e3580adba1e381a8cb5d7562fd04?d=https%3A%2F%2Favatar-management--avatars.us-west-2.prod.public.atl-paas.net%2Finitials%2FSJ-1.png',
+    '24x24': 'https://secure.gravatar.com/avatar/1ea8e3580adba1e381a8cb5d7562fd04?d=https%3A%2F%2Favatar-management--avatars.us-west-2.prod.public.atl-paas.net%2Finitials%2FSJ-1.png',
+    '16x16': 'https://secure.gravatar.com/avatar/1ea8e3580adba1e381a8cb5d7562fd04?d=https%3A%2F%2Favatar-management--avatars.us-west-2.prod.public.atl-paas.net%2Finitials%2FSJ-1.png',
+    '32x32': 'https://secure.gravatar.com/avatar/1ea8e3580adba1e381a8cb5d7562fd04?d=https%3A%2F%2Favatar-management--avatars.us-west-2.prod.public.atl-paas.net%2Finitials%2FSJ-1.png'
+  },
+  displayName: 'Shiran Jayasuriya',
+  active: true,
+  timeZone: 'Asia/Colombo',
+  locale: 'en_US',
+  groups: { size: 1, items: [] },
+  applicationRoles: { size: 1, items: [] },
+  expand: 'groups,applicationRoles'
+}
+📧 Jira returned email: shiranj2000@gmail.com
+🔍 Searching for contact with email: shiranj2000@gmail.com
+✅ Google Sheets response: [
+  [ 'email', 'f_name', 'l_name', 'phone' ],
+  [ 'dinan.jay20@gmail.com', 'DINAN', 'Jayasuriya', '773470464' ],
+  [ 'shiranj2000@gmail.com', 'SHIRAN', 'Jayasuriya', '775770997' ],
+  [
+    'chamalsamindabandara@gmail.com',
+    'CHAMAL',
+    'Bandara',
+    '765224111'
+  ]
+]
+📞 Contact found for email shiranj2000@gmail.com: +94775770997
+📞 Found phone number for shiranj2000@gmail.com: +94775770997
+👋 Hi Shiran Jayasuriya,
+
+You have been assigned a new Jira task:
+Job ID: 17099999436
+
+Client: TEACHING HOSPITAL - RAGAMA
+
+Location: KADAWATHA ROAD RAGAMA
+
+Fault: CHECK FAULTY EXTENSION-203
+
+Reported Time: 2025-08-27 / 12:40 PM
+
+Reported By: MS NISANSALA
+
+Reporter: SHIRAN
+✅ WhatsApp message sent: SM20781be8bf9ab07302e5cfb7d86c3303
+✅ WhatsApp message sent to Shiran Jayasuriya (+94775770997)
+✅ Saved mapping to Google Sheet: SM20781be8bf9ab07302e5cfb7d86c3303 -> TES-50
+Server running on port 3000
+📩 WhatsApp webhook received:
+💬 Message from +94773470464: JOB ID : 17099999436
+TEACHING HOSPITAL - RAGAMA
+LOCATION : KADAWATHA ROAD RAGAMA
+FAULT : CHECK FAULTY EXTENSION-203
+JOB REPORTED TIME : 2025-08-27 / 12:40 PM
+REPORTED BY  : MS NISANSALA
+REPORT : SHIRAN 
+🔍 Checking if job JOB ID : 17099999436
+TEACHING HOSPITAL - RAGAMA
+LOCATION : KADAWATHA ROAD RAGAMA
+FAULT : CHECK FAULTY EXTENSION-203
+JOB REPORTED TIME : 2025-08-27 / 12:40 PM
+REPORTED BY  : MS NISANSALA
+REPORT : SHIRAN exists in Jira: false
+🔍 Searching for email with first name: SHIRAN
+✅ Google Sheets response: [
+  [ 'email', 'f_name', 'l_name', 'phone' ],
+  [ 'dinan.jay20@gmail.com', 'DINAN', 'Jayasuriya', '773470464' ],
+  [ 'shiranj2000@gmail.com', 'SHIRAN', 'Jayasuriya', '775770997' ],
+  [
+    'chamalsamindabandara@gmail.com',
+    'CHAMAL',
+    'Bandara',
+    '765224111'
+  ]
+]
+📧 Contact found for first name SHIRAN: shiranj2000@gmail.com
+Issue created successfully: {
+  id: '10420',
+  key: 'TES-51',
+  self: 'https://dinanjay20.atlassian.net/rest/api/3/issue/10420'
+}
+📩 Jira webhook received: {
+  "timestamp": 1756289932115,
+  "webhookEvent": "jira:issue_created",
+  "issue_event_type_name": "issue_created",
+  "user": {
+    "self": "https://dinanjay20.atlassian.net/rest/api/2/user?accountId=712020%3A2bea55ee-2bf4-44c9-88ff-2ffd1472a3dc",
+    "accountId": "712020:2bea55ee-2bf4-44c9-88ff-2ffd1472a3dc",
+    "avatarUrls": {
+      "48x48": "https://secure.gravatar.com/avatar/e6b56e854c6f977472198836b59d4b4d?d=https%3A%2F%2Favatar-management--avatars.us-west-2.prod.public.atl-paas.net%2Finitials%2FDJ-2.png",
+      "24x24": "https://secure.gravatar.com/avatar/e6b56e854c6f977472198836b59d4b4d?d=https%3A%2F%2Favatar-management--avatars.us-west-2.prod.public.atl-paas.net%2Finitials%2FDJ-2.png",
+      "16x16": "https://secure.gravatar.com/avatar/e6b56e854c6f977472198836b59d4b4d?d=https%3A%2F%2Favatar-management--avatars.us-west-2.prod.public.atl-paas.net%2Finitials%2FDJ-2.png",
+      "32x32": "https://secure.gravatar.com/avatar/e6b56e854c6f977472198836b59d4b4d?d=https%3A%2F%2Favatar-management--avatars.us-west-2.prod.public.atl-paas.net%2Finitials%2FDJ-2.png"
+    },
+    "displayName": "Dinan Jayasuriya",
+    "active": true,
+    "timeZone": "Asia/Colombo",
+    "accountType": "atlassian"
+  },
+  "issue": {
+    "id": "10420",
+    "self": "https://dinanjay20.atlassian.net/rest/api/2/10420",
+    "key": "TES-51",
+    "fields": {
+      "statuscategorychangedate": "2025-08-27T15:48:52.148+0530",
+      "issuetype": {
+        "self": "https://dinanjay20.atlassian.net/rest/api/2/issuetype/10070",
+        "id": "10070",
+        "description": "A small, distinct piece of work.",
+        "iconUrl": "https://dinanjay20.atlassian.net/rest/api/2/universal_avatar/view/type/issuetype/avatar/10318?size=medium",
+        "name": "Task",
+        "subtask": false,
+        "avatarId": 10318,
+        "entityId": "8f170138-b743-4266-a903-da1b7e8f6916",
+        "hierarchyLevel": 0
+      },
+      "components": [],
+      "customfield_10091": null,
+      "timespent": null,
+      "timeoriginalestimate": null,
+      "description": "Job ID: 17099999436\n\nClient: TEACHING HOSPITAL - RAGAMA\n\nLocation: KADAWATHA ROAD RAGAMA\n\nFault: CHECK FAULTY EXTENSION-203\n\nReported Time: 2025-08-27 / 12:40 PM\n\nReported By: MS NISANSALA\n\nReporter: SHIRAN",
+      "project": {
+        "self": "https://dinanjay20.atlassian.net/rest/api/2/project/10067",
+        "id": "10067",
+        "key": "TES",
+        "name": "MetroTest",
+        "projectTypeKey": "business",
+        "simplified": true,
+        "avatarUrls": {
+          "48x48": "https://dinanjay20.atlassian.net/rest/api/2/universal_avatar/view/type/project/avatar/10422",
+          "24x24": "https://dinanjay20.atlassian.net/rest/api/2/universal_avatar/view/type/project/avatar/10422?size=small",
+          "16x16": "https://dinanjay20.atlassian.net/rest/api/2/universal_avatar/view/type/project/avatar/10422?size=xsmall",
+          "32x32": "https://dinanjay20.atlassian.net/rest/api/2/universal_avatar/view/type/project/avatar/10422?size=medium"
+        }
+      },
+      "fixVersions": [],
+      "statusCategory": {
+        "self": "https://dinanjay20.atlassian.net/rest/api/2/statuscategory/2",
+        "id": 2,
+        "key": "new",
+        "colorName": "blue-gray",
+        "name": "New"
+      },
+      "aggregatetimespent": null,
+      "resolution": null,
+      "timetracking": {},
+      "customfield_10015": null,
+      "security": null,
+      "attachment": [],
+      "aggregatetimeestimate": null,
+      "resolutiondate": null,
+      "workratio": -1,
+      "summary": "Job 17099999436 - TEACHING HOSPITAL - RAGAMA",
+      "lastViewed": null,
+      "watches": {
+        "self": "https://dinanjay20.atlassian.net/rest/api/2/issue/TES-51/watchers",
+        "watchCount": 0,
+        "isWatching": true
+      },
+      "creator": {
+        "self": "https://dinanjay20.atlassian.net/rest/api/2/user?accountId=712020%3A2bea55ee-2bf4-44c9-88ff-2ffd1472a3dc",
+        "accountId": "712020:2bea55ee-2bf4-44c9-88ff-2ffd1472a3dc",
+        "avatarUrls": {
+          "48x48": "https://secure.gravatar.com/avatar/e6b56e854c6f977472198836b59d4b4d?d=https%3A%2F%2Favatar-management--avatars.us-west-2.prod.public.atl-paas.net%2Finitials%2FDJ-2.png",
+          "24x24": "https://secure.gravatar.com/avatar/e6b56e854c6f977472198836b59d4b4d?d=https%3A%2F%2Favatar-management--avatars.us-west-2.prod.public.atl-paas.net%2Finitials%2FDJ-2.png",
+          "16x16": "https://secure.gravatar.com/avatar/e6b56e854c6f977472198836b59d4b4d?d=https%3A%2F%2Favatar-management--avatars.us-west-2.prod.public.atl-paas.net%2Finitials%2FDJ-2.png",
+          "32x32": "https://secure.gravatar.com/avatar/e6b56e854c6f977472198836b59d4b4d?d=https%3A%2F%2Favatar-management--avatars.us-west-2.prod.public.atl-paas.net%2Finitials%2FDJ-2.png"
+        },
+        "displayName": "Dinan Jayasuriya",
+        "active": true,
+        "timeZone": "Asia/Colombo",
+        "accountType": "atlassian"
+      },
+      "subtasks": [],
+      "created": "2025-08-27T15:48:51.964+0530",
+      "reporter": {
+        "self": "https://dinanjay20.atlassian.net/rest/api/2/user?accountId=712020%3A742d2122-9523-4a23-8725-ef0c967aefb5",
+        "accountId": "712020:742d2122-9523-4a23-8725-ef0c967aefb5",
+        "emailAddress": "shiranj2000@gmail.com",
+        "avatarUrls": {
+          "48x48": "https://secure.gravatar.com/avatar/1ea8e3580adba1e381a8cb5d7562fd04?d=https%3A%2F%2Favatar-management--avatars.us-west-2.prod.public.atl-paas.net%2Finitials%2FSJ-1.png",
+          "24x24": "https://secure.gravatar.com/avatar/1ea8e3580adba1e381a8cb5d7562fd04?d=https%3A%2F%2Favatar-management--avatars.us-west-2.prod.public.atl-paas.net%2Finitials%2FSJ-1.png",
+          "16x16": "https://secure.gravatar.com/avatar/1ea8e3580adba1e381a8cb5d7562fd04?d=https%3A%2F%2Favatar-management--avatars.us-west-2.prod.public.atl-paas.net%2Finitials%2FSJ-1.png",
+          "32x32": "https://secure.gravatar.com/avatar/1ea8e3580adba1e381a8cb5d7562fd04?d=https%3A%2F%2Favatar-management--avatars.us-west-2.prod.public.atl-paas.net%2Finitials%2FSJ-1.png"
+        },
+        "displayName": "Shiran Jayasuriya",
+        "active": true,
+        "timeZone": "Asia/Colombo",
+        "accountType": "atlassian"
+      },
+      "aggregateprogress": {
+        "progress": 0,
+        "total": 0
+      },
+      "priority": {
+        "self": "https://dinanjay20.atlassian.net/rest/api/2/priority/3",
+        "iconUrl": "https://dinanjay20.atlassian.net/images/icons/priorities/medium_new.svg",
+        "name": "Medium",
+        "id": "3"
+      },
+      "customfield_10001": null,
+      "labels": [],
+      "environment": null,
+      "customfield_10019": "0|i000b3:",
+      "timeestimate": null,
+      "aggregatetimeoriginalestimate": null,
+      "versions": [],
+      "duedate": null,
+      "progress": {
+        "progress": 0,
+        "total": 0
+      },
+      "votes": {
+        "self": "https://dinanjay20.atlassian.net/rest/api/2/issue/TES-51/votes",
+        "votes": 0,
+        "hasVoted": false
+      },
+      "issuelinks": [],
+      "assignee": {
+        "self": "https://dinanjay20.atlassian.net/rest/api/2/user?accountId=712020%3A742d2122-9523-4a23-8725-ef0c967aefb5",
+        "accountId": "712020:742d2122-9523-4a23-8725-ef0c967aefb5",
+        "emailAddress": "shiranj2000@gmail.com",
+        "avatarUrls": {
+          "48x48": "https://secure.gravatar.com/avatar/1ea8e3580adba1e381a8cb5d7562fd04?d=https%3A%2F%2Favatar-management--avatars.us-west-2.prod.public.atl-paas.net%2Finitials%2FSJ-1.png",
+          "24x24": "https://secure.gravatar.com/avatar/1ea8e3580adba1e381a8cb5d7562fd04?d=https%3A%2F%2Favatar-management--avatars.us-west-2.prod.public.atl-paas.net%2Finitials%2FSJ-1.png",
+          "16x16": "https://secure.gravatar.com/avatar/1ea8e3580adba1e381a8cb5d7562fd04?d=https%3A%2F%2Favatar-management--avatars.us-west-2.prod.public.atl-paas.net%2Finitials%2FSJ-1.png",
+          "32x32": "https://secure.gravatar.com/avatar/1ea8e3580adba1e381a8cb5d7562fd04?d=https%3A%2F%2Favatar-management--avatars.us-west-2.prod.public.atl-paas.net%2Finitials%2FSJ-1.png"
+        },
+        "displayName": "Shiran Jayasuriya",
+        "active": true,
+        "timeZone": "Asia/Colombo",
+        "accountType": "atlassian"
+      },
+      "updated": "2025-08-27T15:48:51.964+0530",
+      "status": {
+        "self": "https://dinanjay20.atlassian.net/rest/api/2/status/10075",
+        "description": "",
+        "iconUrl": "https://dinanjay20.atlassian.net/",
+        "name": "To Do",
+        "id": "10075",
+        "statusCategory": {
+          "self": "https://dinanjay20.atlassian.net/rest/api/2/statuscategory/2",
+          "id": 2,
+          "key": "new",
+          "colorName": "blue-gray",
+          "name": "New"
+        }
+      }
+    }
+  },
+  "changelog": {
+    "id": "10738",
+    "items": [
+      {
+        "field": "assignee",
+        "fieldtype": "jira",
+        "fieldId": "assignee",
+        "from": null,
+        "fromString": null,
+        "to": "712020:742d2122-9523-4a23-8725-ef0c967aefb5",
+        "toString": "Shiran Jayasuriya",
+        "tmpFromAccountId": null,
+        "tmpToAccountId": "712020:742d2122-9523-4a23-8725-ef0c967aefb5"
+      },
+      {
+        "field": "description",
+        "fieldtype": "jira",
+        "fieldId": "description",
+        "from": null,
+        "fromString": null,
+        "to": null,
+        "toString": "Job ID: 17099999436\n\nClient: TEACHING HOSPITAL - RAGAMA\n\nLocation: KADAWATHA ROAD RAGAMA\n\nFault: CHECK FAULTY EXTENSION-203\n\nReported Time: 2025-08-27 / 12:40 PM\n\nReported By: MS NISANSALA\n\nReporter: SHIRAN"
+      },
+      {
+        "field": "priority",
+        "fieldtype": "jira",
+        "fieldId": "priority",
+        "from": null,
+        "fromString": null,
+        "to": "3",
+        "toString": "Medium"
+      },
+      {
+        "field": "reporter",
+        "fieldtype": "jira",
+        "fieldId": "reporter",
+        "from": null,
+        "fromString": null,
+        "to": "712020:742d2122-9523-4a23-8725-ef0c967aefb5",
+        "toString": "Shiran Jayasuriya",
+        "tmpFromAccountId": null,
+        "tmpToAccountId": "712020:742d2122-9523-4a23-8725-ef0c967aefb5"
+      },
+      {
+        "field": "Status",
+        "fieldtype": "jira",
+        "fieldId": "status",
+        "from": null,
+        "fromString": null,
+        "to": "10075",
+        "toString": "To Do"
+      },
+      {
+        "field": "summary",
+        "fieldtype": "jira",
+        "fieldId": "summary",
+        "from": null,
+        "fromString": null,
+        "to": null,
+        "toString": "Job 17099999436 - TEACHING HOSPITAL - RAGAMA"
+      }
+    ]
+  }
+}
+👤 Issue TES-51 assigned to Shiran Jayasuriya (accountId: 712020:742d2122-9523-4a23-8725-ef0c967aefb5)
+📩 Jira user lookup response: {
+  self: 'https://dinanjay20.atlassian.net/rest/api/3/user?accountId=712020:742d2122-9523-4a23-8725-ef0c967aefb5',
+  accountId: '712020:742d2122-9523-4a23-8725-ef0c967aefb5',
+  accountType: 'atlassian',
+  emailAddress: 'shiranj2000@gmail.com',
+  avatarUrls: {
+    '48x48': 'https://secure.gravatar.com/avatar/1ea8e3580adba1e381a8cb5d7562fd04?d=https%3A%2F%2Favatar-management--avatars.us-west-2.prod.public.atl-paas.net%2Finitials%2FSJ-1.png',
+    '24x24': 'https://secure.gravatar.com/avatar/1ea8e3580adba1e381a8cb5d7562fd04?d=https%3A%2F%2Favatar-management--avatars.us-west-2.prod.public.atl-paas.net%2Finitials%2FSJ-1.png',
+    '16x16': 'https://secure.gravatar.com/avatar/1ea8e3580adba1e381a8cb5d7562fd04?d=https%3A%2F%2Favatar-management--avatars.us-west-2.prod.public.atl-paas.net%2Finitials%2FSJ-1.png',
+    '32x32': 'https://secure.gravatar.com/avatar/1ea8e3580adba1e381a8cb5d7562fd04?d=https%3A%2F%2Favatar-management--avatars.us-west-2.prod.public.atl-paas.net%2Finitials%2FSJ-1.png'
+  },
+  displayName: 'Shiran Jayasuriya',
+  active: true,
+  timeZone: 'Asia/Colombo',
+  locale: 'en_US',
+  groups: { size: 1, items: [] },
+  applicationRoles: { size: 1, items: [] },
+  expand: 'groups,applicationRoles'
+}
+📧 Jira returned email: shiranj2000@gmail.com
+🔍 Searching for contact with email: shiranj2000@gmail.com
+✅ Google Sheets response: [
+  [ 'email', 'f_name', 'l_name', 'phone' ],
+  [ 'dinan.jay20@gmail.com', 'DINAN', 'Jayasuriya', '773470464' ],
+  [ 'shiranj2000@gmail.com', 'SHIRAN', 'Jayasuriya', '775770997' ],
+  [
+    'chamalsamindabandara@gmail.com',
+    'CHAMAL',
+    'Bandara',
+    '765224111'
+  ]
+]
+📞 Contact found for email shiranj2000@gmail.com: +94775770997
+📞 Found phone number for shiranj2000@gmail.com: +94775770997
+👋 Hi Shiran Jayasuriya,
+
+You have been assigned a new Jira task:
+Job ID: 17099999436
+
+Client: TEACHING HOSPITAL - RAGAMA
+
+Location: KADAWATHA ROAD RAGAMA
+
+Fault: CHECK FAULTY EXTENSION-203
+
+Reported Time: 2025-08-27 / 12:40 PM
+
+Reported By: MS NISANSALA
+
+Reporter: SHIRAN
+✅ WhatsApp message sent to Shiran Jayasuriya (+94775770997)
+Server running on port 3000
+📩 WhatsApp webhook received:
+💬 Message from +94773470464: JOB ID : 17099999436
+TEACHING HOSPITAL - RAGAMA
+LOCATION : KADAWATHA ROAD RAGAMA
+FAULT : CHECK FAULTY EXTENSION-203
+JOB REPORTED TIME : 2025-08-27 / 12:40 PM
+REPORTED BY  : MS NISANSALA
+REPORT : SHIRAN 
+🔍 Checking if job JOB ID : 17099999436
+TEACHING HOSPITAL - RAGAMA
+LOCATION : KADAWATHA ROAD RAGAMA
+FAULT : CHECK FAULTY EXTENSION-203
+JOB REPORTED TIME : 2025-08-27 / 12:40 PM
+REPORTED BY  : MS NISANSALA
+REPORT : SHIRAN exists in Jira: false
+🔍 Searching for email with first name: SHIRAN
+✅ Google Sheets response: [
+  [ 'email', 'f_name', 'l_name', 'phone' ],
+  [ 'dinan.jay20@gmail.com', 'DINAN', 'Jayasuriya', '773470464' ],
+  [ 'shiranj2000@gmail.com', 'SHIRAN', 'Jayasuriya', '775770997' ],
+  [
+    'chamalsamindabandara@gmail.com',
+    'CHAMAL',
+    'Bandara',
+    '765224111'
+  ]
+]
+📧 Contact found for first name SHIRAN: shiranj2000@gmail.com
+Issue created successfully: {
+  id: '10421',
+  key: 'TES-52',
+  self: 'https://dinanjay20.atlassian.net/rest/api/3/issue/10421'
+}
+📩 Jira webhook received: {
+  "timestamp": 1756290206258,
+  "webhookEvent": "jira:issue_created",
+  "issue_event_type_name": "issue_created",
+  "user": {
+    "self": "https://dinanjay20.atlassian.net/rest/api/2/user?accountId=712020%3A2bea55ee-2bf4-44c9-88ff-2ffd1472a3dc",
+    "accountId": "712020:2bea55ee-2bf4-44c9-88ff-2ffd1472a3dc",
+    "avatarUrls": {
+      "48x48": "https://secure.gravatar.com/avatar/e6b56e854c6f977472198836b59d4b4d?d=https%3A%2F%2Favatar-management--avatars.us-west-2.prod.public.atl-paas.net%2Finitials%2FDJ-2.png",
+      "24x24": "https://secure.gravatar.com/avatar/e6b56e854c6f977472198836b59d4b4d?d=https%3A%2F%2Favatar-management--avatars.us-west-2.prod.public.atl-paas.net%2Finitials%2FDJ-2.png",
+      "16x16": "https://secure.gravatar.com/avatar/e6b56e854c6f977472198836b59d4b4d?d=https%3A%2F%2Favatar-management--avatars.us-west-2.prod.public.atl-paas.net%2Finitials%2FDJ-2.png",
+      "32x32": "https://secure.gravatar.com/avatar/e6b56e854c6f977472198836b59d4b4d?d=https%3A%2F%2Favatar-management--avatars.us-west-2.prod.public.atl-paas.net%2Finitials%2FDJ-2.png"
+    },
+    "displayName": "Dinan Jayasuriya",
+    "active": true,
+    "timeZone": "Asia/Colombo",
+    "accountType": "atlassian"
+  },
+  "issue": {
+    "id": "10421",
+    "self": "https://dinanjay20.atlassian.net/rest/api/2/10421",
+    "key": "TES-52",
+    "fields": {
+      "statuscategorychangedate": "2025-08-27T15:53:26.309+0530",
+      "issuetype": {
+        "self": "https://dinanjay20.atlassian.net/rest/api/2/issuetype/10070",
+        "id": "10070",
+        "description": "A small, distinct piece of work.",
+        "iconUrl": "https://dinanjay20.atlassian.net/rest/api/2/universal_avatar/view/type/issuetype/avatar/10318?size=medium",
+        "name": "Task",
+        "subtask": false,
+        "avatarId": 10318,
+        "entityId": "8f170138-b743-4266-a903-da1b7e8f6916",
+        "hierarchyLevel": 0
+      },
+      "components": [],
+      "customfield_10091": null,
+      "timespent": null,
+      "timeoriginalestimate": null,
+      "description": "Job ID: 17099999436\n\nClient: TEACHING HOSPITAL - RAGAMA\n\nLocation: KADAWATHA ROAD RAGAMA\n\nFault: CHECK FAULTY EXTENSION-203\n\nReported Time: 2025-08-27 / 12:40 PM\n\nReported By: MS NISANSALA\n\nReporter: SHIRAN",
+      "project": {
+        "self": "https://dinanjay20.atlassian.net/rest/api/2/project/10067",
+        "id": "10067",
+        "key": "TES",
+        "name": "MetroTest",
+        "projectTypeKey": "business",
+        "simplified": true,
+        "avatarUrls": {
+          "48x48": "https://dinanjay20.atlassian.net/rest/api/2/universal_avatar/view/type/project/avatar/10422",
+          "24x24": "https://dinanjay20.atlassian.net/rest/api/2/universal_avatar/view/type/project/avatar/10422?size=small",
+          "16x16": "https://dinanjay20.atlassian.net/rest/api/2/universal_avatar/view/type/project/avatar/10422?size=xsmall",
+          "32x32": "https://dinanjay20.atlassian.net/rest/api/2/universal_avatar/view/type/project/avatar/10422?size=medium"
+        }
+      },
+      "fixVersions": [],
+      "statusCategory": {
+        "self": "https://dinanjay20.atlassian.net/rest/api/2/statuscategory/2",
+        "id": 2,
+        "key": "new",
+        "colorName": "blue-gray",
+        "name": "New"
+      },
+      "aggregatetimespent": null,
+      "resolution": null,
+      "timetracking": {},
+      "customfield_10015": null,
+      "security": null,
+      "attachment": [],
+      "aggregatetimeestimate": null,
+      "resolutiondate": null,
+      "workratio": -1,
+      "summary": "Job 17099999436 - TEACHING HOSPITAL - RAGAMA",
+      "lastViewed": null,
+      "watches": {
+        "self": "https://dinanjay20.atlassian.net/rest/api/2/issue/TES-52/watchers",
+        "watchCount": 0,
+        "isWatching": true
+      },
+      "creator": {
+        "self": "https://dinanjay20.atlassian.net/rest/api/2/user?accountId=712020%3A2bea55ee-2bf4-44c9-88ff-2ffd1472a3dc",
+        "accountId": "712020:2bea55ee-2bf4-44c9-88ff-2ffd1472a3dc",
+        "avatarUrls": {
+          "48x48": "https://secure.gravatar.com/avatar/e6b56e854c6f977472198836b59d4b4d?d=https%3A%2F%2Favatar-management--avatars.us-west-2.prod.public.atl-paas.net%2Finitials%2FDJ-2.png",
+          "24x24": "https://secure.gravatar.com/avatar/e6b56e854c6f977472198836b59d4b4d?d=https%3A%2F%2Favatar-management--avatars.us-west-2.prod.public.atl-paas.net%2Finitials%2FDJ-2.png",
+          "16x16": "https://secure.gravatar.com/avatar/e6b56e854c6f977472198836b59d4b4d?d=https%3A%2F%2Favatar-management--avatars.us-west-2.prod.public.atl-paas.net%2Finitials%2FDJ-2.png",
+          "32x32": "https://secure.gravatar.com/avatar/e6b56e854c6f977472198836b59d4b4d?d=https%3A%2F%2Favatar-management--avatars.us-west-2.prod.public.atl-paas.net%2Finitials%2FDJ-2.png"
+        },
+        "displayName": "Dinan Jayasuriya",
+        "active": true,
+        "timeZone": "Asia/Colombo",
+        "accountType": "atlassian"
+      },
+      "subtasks": [],
+      "created": "2025-08-27T15:53:26.069+0530",
+      "reporter": {
+        "self": "https://dinanjay20.atlassian.net/rest/api/2/user?accountId=712020%3A742d2122-9523-4a23-8725-ef0c967aefb5",
+        "accountId": "712020:742d2122-9523-4a23-8725-ef0c967aefb5",
+        "emailAddress": "shiranj2000@gmail.com",
+        "avatarUrls": {
+          "48x48": "https://secure.gravatar.com/avatar/1ea8e3580adba1e381a8cb5d7562fd04?d=https%3A%2F%2Favatar-management--avatars.us-west-2.prod.public.atl-paas.net%2Finitials%2FSJ-1.png",
+          "24x24": "https://secure.gravatar.com/avatar/1ea8e3580adba1e381a8cb5d7562fd04?d=https%3A%2F%2Favatar-management--avatars.us-west-2.prod.public.atl-paas.net%2Finitials%2FSJ-1.png",
+          "16x16": "https://secure.gravatar.com/avatar/1ea8e3580adba1e381a8cb5d7562fd04?d=https%3A%2F%2Favatar-management--avatars.us-west-2.prod.public.atl-paas.net%2Finitials%2FSJ-1.png",
+          "32x32": "https://secure.gravatar.com/avatar/1ea8e3580adba1e381a8cb5d7562fd04?d=https%3A%2F%2Favatar-management--avatars.us-west-2.prod.public.atl-paas.net%2Finitials%2FSJ-1.png"
+        },
+        "displayName": "Shiran Jayasuriya",
+        "active": true,
+        "timeZone": "Asia/Colombo",
+        "accountType": "atlassian"
+      },
+      "aggregateprogress": {
+        "progress": 0,
+        "total": 0
+      },
+      "priority": {
+        "self": "https://dinanjay20.atlassian.net/rest/api/2/priority/3",
+        "iconUrl": "https://dinanjay20.atlassian.net/images/icons/priorities/medium_new.svg",
+        "name": "Medium",
+        "id": "3"
+      },
+      "customfield_10001": null,
+      "labels": [],
+      "environment": null,
+      "customfield_10019": "0|i000bb:",
+      "timeestimate": null,
+      "aggregatetimeoriginalestimate": null,
+      "versions": [],
+      "duedate": null,
+      "progress": {
+        "progress": 0,
+        "total": 0
+      },
+      "votes": {
+        "self": "https://dinanjay20.atlassian.net/rest/api/2/issue/TES-52/votes",
+        "votes": 0,
+        "hasVoted": false
+      },
+      "issuelinks": [],
+      "assignee": {
+        "self": "https://dinanjay20.atlassian.net/rest/api/2/user?accountId=712020%3A742d2122-9523-4a23-8725-ef0c967aefb5",
+        "accountId": "712020:742d2122-9523-4a23-8725-ef0c967aefb5",
+        "emailAddress": "shiranj2000@gmail.com",
+        "avatarUrls": {
+          "48x48": "https://secure.gravatar.com/avatar/1ea8e3580adba1e381a8cb5d7562fd04?d=https%3A%2F%2Favatar-management--avatars.us-west-2.prod.public.atl-paas.net%2Finitials%2FSJ-1.png",
+          "24x24": "https://secure.gravatar.com/avatar/1ea8e3580adba1e381a8cb5d7562fd04?d=https%3A%2F%2Favatar-management--avatars.us-west-2.prod.public.atl-paas.net%2Finitials%2FSJ-1.png",
+          "16x16": "https://secure.gravatar.com/avatar/1ea8e3580adba1e381a8cb5d7562fd04?d=https%3A%2F%2Favatar-management--avatars.us-west-2.prod.public.atl-paas.net%2Finitials%2FSJ-1.png",
+          "32x32": "https://secure.gravatar.com/avatar/1ea8e3580adba1e381a8cb5d7562fd04?d=https%3A%2F%2Favatar-management--avatars.us-west-2.prod.public.atl-paas.net%2Finitials%2FSJ-1.png"
+        },
+        "displayName": "Shiran Jayasuriya",
+        "active": true,
+        "timeZone": "Asia/Colombo",
+        "accountType": "atlassian"
+      },
+      "updated": "2025-08-27T15:53:26.069+0530",
+      "status": {
+        "self": "https://dinanjay20.atlassian.net/rest/api/2/status/10075",
+        "description": "",
+        "iconUrl": "https://dinanjay20.atlassian.net/",
+        "name": "To Do",
+        "id": "10075",
+        "statusCategory": {
+          "self": "https://dinanjay20.atlassian.net/rest/api/2/statuscategory/2",
+          "id": 2,
+          "key": "new",
+          "colorName": "blue-gray",
+          "name": "New"
+        }
+      }
+    }
+  },
+  "changelog": {
+    "id": "10739",
+    "items": [
+      {
+        "field": "assignee",
+        "fieldtype": "jira",
+        "fieldId": "assignee",
+        "from": null,
+        "fromString": null,
+        "to": "712020:742d2122-9523-4a23-8725-ef0c967aefb5",
+        "toString": "Shiran Jayasuriya",
+        "tmpFromAccountId": null,
+        "tmpToAccountId": "712020:742d2122-9523-4a23-8725-ef0c967aefb5"
+      },
+      {
+        "field": "description",
+        "fieldtype": "jira",
+        "fieldId": "description",
+        "from": null,
+        "fromString": null,
+        "to": null,
+        "toString": "Job ID: 17099999436\n\nClient: TEACHING HOSPITAL - RAGAMA\n\nLocation: KADAWATHA ROAD RAGAMA\n\nFault: CHECK FAULTY EXTENSION-203\n\nReported Time: 2025-08-27 / 12:40 PM\n\nReported By: MS NISANSALA\n\nReporter: SHIRAN"
+      },
+      {
+        "field": "priority",
+        "fieldtype": "jira",
+        "fieldId": "priority",
+        "from": null,
+        "fromString": null,
+        "to": "3",
+        "toString": "Medium"
+      },
+      {
+        "field": "reporter",
+        "fieldtype": "jira",
+        "fieldId": "reporter",
+        "from": null,
+        "fromString": null,
+        "to": "712020:742d2122-9523-4a23-8725-ef0c967aefb5",
+        "toString": "Shiran Jayasuriya",
+        "tmpFromAccountId": null,
+        "tmpToAccountId": "712020:742d2122-9523-4a23-8725-ef0c967aefb5"
+      },
+      {
+        "field": "Status",
+        "fieldtype": "jira",
+        "fieldId": "status",
+        "from": null,
+        "fromString": null,
+        "to": "10075",
+        "toString": "To Do"
+      },
+      {
+        "field": "summary",
+        "fieldtype": "jira",
+        "fieldId": "summary",
+        "from": null,
+        "fromString": null,
+        "to": null,
+        "toString": "Job 17099999436 - TEACHING HOSPITAL - RAGAMA"
+      }
+    ]
+  }
+}
+👤 Issue TES-52 assigned to Shiran Jayasuriya (accountId: 712020:742d2122-9523-4a23-8725-ef0c967aefb5)
+📩 Jira user lookup response: {
+  self: 'https://dinanjay20.atlassian.net/rest/api/3/user?accountId=712020:742d2122-9523-4a23-8725-ef0c967aefb5',
+  accountId: '712020:742d2122-9523-4a23-8725-ef0c967aefb5',
+  accountType: 'atlassian',
+  emailAddress: 'shiranj2000@gmail.com',
+  avatarUrls: {
+    '48x48': 'https://secure.gravatar.com/avatar/1ea8e3580adba1e381a8cb5d7562fd04?d=https%3A%2F%2Favatar-management--avatars.us-west-2.prod.public.atl-paas.net%2Finitials%2FSJ-1.png',
+    '24x24': 'https://secure.gravatar.com/avatar/1ea8e3580adba1e381a8cb5d7562fd04?d=https%3A%2F%2Favatar-management--avatars.us-west-2.prod.public.atl-paas.net%2Finitials%2FSJ-1.png',
+    '16x16': 'https://secure.gravatar.com/avatar/1ea8e3580adba1e381a8cb5d7562fd04?d=https%3A%2F%2Favatar-management--avatars.us-west-2.prod.public.atl-paas.net%2Finitials%2FSJ-1.png',
+    '32x32': 'https://secure.gravatar.com/avatar/1ea8e3580adba1e381a8cb5d7562fd04?d=https%3A%2F%2Favatar-management--avatars.us-west-2.prod.public.atl-paas.net%2Finitials%2FSJ-1.png'
+  },
+  displayName: 'Shiran Jayasuriya',
+  active: true,
+  timeZone: 'Asia/Colombo',
+  locale: 'en_US',
+  groups: { size: 1, items: [] },
+  applicationRoles: { size: 1, items: [] },
+  expand: 'groups,applicationRoles'
+}
+📧 Jira returned email: shiranj2000@gmail.com
+🔍 Searching for contact with email: shiranj2000@gmail.com
+✅ Google Sheets response: [
+  [ 'email', 'f_name', 'l_name', 'phone' ],
+  [ 'dinan.jay20@gmail.com', 'DINAN', 'Jayasuriya', '773470464' ],
+  [ 'shiranj2000@gmail.com', 'SHIRAN', 'Jayasuriya', '775770997' ],
+  [
+    'chamalsamindabandara@gmail.com',
+    'CHAMAL',
+    'Bandara',
+    '765224111'
+  ]
+]
+📞 Contact found for email shiranj2000@gmail.com: +94775770997
+📞 Found phone number for shiranj2000@gmail.com: +94775770997
+👋 Hi Shiran Jayasuriya,
+
+You have been assigned a new Jira task:
+Job ID: 17099999436
+
+Client: TEACHING HOSPITAL - RAGAMA
+
+Location: KADAWATHA ROAD RAGAMA
+
+Fault: CHECK FAULTY EXTENSION-203
+
+Reported Time: 2025-08-27 / 12:40 PM
+
+Reported By: MS NISANSALA
+
+Reporter: SHIRAN
+✅ WhatsApp message sent: SM1ed738e80f8233fe809977a3cccebee5
+✅ WhatsApp message sent to Shiran Jayasuriya (+94775770997)
+✅ Saved mapping to Google Sheet: SM1ed738e80f8233fe809977a3cccebee5 -> TES-52
+Server running on port 3000
+📩 WhatsApp webhook received:
+💬 Message from +94773470464: JOB ID : 17099999436
+TEACHING HOSPITAL - RAGAMA
+LOCATION : KADAWATHA ROAD RAGAMA
+FAULT : CHECK FAULTY EXTENSION-203
+JOB REPORTED TIME : 2025-08-27 / 12:40 PM
+REPORTED BY  : MS NISANSALA
+A 
+🔍 Checking if job JOB ID : 17099999436
+TEACHING HOSPITAL - RAGAMA
+LOCATION : KADAWATHA ROAD RAGAMA
+FAULT : CHECK FAULTY EXTENSION-203
+JOB REPORTED TIME : 2025-08-27 / 12:40 PM
+REPORTED BY  : MS NISANSALA
+A exists in Jira: false
+Server running on port 3000
+📩 WhatsApp webhook received:
+💬 Message from +94773470464: JOB ID : 17099999436
+TEACHING HOSPITAL - RAGAMA
+LOCATION : KADAWATHA ROAD RAGAMA
+FAULT : CHECK FAULTY EXTENSION-203
+JOB REPORTED TIME : 2025-08-27 / 12:40 PM
+REPORTED BY  : MS NISANSALA
+A 
+🔍 Checking if job JOB ID : 17099999436
+TEACHING HOSPITAL - RAGAMA
+LOCATION : KADAWATHA ROAD RAGAMA
+FAULT : CHECK FAULTY EXTENSION-203
+JOB REPORTED TIME : 2025-08-27 / 12:40 PM
+REPORTED BY  : MS NISANSALA
+A exists in Jira: false
+Server running on port 3000
+📩 WhatsApp webhook received:
+💬 Message from +94773470464: JOB ID : 17099999436
+TEACHING HOSPITAL - RAGAMA
+LOCATION : KADAWATHA ROAD RAGAMA
+FAULT : CHECK FAULTY EXTENSION-203
+JOB REPORTED TIME : 2025-08-27 / 12:40 PM
+REPORTED BY  : MS NISANSALA
+A 
+🔍 Checking if job JOB ID : 17099999436
+TEACHING HOSPITAL - RAGAMA
+LOCATION : KADAWATHA ROAD RAGAMA
+FAULT : CHECK FAULTY EXTENSION-203
+JOB REPORTED TIME : 2025-08-27 / 12:40 PM
+REPORTED BY  : MS NISANSALA
+A exists in Jira: false
+Server running on port 3000
+📩 WhatsApp webhook received:
+💬 Message from +94773470464: JOB ID : 17099999436
+TEACHING HOSPITAL - RAGAMA
+LOCATION : KADAWATHA ROAD RAGAMA
+FAULT : CHECK FAULTY EXTENSION-203
+JOB REPORTED TIME : 2025-08-27 / 12:40 PM
+REPORTED BY  : MS NISANSALA
+A 
+🔍 Checking if job JOB ID : 17099999436
+TEACHING HOSPITAL - RAGAMA
+LOCATION : KADAWATHA ROAD RAGAMA
+FAULT : CHECK FAULTY EXTENSION-203
+JOB REPORTED TIME : 2025-08-27 / 12:40 PM
+REPORTED BY  : MS NISANSALA
+A exists in Jira: false
+🔍 Searching for email with first name: DINAN
+✅ Google Sheets response: [
+  [ 'email', 'f_name', 'l_name', 'phone' ],
+  [ 'dinan.jay20@gmail.com', 'DINAN', 'Jayasuriya', '773470464' ],
+  [ 'shiranj2000@gmail.com', 'SHIRAN', 'Jayasuriya', '775770997' ],
+  [
+    'chamalsamindabandara@gmail.com',
+    'CHAMAL',
+    'Bandara',
+    '765224111'
+  ]
+]
+📧 Contact found for first name DINAN: dinan.jay20@gmail.com
+Issue created successfully: {
+  id: '10422',
+  key: 'TES-53',
+  self: 'https://dinanjay20.atlassian.net/rest/api/3/issue/10422'
+}
+📩 Jira webhook received: {
+  "timestamp": 1756291743864,
+  "webhookEvent": "jira:issue_created",
+  "issue_event_type_name": "issue_created",
+  "user": {
+    "self": "https://dinanjay20.atlassian.net/rest/api/2/user?accountId=712020%3A2bea55ee-2bf4-44c9-88ff-2ffd1472a3dc",
+    "accountId": "712020:2bea55ee-2bf4-44c9-88ff-2ffd1472a3dc",
+    "avatarUrls": {
+      "48x48": "https://secure.gravatar.com/avatar/e6b56e854c6f977472198836b59d4b4d?d=https%3A%2F%2Favatar-management--avatars.us-west-2.prod.public.atl-paas.net%2Finitials%2FDJ-2.png",
+      "24x24": "https://secure.gravatar.com/avatar/e6b56e854c6f977472198836b59d4b4d?d=https%3A%2F%2Favatar-management--avatars.us-west-2.prod.public.atl-paas.net%2Finitials%2FDJ-2.png",
+      "16x16": "https://secure.gravatar.com/avatar/e6b56e854c6f977472198836b59d4b4d?d=https%3A%2F%2Favatar-management--avatars.us-west-2.prod.public.atl-paas.net%2Finitials%2FDJ-2.png",
+      "32x32": "https://secure.gravatar.com/avatar/e6b56e854c6f977472198836b59d4b4d?d=https%3A%2F%2Favatar-management--avatars.us-west-2.prod.public.atl-paas.net%2Finitials%2FDJ-2.png"
+    },
+    "displayName": "Dinan Jayasuriya",
+    "active": true,
+    "timeZone": "Asia/Colombo",
+    "accountType": "atlassian"
+  },
+  "issue": {
+    "id": "10422",
+    "self": "https://dinanjay20.atlassian.net/rest/api/2/10422",
+    "key": "TES-53",
+    "fields": {
+      "statuscategorychangedate": "2025-08-27T16:19:03.922+0530",
+      "issuetype": {
+        "self": "https://dinanjay20.atlassian.net/rest/api/2/issuetype/10070",
+        "id": "10070",
+        "description": "A small, distinct piece of work.",
+        "iconUrl": "https://dinanjay20.atlassian.net/rest/api/2/universal_avatar/view/type/issuetype/avatar/10318?size=medium",
+        "name": "Task",
+        "subtask": false,
+        "avatarId": 10318,
+        "entityId": "8f170138-b743-4266-a903-da1b7e8f6916",
+        "hierarchyLevel": 0
+      },
+      "components": [],
+      "customfield_10091": null,
+      "timespent": null,
+      "timeoriginalestimate": null,
+      "description": "Job ID: 17099999436\n\nClient: TEACHING HOSPITAL - RAGAMA\n\nLocation: KADAWATHA ROAD RAGAMA\n\nFault: CHECK FAULTY EXTENSION-203\n\nReported Time: 2025-08-27 / 12:40 PM\n\nReported By: MS NISANSALA\n\nReporter: DINAN",
+      "project": {
+        "self": "https://dinanjay20.atlassian.net/rest/api/2/project/10067",
+        "id": "10067",
+        "key": "TES",
+        "name": "MetroTest",
+        "projectTypeKey": "business",
+        "simplified": true,
+        "avatarUrls": {
+          "48x48": "https://dinanjay20.atlassian.net/rest/api/2/universal_avatar/view/type/project/avatar/10422",
+          "24x24": "https://dinanjay20.atlassian.net/rest/api/2/universal_avatar/view/type/project/avatar/10422?size=small",
+          "16x16": "https://dinanjay20.atlassian.net/rest/api/2/universal_avatar/view/type/project/avatar/10422?size=xsmall",
+          "32x32": "https://dinanjay20.atlassian.net/rest/api/2/universal_avatar/view/type/project/avatar/10422?size=medium"
+        }
+      },
+      "fixVersions": [],
+      "statusCategory": {
+        "self": "https://dinanjay20.atlassian.net/rest/api/2/statuscategory/2",
+        "id": 2,
+        "key": "new",
+        "colorName": "blue-gray",
+        "name": "New"
+      },
+      "aggregatetimespent": null,
+      "resolution": null,
+      "timetracking": {},
+      "customfield_10015": null,
+      "security": null,
+      "attachment": [],
+      "aggregatetimeestimate": null,
+      "resolutiondate": null,
+      "workratio": -1,
+      "summary": "Job 17099999436 - TEACHING HOSPITAL - RAGAMA",
+      "watches": {
+        "self": "https://dinanjay20.atlassian.net/rest/api/2/issue/TES-53/watchers",
+        "watchCount": 0,
+        "isWatching": true
+      },
+      "lastViewed": null,
+      "creator": {
+        "self": "https://dinanjay20.atlassian.net/rest/api/2/user?accountId=712020%3A2bea55ee-2bf4-44c9-88ff-2ffd1472a3dc",
+        "accountId": "712020:2bea55ee-2bf4-44c9-88ff-2ffd1472a3dc",
+        "avatarUrls": {
+          "48x48": "https://secure.gravatar.com/avatar/e6b56e854c6f977472198836b59d4b4d?d=https%3A%2F%2Favatar-management--avatars.us-west-2.prod.public.atl-paas.net%2Finitials%2FDJ-2.png",
+          "24x24": "https://secure.gravatar.com/avatar/e6b56e854c6f977472198836b59d4b4d?d=https%3A%2F%2Favatar-management--avatars.us-west-2.prod.public.atl-paas.net%2Finitials%2FDJ-2.png",
+          "16x16": "https://secure.gravatar.com/avatar/e6b56e854c6f977472198836b59d4b4d?d=https%3A%2F%2Favatar-management--avatars.us-west-2.prod.public.atl-paas.net%2Finitials%2FDJ-2.png",
+          "32x32": "https://secure.gravatar.com/avatar/e6b56e854c6f977472198836b59d4b4d?d=https%3A%2F%2Favatar-management--avatars.us-west-2.prod.public.atl-paas.net%2Finitials%2FDJ-2.png"
+        },
+        "displayName": "Dinan Jayasuriya",
+        "active": true,
+        "timeZone": "Asia/Colombo",
+        "accountType": "atlassian"
+      },
+      "subtasks": [],
+      "created": "2025-08-27T16:19:03.667+0530",
+      "reporter": {
+        "self": "https://dinanjay20.atlassian.net/rest/api/2/user?accountId=712020%3A2bea55ee-2bf4-44c9-88ff-2ffd1472a3dc",
+        "accountId": "712020:2bea55ee-2bf4-44c9-88ff-2ffd1472a3dc",
+        "avatarUrls": {
+          "48x48": "https://secure.gravatar.com/avatar/e6b56e854c6f977472198836b59d4b4d?d=https%3A%2F%2Favatar-management--avatars.us-west-2.prod.public.atl-paas.net%2Finitials%2FDJ-2.png",
+          "24x24": "https://secure.gravatar.com/avatar/e6b56e854c6f977472198836b59d4b4d?d=https%3A%2F%2Favatar-management--avatars.us-west-2.prod.public.atl-paas.net%2Finitials%2FDJ-2.png",
+          "16x16": "https://secure.gravatar.com/avatar/e6b56e854c6f977472198836b59d4b4d?d=https%3A%2F%2Favatar-management--avatars.us-west-2.prod.public.atl-paas.net%2Finitials%2FDJ-2.png",
+          "32x32": "https://secure.gravatar.com/avatar/e6b56e854c6f977472198836b59d4b4d?d=https%3A%2F%2Favatar-management--avatars.us-west-2.prod.public.atl-paas.net%2Finitials%2FDJ-2.png"
+        },
+        "displayName": "Dinan Jayasuriya",
+        "active": true,
+        "timeZone": "Asia/Colombo",
+        "accountType": "atlassian"
+      },
+      "aggregateprogress": {
+        "progress": 0,
+        "total": 0
+      },
+      "priority": {
+        "self": "https://dinanjay20.atlassian.net/rest/api/2/priority/3",
+        "iconUrl": "https://dinanjay20.atlassian.net/images/icons/priorities/medium_new.svg",
+        "name": "Medium",
+        "id": "3"
+      },
+      "customfield_10001": null,
+      "labels": [],
+      "environment": null,
+      "customfield_10019": "0|i000bj:",
+      "timeestimate": null,
+      "aggregatetimeoriginalestimate": null,
+      "versions": [],
+      "duedate": null,
+      "progress": {
+        "progress": 0,
+        "total": 0
+      },
+      "issuelinks": [],
+      "votes": {
+        "self": "https://dinanjay20.atlassian.net/rest/api/2/issue/TES-53/votes",
+        "votes": 0,
+        "hasVoted": false
+      },
+      "assignee": {
+        "self": "https://dinanjay20.atlassian.net/rest/api/2/user?accountId=712020%3A2bea55ee-2bf4-44c9-88ff-2ffd1472a3dc",
+        "accountId": "712020:2bea55ee-2bf4-44c9-88ff-2ffd1472a3dc",
+        "avatarUrls": {
+          "48x48": "https://secure.gravatar.com/avatar/e6b56e854c6f977472198836b59d4b4d?d=https%3A%2F%2Favatar-management--avatars.us-west-2.prod.public.atl-paas.net%2Finitials%2FDJ-2.png",
+          "24x24": "https://secure.gravatar.com/avatar/e6b56e854c6f977472198836b59d4b4d?d=https%3A%2F%2Favatar-management--avatars.us-west-2.prod.public.atl-paas.net%2Finitials%2FDJ-2.png",
+          "16x16": "https://secure.gravatar.com/avatar/e6b56e854c6f977472198836b59d4b4d?d=https%3A%2F%2Favatar-management--avatars.us-west-2.prod.public.atl-paas.net%2Finitials%2FDJ-2.png",
+          "32x32": "https://secure.gravatar.com/avatar/e6b56e854c6f977472198836b59d4b4d?d=https%3A%2F%2Favatar-management--avatars.us-west-2.prod.public.atl-paas.net%2Finitials%2FDJ-2.png"
+        },
+        "displayName": "Dinan Jayasuriya",
+        "active": true,
+        "timeZone": "Asia/Colombo",
+        "accountType": "atlassian"
+      },
+      "updated": "2025-08-27T16:19:03.667+0530",
+      "status": {
+        "self": "https://dinanjay20.atlassian.net/rest/api/2/status/10075",
+        "description": "",
+        "iconUrl": "https://dinanjay20.atlassian.net/",
+        "name": "To Do",
+        "id": "10075",
+        "statusCategory": {
+          "self": "https://dinanjay20.atlassian.net/rest/api/2/statuscategory/2",
+          "id": 2,
+          "key": "new",
+          "colorName": "blue-gray",
+          "name": "New"
+        }
+      }
+    }
+  },
+  "changelog": {
+    "id": "10740",
+    "items": [
+      {
+        "field": "assignee",
+        "fieldtype": "jira",
+        "fieldId": "assignee",
+        "from": null,
+        "fromString": null,
+        "to": "712020:2bea55ee-2bf4-44c9-88ff-2ffd1472a3dc",
+        "toString": "Dinan Jayasuriya",
+        "tmpFromAccountId": null,
+        "tmpToAccountId": "712020:2bea55ee-2bf4-44c9-88ff-2ffd1472a3dc"
+      },
+      {
+        "field": "description",
+        "fieldtype": "jira",
+        "fieldId": "description",
+        "from": null,
+        "fromString": null,
+        "to": null,
+        "toString": "Job ID: 17099999436\n\nClient: TEACHING HOSPITAL - RAGAMA\n\nLocation: KADAWATHA ROAD RAGAMA\n\nFault: CHECK FAULTY EXTENSION-203\n\nReported Time: 2025-08-27 / 12:40 PM\n\nReported By: MS NISANSALA\n\nReporter: DINAN"
+      },
+      {
+        "field": "priority",
+        "fieldtype": "jira",
+        "fieldId": "priority",
+        "from": null,
+        "fromString": null,
+        "to": "3",
+        "toString": "Medium"
+      },
+      {
+        "field": "reporter",
+        "fieldtype": "jira",
+        "fieldId": "reporter",
+        "from": null,
+        "fromString": null,
+        "to": "712020:2bea55ee-2bf4-44c9-88ff-2ffd1472a3dc",
+        "toString": "Dinan Jayasuriya",
+        "tmpFromAccountId": null,
+        "tmpToAccountId": "712020:2bea55ee-2bf4-44c9-88ff-2ffd1472a3dc"
+      },
+      {
+        "field": "Status",
+        "fieldtype": "jira",
+        "fieldId": "status",
+        "from": null,
+        "fromString": null,
+        "to": "10075",
+        "toString": "To Do"
+      },
+      {
+        "field": "summary",
+        "fieldtype": "jira",
+        "fieldId": "summary",
+        "from": null,
+        "fromString": null,
+        "to": null,
+        "toString": "Job 17099999436 - TEACHING HOSPITAL - RAGAMA"
+      }
+    ]
+  }
+}
+👤 Issue TES-53 assigned to Dinan Jayasuriya (accountId: 712020:2bea55ee-2bf4-44c9-88ff-2ffd1472a3dc)
+📩 Jira user lookup response: {
+  self: 'https://dinanjay20.atlassian.net/rest/api/3/user?accountId=712020:2bea55ee-2bf4-44c9-88ff-2ffd1472a3dc',
+  accountId: '712020:2bea55ee-2bf4-44c9-88ff-2ffd1472a3dc',
+  accountType: 'atlassian',
+  emailAddress: 'dinan.jay20@gmail.com',
+  avatarUrls: {
+    '48x48': 'https://secure.gravatar.com/avatar/e6b56e854c6f977472198836b59d4b4d?d=https%3A%2F%2Favatar-management--avatars.us-west-2.prod.public.atl-paas.net%2Finitials%2FDJ-2.png',
+    '24x24': 'https://secure.gravatar.com/avatar/e6b56e854c6f977472198836b59d4b4d?d=https%3A%2F%2Favatar-management--avatars.us-west-2.prod.public.atl-paas.net%2Finitials%2FDJ-2.png',
+    '16x16': 'https://secure.gravatar.com/avatar/e6b56e854c6f977472198836b59d4b4d?d=https%3A%2F%2Favatar-management--avatars.us-west-2.prod.public.atl-paas.net%2Finitials%2FDJ-2.png',
+    '32x32': 'https://secure.gravatar.com/avatar/e6b56e854c6f977472198836b59d4b4d?d=https%3A%2F%2Favatar-management--avatars.us-west-2.prod.public.atl-paas.net%2Finitials%2FDJ-2.png'
+  },
+  displayName: 'Dinan Jayasuriya',
+  active: true,
+  timeZone: 'Asia/Colombo',
+  locale: 'en_US',
+  groups: { size: 2, items: [] },
+  applicationRoles: { size: 2, items: [] },
+  expand: 'groups,applicationRoles'
+}
+📧 Jira returned email: dinan.jay20@gmail.com
+🔍 Searching for contact with email: dinan.jay20@gmail.com
+✅ Google Sheets response: [
+  [ 'email', 'f_name', 'l_name', 'phone' ],
+  [ 'dinan.jay20@gmail.com', 'DINAN', 'Jayasuriya', '773470464' ],
+  [ 'shiranj2000@gmail.com', 'SHIRAN', 'Jayasuriya', '775770997' ],
+  [
+    'chamalsamindabandara@gmail.com',
+    'CHAMAL',
+    'Bandara',
+    '765224111'
+  ]
+]
+📞 Contact found for email dinan.jay20@gmail.com: +94773470464
+📞 Found phone number for dinan.jay20@gmail.com: +94773470464
+👋 Hi Dinan Jayasuriya,
+
+You have been assigned a new Jira task:
+Job ID: 17099999436
+
+Client: TEACHING HOSPITAL - RAGAMA
+
+Location: KADAWATHA ROAD RAGAMA
+
+Fault: CHECK FAULTY EXTENSION-203
+
+Reported Time: 2025-08-27 / 12:40 PM
+
+Reported By: MS NISANSALA
+
+Reporter: DINAN
+✅ WhatsApp message sent: SM82a9a67ea9f840ac49f9518c827d90bf
+✅ WhatsApp message sent to Dinan Jayasuriya (+94773470464)
+✅ Saved mapping to Google Sheet: SM82a9a67ea9f840ac49f9518c827d90bf -> TES-53
+📩 WhatsApp webhook received:
+💬 Message from +94773470464: JOB ID : 17099999436
+TEACHING HOSPITAL - RAGAMA
+LOCATION : KADAWATHA ROAD RAGAMA
+FAULT : CHECK FAULTY EXTENSION-203
+JOB REPORTED TIME : 2025-08-27 / 12:40 PM
+REPORTED BY  : MS NISANSALA
+B 
+🔍 Checking if job JOB ID : 17099999436
+TEACHING HOSPITAL - RAGAMA
+LOCATION : KADAWATHA ROAD RAGAMA
+FAULT : CHECK FAULTY EXTENSION-203
+JOB REPORTED TIME : 2025-08-27 / 12:40 PM
+REPORTED BY  : MS NISANSALA
+B exists in Jira: false
+🔍 Searching for email with first name: CHAMAL
+✅ Google Sheets response: [
+  [ 'email', 'f_name', 'l_name', 'phone' ],
+  [ 'dinan.jay20@gmail.com', 'DINAN', 'Jayasuriya', '773470464' ],
+  [ 'shiranj2000@gmail.com', 'SHIRAN', 'Jayasuriya', '775770997' ],
+  [
+    'chamalsamindabandara@gmail.com',
+    'CHAMAL',
+    'Bandara',
+    '765224111'
+  ]
+]
+📧 Contact found for first name CHAMAL: chamalsamindabandara@gmail.com
+Issue created successfully: {
+  id: '10423',
+  key: 'TES-54',
+  self: 'https://dinanjay20.atlassian.net/rest/api/3/issue/10423'
+}
+📩 Jira webhook received: {
+  "timestamp": 1756291764072,
+  "webhookEvent": "jira:issue_created",
+  "issue_event_type_name": "issue_created",
+  "user": {
+    "self": "https://dinanjay20.atlassian.net/rest/api/2/user?accountId=712020%3A2bea55ee-2bf4-44c9-88ff-2ffd1472a3dc",
+    "accountId": "712020:2bea55ee-2bf4-44c9-88ff-2ffd1472a3dc",
+    "avatarUrls": {
+      "48x48": "https://secure.gravatar.com/avatar/e6b56e854c6f977472198836b59d4b4d?d=https%3A%2F%2Favatar-management--avatars.us-west-2.prod.public.atl-paas.net%2Finitials%2FDJ-2.png",
+      "24x24": "https://secure.gravatar.com/avatar/e6b56e854c6f977472198836b59d4b4d?d=https%3A%2F%2Favatar-management--avatars.us-west-2.prod.public.atl-paas.net%2Finitials%2FDJ-2.png",
+      "16x16": "https://secure.gravatar.com/avatar/e6b56e854c6f977472198836b59d4b4d?d=https%3A%2F%2Favatar-management--avatars.us-west-2.prod.public.atl-paas.net%2Finitials%2FDJ-2.png",
+      "32x32": "https://secure.gravatar.com/avatar/e6b56e854c6f977472198836b59d4b4d?d=https%3A%2F%2Favatar-management--avatars.us-west-2.prod.public.atl-paas.net%2Finitials%2FDJ-2.png"
+    },
+    "displayName": "Dinan Jayasuriya",
+    "active": true,
+    "timeZone": "Asia/Colombo",
+    "accountType": "atlassian"
+  },
+  "issue": {
+    "id": "10423",
+    "self": "https://dinanjay20.atlassian.net/rest/api/2/10423",
+    "key": "TES-54",
+    "fields": {
+      "statuscategorychangedate": "2025-08-27T16:19:24.117+0530",
+      "issuetype": {
+        "self": "https://dinanjay20.atlassian.net/rest/api/2/issuetype/10070",
+        "id": "10070",
+        "description": "A small, distinct piece of work.",
+        "iconUrl": "https://dinanjay20.atlassian.net/rest/api/2/universal_avatar/view/type/issuetype/avatar/10318?size=medium",
+        "name": "Task",
+        "subtask": false,
+        "avatarId": 10318,
+        "entityId": "8f170138-b743-4266-a903-da1b7e8f6916",
+        "hierarchyLevel": 0
+      },
+      "components": [],
+      "customfield_10091": null,
+      "timespent": null,
+      "timeoriginalestimate": null,
+      "description": "Job ID: 17099999436\n\nClient: TEACHING HOSPITAL - RAGAMA\n\nLocation: KADAWATHA ROAD RAGAMA\n\nFault: CHECK FAULTY EXTENSION-203\n\nReported Time: 2025-08-27 / 12:40 PM\n\nReported By: MS NISANSALA\n\nReporter: CHAMAL",
+      "project": {
+        "self": "https://dinanjay20.atlassian.net/rest/api/2/project/10067",
+        "id": "10067",
+        "key": "TES",
+        "name": "MetroTest",
+        "projectTypeKey": "business",
+        "simplified": true,
+        "avatarUrls": {
+          "48x48": "https://dinanjay20.atlassian.net/rest/api/2/universal_avatar/view/type/project/avatar/10422",
+          "24x24": "https://dinanjay20.atlassian.net/rest/api/2/universal_avatar/view/type/project/avatar/10422?size=small",
+          "16x16": "https://dinanjay20.atlassian.net/rest/api/2/universal_avatar/view/type/project/avatar/10422?size=xsmall",
+          "32x32": "https://dinanjay20.atlassian.net/rest/api/2/universal_avatar/view/type/project/avatar/10422?size=medium"
+        }
+      },
+      "fixVersions": [],
+      "statusCategory": {
+        "self": "https://dinanjay20.atlassian.net/rest/api/2/statuscategory/2",
+        "id": 2,
+        "key": "new",
+        "colorName": "blue-gray",
+        "name": "New"
+      },
+      "aggregatetimespent": null,
+      "resolution": null,
+      "timetracking": {},
+      "customfield_10015": null,
+      "security": null,
+      "attachment": [],
+      "aggregatetimeestimate": null,
+      "resolutiondate": null,
+      "workratio": -1,
+      "summary": "Job 17099999436 - TEACHING HOSPITAL - RAGAMA",
+      "lastViewed": null,
+      "watches": {
+        "self": "https://dinanjay20.atlassian.net/rest/api/2/issue/TES-54/watchers",
+        "watchCount": 0,
+        "isWatching": true
+      },
+      "creator": {
+        "self": "https://dinanjay20.atlassian.net/rest/api/2/user?accountId=712020%3A2bea55ee-2bf4-44c9-88ff-2ffd1472a3dc",
+        "accountId": "712020:2bea55ee-2bf4-44c9-88ff-2ffd1472a3dc",
+        "avatarUrls": {
+          "48x48": "https://secure.gravatar.com/avatar/e6b56e854c6f977472198836b59d4b4d?d=https%3A%2F%2Favatar-management--avatars.us-west-2.prod.public.atl-paas.net%2Finitials%2FDJ-2.png",
+          "24x24": "https://secure.gravatar.com/avatar/e6b56e854c6f977472198836b59d4b4d?d=https%3A%2F%2Favatar-management--avatars.us-west-2.prod.public.atl-paas.net%2Finitials%2FDJ-2.png",
+          "16x16": "https://secure.gravatar.com/avatar/e6b56e854c6f977472198836b59d4b4d?d=https%3A%2F%2Favatar-management--avatars.us-west-2.prod.public.atl-paas.net%2Finitials%2FDJ-2.png",
+          "32x32": "https://secure.gravatar.com/avatar/e6b56e854c6f977472198836b59d4b4d?d=https%3A%2F%2Favatar-management--avatars.us-west-2.prod.public.atl-paas.net%2Finitials%2FDJ-2.png"
+        },
+        "displayName": "Dinan Jayasuriya",
+        "active": true,
+        "timeZone": "Asia/Colombo",
+        "accountType": "atlassian"
+      },
+      "subtasks": [],
+      "created": "2025-08-27T16:19:23.972+0530",
+      "reporter": {
+        "self": "https://dinanjay20.atlassian.net/rest/api/2/user?accountId=712020%3A9d65b2a5-0291-4b75-a903-4f22a3ab0c16",
+        "accountId": "712020:9d65b2a5-0291-4b75-a903-4f22a3ab0c16",
+        "emailAddress": "chamalsamindabandara@gmail.com",
+        "avatarUrls": {
+          "48x48": "https://secure.gravatar.com/avatar/98f484c0762707504ed6a534bb903c12?d=https%3A%2F%2Favatar-management--avatars.us-west-2.prod.public.atl-paas.net%2Finitials%2FCS-0.png",
+          "24x24": "https://secure.gravatar.com/avatar/98f484c0762707504ed6a534bb903c12?d=https%3A%2F%2Favatar-management--avatars.us-west-2.prod.public.atl-paas.net%2Finitials%2FCS-0.png",
+          "16x16": "https://secure.gravatar.com/avatar/98f484c0762707504ed6a534bb903c12?d=https%3A%2F%2Favatar-management--avatars.us-west-2.prod.public.atl-paas.net%2Finitials%2FCS-0.png",
+          "32x32": "https://secure.gravatar.com/avatar/98f484c0762707504ed6a534bb903c12?d=https%3A%2F%2Favatar-management--avatars.us-west-2.prod.public.atl-paas.net%2Finitials%2FCS-0.png"
+        },
+        "displayName": "chamal saminda",
+        "active": true,
+        "timeZone": "Asia/Colombo",
+        "accountType": "atlassian"
+      },
+      "aggregateprogress": {
+        "progress": 0,
+        "total": 0
+      },
+      "priority": {
+        "self": "https://dinanjay20.atlassian.net/rest/api/2/priority/3",
+        "iconUrl": "https://dinanjay20.atlassian.net/images/icons/priorities/medium_new.svg",
+        "name": "Medium",
+        "id": "3"
+      },
+      "customfield_10001": null,
+      "labels": [],
+      "environment": null,
+      "customfield_10019": "0|i000br:",
+      "timeestimate": null,
+      "aggregatetimeoriginalestimate": null,
+      "versions": [],
+      "duedate": null,
+      "progress": {
+        "progress": 0,
+        "total": 0
+      },
+      "votes": {
+        "self": "https://dinanjay20.atlassian.net/rest/api/2/issue/TES-54/votes",
+        "votes": 0,
+        "hasVoted": false
+      },
+      "issuelinks": [],
+      "assignee": {
+        "self": "https://dinanjay20.atlassian.net/rest/api/2/user?accountId=712020%3A9d65b2a5-0291-4b75-a903-4f22a3ab0c16",
+        "accountId": "712020:9d65b2a5-0291-4b75-a903-4f22a3ab0c16",
+        "emailAddress": "chamalsamindabandara@gmail.com",
+        "avatarUrls": {
+          "48x48": "https://secure.gravatar.com/avatar/98f484c0762707504ed6a534bb903c12?d=https%3A%2F%2Favatar-management--avatars.us-west-2.prod.public.atl-paas.net%2Finitials%2FCS-0.png",
+          "24x24": "https://secure.gravatar.com/avatar/98f484c0762707504ed6a534bb903c12?d=https%3A%2F%2Favatar-management--avatars.us-west-2.prod.public.atl-paas.net%2Finitials%2FCS-0.png",
+          "16x16": "https://secure.gravatar.com/avatar/98f484c0762707504ed6a534bb903c12?d=https%3A%2F%2Favatar-management--avatars.us-west-2.prod.public.atl-paas.net%2Finitials%2FCS-0.png",
+          "32x32": "https://secure.gravatar.com/avatar/98f484c0762707504ed6a534bb903c12?d=https%3A%2F%2Favatar-management--avatars.us-west-2.prod.public.atl-paas.net%2Finitials%2FCS-0.png"
+        },
+        "displayName": "chamal saminda",
+        "active": true,
+        "timeZone": "Asia/Colombo",
+        "accountType": "atlassian"
+      },
+      "updated": "2025-08-27T16:19:23.972+0530",
+      "status": {
+        "self": "https://dinanjay20.atlassian.net/rest/api/2/status/10075",
+        "description": "",
+        "iconUrl": "https://dinanjay20.atlassian.net/",
+        "name": "To Do",
+        "id": "10075",
+        "statusCategory": {
+          "self": "https://dinanjay20.atlassian.net/rest/api/2/statuscategory/2",
+          "id": 2,
+          "key": "new",
+          "colorName": "blue-gray",
+          "name": "New"
+        }
+      }
+    }
+  },
+  "changelog": {
+    "id": "10741",
+    "items": [
+      {
+        "field": "assignee",
+        "fieldtype": "jira",
+        "fieldId": "assignee",
+        "from": null,
+        "fromString": null,
+        "to": "712020:9d65b2a5-0291-4b75-a903-4f22a3ab0c16",
+        "toString": "chamal saminda",
+        "tmpFromAccountId": null,
+        "tmpToAccountId": "712020:9d65b2a5-0291-4b75-a903-4f22a3ab0c16"
+      },
+      {
+        "field": "description",
+        "fieldtype": "jira",
+        "fieldId": "description",
+        "from": null,
+        "fromString": null,
+        "to": null,
+        "toString": "Job ID: 17099999436\n\nClient: TEACHING HOSPITAL - RAGAMA\n\nLocation: KADAWATHA ROAD RAGAMA\n\nFault: CHECK FAULTY EXTENSION-203\n\nReported Time: 2025-08-27 / 12:40 PM\n\nReported By: MS NISANSALA\n\nReporter: CHAMAL"
+      },
+      {
+        "field": "priority",
+        "fieldtype": "jira",
+        "fieldId": "priority",
+        "from": null,
+        "fromString": null,
+        "to": "3",
+        "toString": "Medium"
+      },
+      {
+        "field": "reporter",
+        "fieldtype": "jira",
+        "fieldId": "reporter",
+        "from": null,
+        "fromString": null,
+        "to": "712020:9d65b2a5-0291-4b75-a903-4f22a3ab0c16",
+        "toString": "chamal saminda",
+        "tmpFromAccountId": null,
+        "tmpToAccountId": "712020:9d65b2a5-0291-4b75-a903-4f22a3ab0c16"
+      },
+      {
+        "field": "Status",
+        "fieldtype": "jira",
+        "fieldId": "status",
+        "from": null,
+        "fromString": null,
+        "to": "10075",
+        "toString": "To Do"
+      },
+      {
+        "field": "summary",
+        "fieldtype": "jira",
+        "fieldId": "summary",
+        "from": null,
+        "fromString": null,
+        "to": null,
+        "toString": "Job 17099999436 - TEACHING HOSPITAL - RAGAMA"
+      }
+    ]
+  }
+}
+👤 Issue TES-54 assigned to chamal saminda (accountId: 712020:9d65b2a5-0291-4b75-a903-4f22a3ab0c16)
+📩 Jira user lookup response: {
+  self: 'https://dinanjay20.atlassian.net/rest/api/3/user?accountId=712020:9d65b2a5-0291-4b75-a903-4f22a3ab0c16',
+  accountId: '712020:9d65b2a5-0291-4b75-a903-4f22a3ab0c16',
+  accountType: 'atlassian',
+  emailAddress: 'chamalsamindabandara@gmail.com',
+  avatarUrls: {
+    '48x48': 'https://secure.gravatar.com/avatar/98f484c0762707504ed6a534bb903c12?d=https%3A%2F%2Favatar-management--avatars.us-west-2.prod.public.atl-paas.net%2Finitials%2FCS-0.png',
+    '24x24': 'https://secure.gravatar.com/avatar/98f484c0762707504ed6a534bb903c12?d=https%3A%2F%2Favatar-management--avatars.us-west-2.prod.public.atl-paas.net%2Finitials%2FCS-0.png',
+    '16x16': 'https://secure.gravatar.com/avatar/98f484c0762707504ed6a534bb903c12?d=https%3A%2F%2Favatar-management--avatars.us-west-2.prod.public.atl-paas.net%2Finitials%2FCS-0.png',
+    '32x32': 'https://secure.gravatar.com/avatar/98f484c0762707504ed6a534bb903c12?d=https%3A%2F%2Favatar-management--avatars.us-west-2.prod.public.atl-paas.net%2Finitials%2FCS-0.png'
+  },
+  displayName: 'chamal saminda',
+  active: true,
+  timeZone: 'Asia/Colombo',
+  locale: 'en_US',
+  groups: { size: 2, items: [] },
+  applicationRoles: { size: 2, items: [] },
+  expand: 'groups,applicationRoles'
+}
+📧 Jira returned email: chamalsamindabandara@gmail.com
+🔍 Searching for contact with email: chamalsamindabandara@gmail.com
+✅ Google Sheets response: [
+  [ 'email', 'f_name', 'l_name', 'phone' ],
+  [ 'dinan.jay20@gmail.com', 'DINAN', 'Jayasuriya', '773470464' ],
+  [ 'shiranj2000@gmail.com', 'SHIRAN', 'Jayasuriya', '775770997' ],
+  [
+    'chamalsamindabandara@gmail.com',
+    'CHAMAL',
+    'Bandara',
+    '765224111'
+  ]
+]
+📞 Contact found for email chamalsamindabandara@gmail.com: +94765224111
+📞 Found phone number for chamalsamindabandara@gmail.com: +94765224111
+👋 Hi chamal saminda,
+
+You have been assigned a new Jira task:
+Job ID: 17099999436
+
+Client: TEACHING HOSPITAL - RAGAMA
+
+Location: KADAWATHA ROAD RAGAMA
+
+Fault: CHECK FAULTY EXTENSION-203
+
+Reported Time: 2025-08-27 / 12:40 PM
+
+Reported By: MS NISANSALA
+
+Reporter: CHAMAL
+✅ WhatsApp message sent to chamal saminda (+94765224111)
