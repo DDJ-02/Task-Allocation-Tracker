@@ -3,8 +3,11 @@
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
+  "dev": "nodemon src/app.js",
+  "start": "node src/app.js",
+  "test": "echo \"Error: no test specified\" && exit 1"
+}
+  ,
   "keywords": [],
   "author": "",
   "license": "ISC",
@@ -16,5 +19,8 @@
     "node-cron": "^4.2.1",
     "node-fetch": "^3.3.2",
     "twilio": "^5.8.0"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.11"
   }
 }

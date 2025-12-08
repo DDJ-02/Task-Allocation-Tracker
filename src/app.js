@@ -4,6 +4,7 @@ const jiraRoutes = require('./routes/jiraRoutes');
 const jiraWebhookRoutes = require('./routes/jiraWebhook');
 const whatsappWebhook = require('./routes/whatsappWebhook').router;
 const googleSheetRoutes = require('./routes/googleSheetRoutes');
+const whatsappStatusWebhook = require('./routes/whatsappStatusWebhook');
 
 const app = express();
 const PORT = process.env.PORT || 3000;
@@ -28,6 +29,7 @@ app.use('/api/jira', jiraRoutes);
 app.use('/api/jira', jiraWebhookRoutes);
 app.use('/api/whatsapp', whatsappWebhook);
 app.use('/api/sheets', googleSheetRoutes);
+app.use('/api/whatsapp', whatsappStatusWebhook); // ✅ status callback
 
 app.get('/', (req, res) => {
   res.send('Server running...');

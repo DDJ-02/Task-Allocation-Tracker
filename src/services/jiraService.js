@@ -52,7 +52,7 @@ async function createJiraIssue(jobText) {
     if(reportercategory.toLowerCase() == 'a'){
       reporter = "DINAN";
     }else if(reportercategory.toLowerCase() == 'b'){
-      reporter = "CHAMAL";
+      reporter = "LALITH";
     }else{
       return;
     }
@@ -100,7 +100,7 @@ function parseJobText(jobText) {
   if (reporterCategory.toLowerCase() === "a") {
     reporter = "DINAN";
   } else if (reporterCategory.toLowerCase() === "b") {
-    reporter = "CHAMAL";
+    reporter = "LALITH";
   }
 
   return {
@@ -190,7 +190,7 @@ async function updateJiraIssueStatus(issueKey, transitionId) {
         }
     );
 }
-
+/*
 async function getJiraUserAccountId(email) {
   try {
     const response = await axios.get(
@@ -212,7 +212,39 @@ async function getJiraUserAccountId(email) {
     console.error('❌ Error fetching Jira accountId:', err.message);
     throw err;
   }
+}*/
+async function getJiraUserAccountId(email) {
+  try {
+    const response = await axios.get(
+      `${process.env.JIRA_BASE_URL}/rest/api/3/user/search`,
+      {
+        params: { query: email }, // safer than manual query string
+        headers: {
+          Authorization: `Basic ${Buffer.from(`${process.env.JIRA_EMAIL}:${process.env.JIRA_API_TOKEN}`).toString('base64')}`,
+          Accept: 'application/json'
+        }
+      }
+    );
+
+    
+    console.log('Searching Jira user for email:', email);
+    const users = response.data;
+
+    if (!users || users.length === 0) {
+      throw new Error(`No Jira user found for email: ${email}`);
+    }
+    console.log('📩 Jira user search response:', users);
+    // ✅ Get the last user in the array
+    const lastUser = users[users.length - 1];
+
+    return lastUser.accountId;
+  } catch (err) {
+    console.error('❌ Error fetching Jira accountId:', err.response?.data || err.message);
+    console.log('⚠️ Full error response:', err.response);
+    throw err;
+  }
 }
+
 
 async function assignJiraIssue(issueKey, assigneeEmail) {
   try {
@@ -274,6 +306,19 @@ async function getIssueReporter(issueKey) {
     return null;
   }
 }
+
+function adfToPlainText(adf) {
+  if (!adf || !adf.content) return "";
+
+  return adf.content
+    .map(block =>
+      block.content
+        ?.map(x => x.text || "")
+        .join("")
+    )
+    .join("\n");
+}
+
 async function getIssueDetails(issueKey) {
   try {
     const response = await axios.get(
@@ -287,7 +332,10 @@ async function getIssueDetails(issueKey) {
     );
 
     const fields = response.data.fields;
+    console.log("Fetched issue details:", fields);
+    console.log(fields.description)
     return {
+      description: fields.description || "No description provided",
       status: fields.status?.name || "Unknown",
       assignee: fields.assignee?.displayName || "Unassigned",
       reporterEmail: fields.reporter?.emailAddress || null
@@ -308,7 +356,8 @@ async function notifyReporter(issueKey) {
 
   const msg = `ℹ️ Update on Jira Task *${issueKey}*:
 - Status: ${issue.status}
-- Assigned to: ${issue.assignee}`;
+- Assigned to: ${issue.assignee}
+- Summary: ${adfToPlainText(issue.description) || 'No description provided'}`;
 
   await sendWhatsAppMessage(reporterPhone, msg, issueKey);
 
@@ -328,7 +377,17 @@ async function getJiraIssue(jobId) {
         // Extract actual issue key if you prepend "JOB ID" text
         const issueKey = jobId.replace("JOB ID", "").trim();
 
-        const response = await jiraApi.get(`/issue/${issueKey}`);
+        const response = await axios.get(
+          `${JIRA_BASE_URL}/rest/api/3/issue/${issueKey}`,
+          {
+            headers: {
+              Authorization: `Basic ${Buffer
+                .from(`${JIRA_EMAIL}:${JIRA_API_TOKEN}`)
+                .toString('base64')}`,
+              Accept: 'application/json'
+            }
+          }
+        );//await jiraApi.get(`/issue/${issueKey}`);
         return response.data; // issue exists
     } catch (err) {
         if (err.response && err.response.status === 404) {
@@ -339,4 +398,113 @@ async function getJiraIssue(jobId) {
     }
 }
 
-module.exports = { getJiraIssue,checkIfJiraIssueExists,transitionJiraIssue,getJiraUserEmail,createJiraIssue,updateJiraIssueStatus, getJiraUserAccountId,assignJiraIssue ,getPendingJiraTasks,getIssueReporter,notifyReporter };
+async function isJiraIssueDone(issueKey) {
+  try {
+    const response = await axios.get(
+      `${JIRA_BASE_URL}/rest/api/3/issue/${issueKey}`,
+      {
+        headers: {
+          Authorization: `Basic ${Buffer
+            .from(`${JIRA_EMAIL}:${JIRA_API_TOKEN}`)
+            .toString('base64')}`,
+          Accept: 'application/json'
+        }
+      }
+    );
+
+    // Get current status name (e.g., "To Do", "In Progress", "Done")
+    const currentStatus = response.data.fields.status.name;
+
+    // Return true if status is "Done", else false
+    return currentStatus.toLowerCase() === "done";
+
+  } catch (err) {
+    console.error(`Error checking issue ${issueKey}:`, err.message);
+    return false; // safe fallback
+  }
+}
+
+async function getJiraIssueTimelineWithDurations(issueKey) {
+  try {
+    const response = await axios.get(
+      `${JIRA_BASE_URL}/rest/api/3/issue/${issueKey}?expand=changelog`,
+      {
+        headers: {
+          Authorization: `Basic ${Buffer.from(`${JIRA_EMAIL}:${JIRA_API_TOKEN}`).toString('base64')}`,
+          Accept: 'application/json'
+        }
+      }
+    );
+
+    const fields = response.data.fields;
+    const changelog = response.data.changelog.histories;
+
+    // Build status transition history
+    const statusChanges = [];
+
+    changelog.forEach(entry => {
+      entry.items.forEach(item => {
+        if (item.field === "status") {
+          statusChanges.push({
+            from: item.fromString || "Unspecified",
+            to: item.toString,
+            changedAt: new Date(entry.created)
+          });
+        }
+      });
+    });
+
+    // Sort by time to be safe
+    statusChanges.sort((a, b) => a.changedAt - b.changedAt);
+
+    // Calculate durations
+    const timeInStatus = {};
+    let lastStatus = statusChanges.length > 0 ? statusChanges[0].from : fields.status.name;
+    let lastChangeTime = statusChanges.length > 0 ? statusChanges[0].changedAt : new Date(fields.created);
+
+    statusChanges.forEach(change => {
+      // Accumulate time spent in previous status
+      const diffMs = change.changedAt - lastChangeTime;
+      timeInStatus[lastStatus] = (timeInStatus[lastStatus] || 0) + diffMs;
+
+      // Move to next status
+      lastStatus = change.to;
+      lastChangeTime = change.changedAt;
+    });
+
+    // Add time from last status until now
+    const now = new Date();
+    const diffMs = now - lastChangeTime;
+    timeInStatus[lastStatus] = (timeInStatus[lastStatus] || 0) + diffMs;
+
+    // Convert ms to human readable
+    const readable = Object.fromEntries(
+      Object.entries(timeInStatus).map(([status, ms]) => [
+        status,
+        msToReadable(ms)
+      ])
+    );
+
+    return {
+      issueKey,
+      currentStatus: fields.status.name,
+      timeline: statusChanges,
+      timeInStatus: readable
+    };
+
+  } catch (err) {
+    console.error(`❌ Error fetching timeline for ${issueKey}:`, err.response?.data || err.message);
+    return null;
+  }
+}
+
+function msToReadable(ms) {
+  const seconds = Math.floor(ms / 1000);
+  const minutes = Math.floor(seconds / 60);
+  const hours = Math.floor(minutes / 60);
+  const days = Math.floor(hours / 24);
+  return `${days}d ${hours % 24}h ${minutes % 60}m`;
+}
+
+
+module.exports = { getJiraIssue,checkIfJiraIssueExists,transitionJiraIssue,getJiraUserEmail,createJiraIssue,isJiraIssueDone,updateJiraIssueStatus, getJiraUserAccountId,assignJiraIssue ,getPendingJiraTasks,getIssueReporter,notifyReporter,getJiraIssueTimelineWithDurations,adfToPlainText};
