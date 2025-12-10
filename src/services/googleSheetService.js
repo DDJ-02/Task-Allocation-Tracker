@@ -45,9 +45,14 @@ async function getSheetData(range = 'Sheet1!A:D') {
     });
     console.log('Got authentocated');
 
-    // Get an authenticated client
-    const client = await auth.getClient();
-    console.log('✅ Google Sheets API authenticated. Got Client.');
+    try{
+        
+      // Get an authenticated client
+      const client = await auth.getClient();
+      console.log('✅ Google Sheets API authenticated. Got Client.');
+    }catch(err){
+      console.log('xxxxxxxxxxxxxxxxxError in getting authenticated client:', err.message);
+    }
     // Pass the authenticated client to the Sheets API
     const sheets = google.sheets({ version: 'v4', auth: client });
     console.log('📄 Fetching data from Google Sheet...');
