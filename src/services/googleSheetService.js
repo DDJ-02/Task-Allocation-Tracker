@@ -1,7 +1,7 @@
 // services/googleSheetService.js
 const { google } = require('googleapis');
 const path = require('path');
-
+/*
 async function getSheetData(range = 'Sheet1!A:D') {
   try {
     console.log('🔑 Authenticating with Google Sheets API...');
@@ -32,15 +32,15 @@ async function getSheetData(range = 'Sheet1!A:D') {
     console.error('❌ Error fetching Google Sheet:', err.message);
     return [];
   }
-}
+}*/
 
-/*
+
 async function getSheetData(range = 'Sheet1!A:D') {
   try {
     // Create GoogleAuth instance
     console.log('🔑 Check THIS Authenticating with Google Sheets API...')  ;
     const auth = new google.auth.GoogleAuth({
-      keyFile: path.join(__dirname, 'google-credentials.json'), // <- your JSON key
+      keyFile: process.env.GOOGLE_CREDENTIALS_PATH,// path.join(__dirname, 'google-credentials.json'), // <- your JSON key
       scopes: ['https://www.googleapis.com/auth/spreadsheets.readonly'],
     });
     console.log('Got authentocated');
@@ -66,7 +66,7 @@ async function getSheetData(range = 'Sheet1!A:D') {
     console.error('❌ Error fetching Google Sheet:', err.message);
     throw err;
   }
-}*/
+}
 
 async function findContactByPhone(phone) {
   const rows = await getSheetData();
