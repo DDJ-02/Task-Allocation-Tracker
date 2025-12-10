@@ -5,14 +5,18 @@ const path = require('path');
 async function getSheetData(range = 'Sheet1!A:D') {
   try {
     console.log('🔑 Authenticating with Google Sheets API...');
-
-    const auth = new google.auth.GoogleAuth({
+    try{
+      const auth = new google.auth.GoogleAuth({
       credentials: {
         client_email: process.env.GOOGLE_CLIENT_EMAIL,
-        private_key: process.env.GOOGLE_PRIVATE_KEY.replace(/\\n/g, '\n'),
+        private_key: process.env.GOOGLE_PRIVATE_KEY,
       },
       scopes: ['https://www.googleapis.com/auth/spreadsheets.readonly'],
     });
+    }catch(err){
+      console.log('xxxxxxxxxxxxxxxxxError in Google Auth:', err.message);
+    }
+    
 
     const client = await auth.getClient();
     console.log('✅ Google Sheets API authenticated. Got Client.');
