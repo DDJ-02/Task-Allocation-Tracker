@@ -16,7 +16,7 @@ async function getSheetData(range = 'Sheet1!A:D') {
     }catch(err){
       console.log('xxxxxxxxxxxxxxxxxError in Google Auth:', err.message);
     }
-    
+    console.log('Got authenticated');
 
     const client = await auth.getClient();
     console.log('✅ Google Sheets API authenticated. Got Client.');
