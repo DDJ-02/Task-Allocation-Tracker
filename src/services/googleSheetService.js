@@ -10,10 +10,11 @@ async function getSheetData(range = 'Sheet1!A:D') {
       keyFile: path.join(__dirname, 'google-credentials.json'), // <- your JSON key
       scopes: ['https://www.googleapis.com/auth/spreadsheets.readonly'],
     });
+    console.log('Got authentocated');
 
     // Get an authenticated client
     const client = await auth.getClient();
-
+    console.log('✅ Google Sheets API authenticated. Got Client.');
     // Pass the authenticated client to the Sheets API
     const sheets = google.sheets({ version: 'v4', auth: client });
 
