@@ -39,10 +39,16 @@ async function getSheetData(range = 'Sheet1!A:D') {
   try {
     // Create GoogleAuth instance
     console.log('🔑 Check THIS Authenticating with Google Sheets API...')  ;
-    const auth = new google.auth.GoogleAuth({
-      keyFile: process.env.GOOGLE_CREDENTIALS_PATH,// path.join(__dirname, 'google-credentials.json'), // <- your JSON key
-      scopes: ['https://www.googleapis.com/auth/spreadsheets.readonly'],
-    });
+    try{
+      
+      const auth = new google.auth.GoogleAuth({
+        keyFile: process.env.GOOGLE_CREDENTIALS_PATH,// path.join(__dirname, 'google-credentials.json'), // <- your JSON key
+        scopes: ['https://www.googleapis.com/auth/spreadsheets.readonly'],
+      });
+
+    }catch(err){
+      console.log('aaaaaaaaaaaaaa in google auth creation:', err.message);
+    }
     console.log('Got authentocated');
 
     try{
