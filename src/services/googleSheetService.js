@@ -17,7 +17,7 @@ async function getSheetData(range = 'Sheet1!A:D') {
     console.log('✅ Google Sheets API authenticated. Got Client.');
     // Pass the authenticated client to the Sheets API
     const sheets = google.sheets({ version: 'v4', auth: client });
-
+    console.log('📄 Fetching data from Google Sheet...');
     const res = await sheets.spreadsheets.values.get({
       spreadsheetId: '1yQQuMlVKZ_-X44IBbuwUQy1h4tKKVMALRQ2DFLlqLdY', // <- your sheet ID
       range,
