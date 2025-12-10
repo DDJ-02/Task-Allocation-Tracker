@@ -5,6 +5,7 @@ const path = require('path');
 async function getSheetData(range = 'Sheet1!A:D') {
   try {
     // Create GoogleAuth instance
+    console.log('🔑 Check THIS Authenticating with Google Sheets API...')  ;
     const auth = new google.auth.GoogleAuth({
       keyFile: path.join(__dirname, 'google-credentials.json'), // <- your JSON key
       scopes: ['https://www.googleapis.com/auth/spreadsheets.readonly'],
