@@ -215,6 +215,7 @@ async function getJiraUserAccountId(email) {
 }*/
 async function getJiraUserAccountId(email) {
   try {
+    console.log('Searching Jira user for email:', email);
     const response = await axios.get(
       `${process.env.JIRA_BASE_URL}/rest/api/3/user/search`,
       {
@@ -240,7 +241,7 @@ async function getJiraUserAccountId(email) {
     return lastUser.accountId;
   } catch (err) {
     console.error('❌ Error fetching Jira accountId:', err.response?.data || err.message);
-    console.log('⚠️ Full error response:', err.response);
+    console.log('⚠️ Full error response:', '❌ Error fetching Jira accountId:', err.response?.data || err.message);
     throw err;
   }
 }
