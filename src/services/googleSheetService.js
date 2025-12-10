@@ -42,8 +42,12 @@ async function getSheetData(range = 'Sheet1!A:D') {
     
       
     const auth = new google.auth.GoogleAuth({
-      keyFile: process.env.GOOGLE_CREDENTIALS_PATH,// path.join(__dirname, 'google-credentials.json'), // <- your JSON key
-      scopes: ['https://www.googleapis.com/auth/spreadsheets.readonly'],
+      client_email: "google-sheet-access-service@metro-469109.iam.gserviceaccount.com",
+      private_key: `-----BEGIN PRIVATE KEY-----\nMIIEvgIBADANBgkqhkiG9w0BAQEFAASCBKgwggSkAgEAAoIBAQDUCAv13FaiYSNJ\nh5ndp5TslEgVPi7otF6e4CS/OPSeMq3fqDPxLjWTMBwy3srzXEyKggbSDUEYEApx\nmKTqjoTF+b+jHuqxXuY4NRVete3hbiJhFbwPQUZp0lKdIt80srfdrwo4NpUOfd0F\nGheSfSGdRD2bTRme9WFSpeiZhvinvlchUSjqd6HLFrk36zuKWgfxOfX5bfYo8jPK\nSl7jDQAXvEeH0Ssa9CqtrwjX697fOCThiuKlyKfCJPp8hnyOzAKNcwXVymhWz41q\nT8NQ36+xT9jRyshOIEzAqoaqrqJGX8WCY+rh0Tm5KbKLob8ARUtClN1+MeXKbgnv\n3OcytRshAgMBAAECggEAV79kw8EGEXlF0z5NDRA3b5kGI9RyMVfD+NgmHQUDJx0u\nG+tOY7eN8HXulZbiQsil3IRnMjLOB5lL2SskxPVqOUxcZLN8yR7PA9/kEigUZEDh\n9W+7PkzzSQQDsIgn+3Ui5pl0D0N3eGHaQCxGKRej+6OsI0NLIR/HwR5sHm1fJnu7\n0JIGVZds/Q9jdYpyFEzVIKlhbo/RHEq48N6hJbYxuf5yJpJ5excQvkgMvpwWB4Zl\nbysTWQAKn8TQp+Na4bYZIfoATNO6IEYXViB9ZO/SQ6aG7+dWZq691Fh08cgucYnE\n1B8HlVNtKuV5wDhLWCrwl3JUWlBNmOYTv8I2xD9ASQKBgQD68pJnZHdrCLwkj+Rn\nUxpR25E3e5CyUY4HB4+9v93DAIqAvsFUzG91gzkP14pm7+K0SgQEuEZCEiUKmbfE\n8rUVJlZT78o9Q512GecKN9XJnHwVEYkAGa1H9CKRrh3QbmGYK9zsPDPGxaHtvOe7\nuixZj1mlDjyuEAECMeJJGEAjvwKBgQDYTOTv2lRiSVgtpqsbIdU/JCcEE0Ts48um\ni1iUJXmVjK/46jSEFGhki6eJJSWGoBmlK5kxNx6ACuHSu3KMmKnYIH+5erzNwz8o\neMo/48X3MINlmqGVVFKoWELG7D6pd5BTE1L9UnfguMu9uzTpFg0U8OozDRbgnYb7\nHU/AOtT5HwKBgCDoQk6QnCBLCvD4dYkfGqp1UnumFnlrvGYrlavaRyhVH9R2L0AB\ndvQ/+vGa4ClTd7UQp6o+x+fOHVFgivqmoRxe5J8pKKoT/cgI6YUrgTto69SPchmz\nREfVOdtEq+AzOVUNG3FXC6sbK3rTdMfnR/2OkMDWNxrUOm2hQP040uBdAoGBAMC7\nY5NFG8OoTuX+iKBYeUcV054R/WyHXcM8juUSr0/OWE6Xgcve01YkClhtvQ5EQhWm\nz43G62p0R9waImuc7FokOyrubqV5wCEz4CMlthQYKjyymCATTsOqQXY2s28Vlogv\nw9btUNvwTbr1wKOgfm+Wa1ip5SSnuMqwx4sl4PdJAoGBAOWt5tkgqPa5frfVr/1b\ncARrA8+bsSQT9ZSUP8OsL1mrjivNJRUPG0N06Sdo0hPoO5ixQiAsfEAtmwiHKElU\nQ1v1EeoriZYaCXOwta6ZUs/PBxW/y/PTVtTBZpXZ3DeVMmt1KxuA3CBqjjyqsXnm\nBbz+Dzry9bIdfQaaE1UKWY8l\n-----END PRIVATE KEY-----\n`,
+
+
+      //keyFile: process.env.GOOGLE_CREDENTIALS_PATH,// path.join(__dirname, 'google-credentials.json'), // <- your JSON key
+      //scopes: ['https://www.googleapis.com/auth/spreadsheets.readonly'],
     });
 
     console.log('Got authentocated');
